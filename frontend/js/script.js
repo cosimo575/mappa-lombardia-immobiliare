@@ -24,7 +24,7 @@ const styleLuoghi = commonStyle;
 const API_URL = "/api";
 
 // STATO APPLICAZIONE
-let currentSelectedCity = null;
+// let currentSelectedCity = null; // RIMOSSO: Concetto unificato in "currentSelectedFeatureGeometry"
 
 // --- GESTIONE POLIGONI (COMUNI/FRAZIONI) ---
 
@@ -51,19 +51,13 @@ const pointLayers = {};
 // Carica confini statici
 // Carica confini statici
 if (typeof comuniData !== 'undefined') {
-    // Assegna esplicitamente il tipo "Comune" a tutti gli elementi di comuniData
-    // Questo serve perché onEachFeature usa feature.properties.type per capire se aggiornare il filtro città
-    if (comuniData.features) {
-        comuniData.features.forEach(f => {
-            if (f.properties) {
-                f.properties.type = "Comune";
-            }
-        });
-    }
-
     const comuniLayer = L.geoJSON(comuniData, {
         style: styleComuni,
-        onEachFeature: onEachFeature
+        onEachFeature: (feature, layer) => {
+            // FORZATURA TIPO: Assicuriamoci che ogni poligono di questo layer sia un "Comune"
+            feature.properties.type = "Comune";
+            onEachFeature(feature, layer);
+        }
     }).addTo(map);
     layers["Comuni (Livello 8)"] = comuniLayer;
     map.fitBounds(comuniLayer.getBounds());
@@ -111,10 +105,18 @@ Object.keys(datasetsConfig).forEach(key => {
 
     const checkbox = document.getElementById(datasetsConfig[key].id);
     if (checkbox) {
+        // Disabilita di default all'avvio
+        checkbox.disabled = true;
+        checkbox.parentElement.style.opacity = "0.5";
+        checkbox.parentElement.title = "Seleziona prima una zona sulla mappa";
+
         checkbox.addEventListener('change', (e) => {
             if (e.target.checked) {
                 pointLayers[key].addTo(map);
-                updateVisiblePoints();
+                // Carica i punti SOLO se abbiamo una ZONA selezionata
+                if (currentSelectedFeatureGeometry) {
+                    updateVisiblePoints();
+                }
             } else {
                 map.removeLayer(pointLayers[key]);
             }
@@ -122,29 +124,76 @@ Object.keys(datasetsConfig).forEach(key => {
     }
 });
 
+// Funzione per abilitare/disabilitare i controlli
+function updateControlsState(enable) {
+    Object.keys(datasetsConfig).forEach(key => {
+        const checkbox = document.getElementById(datasetsConfig[key].id);
+        if (checkbox) {
+            checkbox.disabled = !enable;
+            checkbox.parentElement.style.opacity = enable ? "1" : "0.5";
+            checkbox.parentElement.title = enable ? "" : "Seleziona prima una zona sulla mappa";
+
+            // Se disabilitiamo, deselezioniamo anche e rimuoviamo il layer
+            if (!enable && checkbox.checked) {
+                checkbox.checked = false;
+                if (map.hasLayer(pointLayers[key])) {
+                    map.removeLayer(pointLayers[key]);
+                }
+            }
+        }
+    });
+}
+
+// --- GEOMETRY UTILS (POINT IN POLYGON) ---
+function isPointInPolygon(point, vs) {
+    // point = [lon, lat], vs = [[lon, lat], ...]
+    var x = point[0], y = point[1];
+    var inside = false;
+    for (var i = 0, j = vs.length - 1; i < vs.length; j = i++) {
+        var xi = vs[i][0], yi = vs[i][1];
+        var xj = vs[j][0], yj = vs[j][1];
+        var intersect = ((yi > y) != (yj > y)) && (x < (xj - xi) * (y - yi) / (yj - yi) + xi);
+        if (intersect) inside = !inside;
+    }
+    return inside;
+}
+
+function isPointInFeature(point, geometry) {
+    if (!geometry || !geometry.coordinates) return true;
+    if (geometry.type === 'Polygon') {
+        return isPointInPolygon(point, geometry.coordinates[0]);
+    } else if (geometry.type === 'MultiPolygon') {
+        for (let i = 0; i < geometry.coordinates.length; i++) {
+            if (isPointInPolygon(point, geometry.coordinates[i][0])) return true;
+        }
+    }
+    return false;
+}
+
+let currentSelectedFeatureGeometry = null;
+
 // Funzione per caricare i punti visibili
 async function updateVisiblePoints() {
-    // OTTIMIZZAZIONE PRESTAZIONI:
-    // Non caricare nulla se siamo troppo "lontani" (vista regionale) e non abbiamo selezionato una città specifica.
-    // Questo evita di bloccare il browser cercando di disegnare migliaia di punti su tutta la Lombardia.
-    if (!currentSelectedCity && map.getZoom() < 12) {
-        // Pulisci tutti i layer se usciamo dallo zoom o deselezioniamo la città
+    // APPROCCIO "TUTTO E' UNA ZONA": 
+    // Se non c'è una geometria selezionata, NON caricare nulla.
+    if (!currentSelectedFeatureGeometry) {
         for (const layer of Object.values(pointLayers)) {
             layer.clearLayers();
         }
         return;
     }
 
-    const bounds = map.getBounds();
+    // Usiamo il bounding box della GEOMETRIA SELEZIONATA
+    // Questo evita di caricare punti fuori dallo schermo se siamo zoomati, 
+    // ma soprattutto centra la richiesta sull'area di interesse.
+    if (!highlightLayer) return;
+    const bounds = highlightLayer.getBounds();
     const minLat = bounds.getSouth();
     const minLon = bounds.getWest();
     const maxLat = bounds.getNorth();
     const maxLon = bounds.getEast();
 
     let url = `${API_URL}/points?minLat=${minLat}&minLon=${minLon}&maxLat=${maxLat}&maxLon=${maxLon}`;
-    if (currentSelectedCity) {
-        url += `&city=${encodeURIComponent(currentSelectedCity)}`;
-    }
 
     // Aggiungi timestamp per evitare caching del browser
     url += `&_t=${new Date().getTime()}`;
@@ -154,8 +203,19 @@ async function updateVisiblePoints() {
             try {
                 const response = await fetch(`${url}&layer=${key}`);
                 const data = await response.json();
+
+                let featuresToShow = data.features;
+
+                // FILTRO GEOGRAFICO RIGOROSO
+                // Mostra SOLO i punti che cadono esattamente dentro i confini del poligono selezionato.
+                if (currentSelectedFeatureGeometry) {
+                    featuresToShow = featuresToShow.filter(f =>
+                        isPointInFeature(f.geometry.coordinates, currentSelectedFeatureGeometry)
+                    );
+                }
+
                 layer.clearLayers();
-                layer.addData(data);
+                layer.addData({ type: "FeatureCollection", features: featuresToShow });
             } catch (error) {
                 console.error(`Errore nel caricamento dei punti per ${key}:`, error);
             }
@@ -163,8 +223,11 @@ async function updateVisiblePoints() {
     }
 }
 
-// Aggiorna quando la mappa si muove o cambia zoom
-map.on('moveend', updateVisiblePoints);
+// RIMOSSO EVENT LISTENER GLOBALE
+// map.on('moveend', updateVisiblePoints); <--- QUESTA RIGA È CANCELLATA
+// I punti si aggiornano solo quando:
+// 1. Selezioni una città (selectLocation)
+// 2. Accendi/Spegni un toggle (checkbox change)
 
 // --- SEARCH E SIDEBAR ---
 
@@ -182,7 +245,9 @@ function indexData() {
     if (typeof luoghiData !== 'undefined' && luoghiData.features) {
         luoghiData.features.forEach(feature => {
             if (feature.properties && feature.properties.name) {
-                searchableItems.push({ name: feature.properties.name, type: feature.properties.type || "Frazione/Località", feature: feature });
+                // Determine type more gracefully if possible
+                let t = feature.properties.type || "Zona";
+                searchableItems.push({ name: feature.properties.name, type: t, feature: feature });
             }
         });
     }
@@ -227,18 +292,10 @@ let highlightLayer = null;
 async function selectLocation(item) {
     if (highlightLayer) map.removeLayer(highlightLayer);
 
-    // Se clicchiamo su un Comune, lo impostiamo come filtro
-    if (item.type === "Comune") {
-        currentSelectedCity = item.name;
-    } else {
-        // Se è una frazione, non filtriamo per il nome della frazione (che nei dati punti è quasi sempre il Comune)
-        // Ma potremmo voler filtrare per il Comune di appartenenza se lo avessimo nei metadati dei poligoni luoghi.
-        // Per ora, resettiamo o manteniamo? L'utente dice "solo della città che clicco".
-        // Assumiamo che se clicca una frazione, vuole vedere i punti di quel "territorio", ma i punti sono censiti per City (Comune).
-        // Quindi se clicca una frazione, resettiamo il filtro o lo lasciamo?
-        // Facciamo che se clicca una frazione NON cambia il filtro città dei punti per evitare confusione se la frazione ha un nome diverso dal comune.
-        // currentSelectedCity = null; 
-    }
+    // LOGICA SEMPLIFICATA "TUTTO E' UNA ZONA"
+    // Non ci preoccupiamo più se è Comune o Frazione. 
+    // Salviamo la geometria per il filtro e basta.
+    currentSelectedFeatureGeometry = item.feature.geometry;
 
     highlightLayer = L.geoJSON(item.feature, {
         style: { color: "#ff0000", weight: 4, opacity: 1, fillColor: "#ffff00", fillOpacity: 0.3 }
@@ -246,10 +303,13 @@ async function selectLocation(item) {
 
     map.fitBounds(highlightLayer.getBounds(), { padding: [50, 50], maxZoom: 16 });
 
+    // ABILITA I CONTROLLI DEI DATI
+    updateControlsState(true);
+
     const infoPanel = document.getElementById('feature-info');
 
     // Mostra pannello laterale con loading
-    infoPanel.innerHTML = `<h3>${item.name}</h3><p class="stats-hint">Caricamento dati...</p>`;
+    infoPanel.innerHTML = `<h3>${item.name}</h3><p class="stats-hint">Caricamento dati zona...</p>`;
 
     try {
         const response = await fetch(`${API_URL}/stats?city=${encodeURIComponent(item.name)}&type=${encodeURIComponent(item.type || '')}`);
@@ -281,7 +341,7 @@ async function selectLocation(item) {
             </div>
             <button onclick="clearCityFilter()" class="clear-filter-btn">Mostra tutto</button>
         `;
-        // Aggiorna i punti sulla mappa per mostrare solo quelli di questa città
+        // Aggiorna i punti sulla mappa per mostrare solo quelli di questa città/zona
         updateVisiblePoints();
 
         if (window.innerWidth <= 768) {
@@ -299,11 +359,20 @@ async function selectLocation(item) {
 }
 
 function clearCityFilter() {
-    currentSelectedCity = null;
+    // currentSelectedCity = null; // RIMOSSO
+    currentSelectedFeatureGeometry = null;
     if (highlightLayer) map.removeLayer(highlightLayer);
-    updateVisiblePoints();
+
+    // Pulisci tutti i punti
+    for (const layer of Object.values(pointLayers)) {
+        layer.clearLayers();
+    }
+
+    // DISABILITA I CONTROLLI
+    updateControlsState(false);
+
     document.getElementById('feature-info').innerHTML = `
-        <p class="placeholder-text">Seleziona un Comune o una Frazione per vedere i dettagli.</p>
+        <p class="placeholder-text">Seleziona una Zona sulla mappa per vedere i dettagli.</p>
     `;
 }
 
@@ -312,4 +381,4 @@ window.clearCityFilter = clearCityFilter;
 
 // Avvio
 initSearch();
-console.log("Mappa pronta con filtro città dinamico");
+console.log("Mappa pronta: Modalità ZONA UNICA attiva");
