@@ -1,0 +1,930 @@
+{
+    "Brescia": [
+        {
+            "name": "Brescia",
+            "salePrice": "2.288",
+            "rentPrice": "12,13"
+        },
+        {
+            "name": "Desenzano del Garda",
+            "salePrice": "3.930",
+            "rentPrice": "14,21"
+        },
+        {
+            "name": "Sirmione",
+            "salePrice": "4.084",
+            "rentPrice": "15,52"
+        },
+        {
+            "name": "Lumezzane",
+            "salePrice": "882",
+            "rentPrice": "6,78"
+        },
+        {
+            "name": "Montichiari",
+            "salePrice": "1.696",
+            "rentPrice": "9,80"
+        },
+        {
+            "name": "Salò",
+            "salePrice": "3.562",
+            "rentPrice": "13,50"
+        },
+        {
+            "name": "Lonato del Garda",
+            "salePrice": "2.450",
+            "rentPrice": "10,80"
+        },
+        {
+            "name": "Ghedi",
+            "salePrice": "1.420",
+            "rentPrice": "8,50"
+        },
+        {
+            "name": "Palazzolo sull'Oglio",
+            "salePrice": "1.550",
+            "rentPrice": "9,20"
+        },
+        {
+            "name": "Chiari",
+            "salePrice": "1.480",
+            "rentPrice": "8,90"
+        },
+        {
+            "name": "Rovato",
+            "salePrice": "1.620",
+            "rentPrice": "9,50"
+        },
+        {
+            "name": "Gussago",
+            "salePrice": "2.150",
+            "rentPrice": "11,20"
+        },
+        {
+            "name": "Darfo Boario Terme",
+            "salePrice": "1.250",
+            "rentPrice": "7,80"
+        },
+        {
+            "name": "Concesio",
+            "salePrice": "1.950",
+            "rentPrice": "10,50"
+        },
+        {
+            "name": "Ospitaletto",
+            "salePrice": "1.680",
+            "rentPrice": "9,60"
+        },
+        {
+            "name": "Travagliato",
+            "salePrice": "1.550",
+            "rentPrice": "9,10"
+        },
+        {
+            "name": "Manerbio",
+            "salePrice": "1.280",
+            "rentPrice": "7,90"
+        },
+        {
+            "name": "Carpenedolo",
+            "salePrice": "1.350",
+            "rentPrice": "8,20"
+        },
+        {
+            "name": "Calcinato",
+            "salePrice": "1.450",
+            "rentPrice": "8,50"
+        },
+        {
+            "name": "Bagnolo Mella",
+            "salePrice": "1.380",
+            "rentPrice": "8,10"
+        },
+        {
+            "name": "Orzinuovi",
+            "salePrice": "1.250",
+            "rentPrice": "7,50"
+        },
+        {
+            "name": "Bedizzole",
+            "salePrice": "1.520",
+            "rentPrice": "8,80"
+        },
+        {
+            "name": "Mazzano",
+            "salePrice": "1.650",
+            "rentPrice": "9,30"
+        },
+        {
+            "name": "Gavardo",
+            "salePrice": "1.480",
+            "rentPrice": "8,60"
+        },
+        {
+            "name": "Castenedolo",
+            "salePrice": "1.550",
+            "rentPrice": "8,90"
+        },
+        {
+            "name": "Gardone Val Trompia",
+            "salePrice": "1.150",
+            "rentPrice": "7,20"
+        },
+        {
+            "name": "Rezzato",
+            "salePrice": "1.750",
+            "rentPrice": "9,80"
+        },
+        {
+            "name": "Botticino",
+            "salePrice": "1.850",
+            "rentPrice": "10,20"
+        },
+        {
+            "name": "Castel Mella",
+            "salePrice": "1.620",
+            "rentPrice": "9,40"
+        },
+        {
+            "name": "Nave",
+            "salePrice": "1.450",
+            "rentPrice": "8,40"
+        },
+        {
+            "name": "Villa Carcina",
+            "salePrice": "1.320",
+            "rentPrice": "7,90"
+        },
+        {
+            "name": "Sarezzo",
+            "salePrice": "1.280",
+            "rentPrice": "7,80"
+        },
+        {
+            "name": "Flero",
+            "salePrice": "1.580",
+            "rentPrice": "9,00"
+        },
+        {
+            "name": "Cazzago San Martino",
+            "salePrice": "1.650",
+            "rentPrice": "9,20"
+        },
+        {
+            "name": "Passirano",
+            "salePrice": "1.720",
+            "rentPrice": "9,60"
+        },
+        {
+            "name": "Coccaglio",
+            "salePrice": "1.450",
+            "rentPrice": "8,50"
+        },
+        {
+            "name": "Rodengo Saiano",
+            "salePrice": "1.850",
+            "rentPrice": "10,10"
+        },
+        {
+            "name": "Roncadelle",
+            "salePrice": "1.780",
+            "rentPrice": "9,90"
+        },
+        {
+            "name": "Capriolo",
+            "salePrice": "1.550",
+            "rentPrice": "8,80"
+        },
+        {
+            "name": "Borgosatollo",
+            "salePrice": "1.620",
+            "rentPrice": "9,10"
+        },
+        {
+            "name": "Adro",
+            "salePrice": "1.680",
+            "rentPrice": "9,40"
+        },
+        {
+            "name": "Cologne",
+            "salePrice": "1.420",
+            "rentPrice": "8,30"
+        },
+        {
+            "name": "Provaglio d'Iseo",
+            "salePrice": "1.950",
+            "rentPrice": "10,50"
+        },
+        {
+            "name": "Corte Franca",
+            "salePrice": "2.150",
+            "rentPrice": "11,20"
+        },
+        {
+            "name": "Iseo",
+            "salePrice": "2.695",
+            "rentPrice": "12,31"
+        },
+        {
+            "name": "Erbusco",
+            "salePrice": "1.850",
+            "rentPrice": "9,90"
+        },
+        {
+            "name": "Pisogne",
+            "salePrice": "1.550",
+            "rentPrice": "8,80"
+        },
+        {
+            "name": "Paratico",
+            "salePrice": "2.350",
+            "rentPrice": "11,50"
+        },
+        {
+            "name": "Pontoglio",
+            "salePrice": "1.250",
+            "rentPrice": "7,50"
+        },
+        {
+            "name": "Pontevico",
+            "salePrice": "1.050",
+            "rentPrice": "6,80"
+        },
+        {
+            "name": "Lenor",
+            "salePrice": "1.150",
+            "rentPrice": "7,20"
+        },
+        {
+            "name": "Verolanuova",
+            "salePrice": "1.180",
+            "rentPrice": "7,40"
+        },
+        {
+            "name": "Castelcovati",
+            "salePrice": "1.350",
+            "rentPrice": "8,00"
+        },
+        {
+            "name": "Vobarno",
+            "salePrice": "1.220",
+            "rentPrice": "7,60"
+        },
+        {
+            "name": "Roè Volciano",
+            "salePrice": "1.450",
+            "rentPrice": "8,40"
+        },
+        {
+            "name": "Villanuova sul Clisi",
+            "salePrice": "1.520",
+            "rentPrice": "8,70"
+        },
+        {
+            "name": "Manerba del Garda",
+            "salePrice": "3.150",
+            "rentPrice": "13,20"
+        },
+        {
+            "name": "Padenghe sul Garda",
+            "salePrice": "3.850",
+            "rentPrice": "14,50"
+        },
+        {
+            "name": "Moniga del Garda",
+            "salePrice": "3.450",
+            "rentPrice": "13,80"
+        },
+        {
+            "name": "Polpenazze del Garda",
+            "salePrice": "2.850",
+            "rentPrice": "12,50"
+        },
+        {
+            "name": "Soiano del Lago",
+            "salePrice": "2.950",
+            "rentPrice": "12,80"
+        },
+        {
+            "name": "Puegnago del Garda",
+            "salePrice": "2.750",
+            "rentPrice": "12,20"
+        },
+        {
+            "name": "San Felice del Benaco",
+            "salePrice": "3.650",
+            "rentPrice": "14,10"
+        },
+        {
+            "name": "Toscolano-Maderno",
+            "salePrice": "2.950",
+            "rentPrice": "12,90"
+        },
+        {
+            "name": "Gardone Riviera",
+            "salePrice": "4.626",
+            "rentPrice": "12,97"
+        },
+        {
+            "name": "Gargnano",
+            "salePrice": "4.850",
+            "rentPrice": "15,20"
+        },
+        {
+            "name": "Tignale",
+            "salePrice": "1.950",
+            "rentPrice": "10,50"
+        },
+        {
+            "name": "Tremosine sul Garda",
+            "salePrice": "1.850",
+            "rentPrice": "10,10"
+        },
+        {
+            "name": "Limone sul Garda",
+            "salePrice": "4.656",
+            "rentPrice": "11,97"
+        },
+        {
+            "name": "Pozzolengo",
+            "salePrice": "1.850",
+            "rentPrice": "9,90"
+        },
+        {
+            "name": "Edolo",
+            "salePrice": "1.650",
+            "rentPrice": "9,50"
+        },
+        {
+            "name": "Ponte di Legno",
+            "salePrice": "4.950",
+            "rentPrice": "25,50"
+        },
+        {
+            "name": "Temù",
+            "salePrice": "3.850",
+            "rentPrice": "18,20"
+        },
+        {
+            "name": "Borno",
+            "salePrice": "1.450",
+            "rentPrice": "8,50"
+        },
+        {
+            "name": "Monte Isola",
+            "salePrice": "1.850",
+            "rentPrice": "9,80"
+        },
+        {
+            "name": "Zone",
+            "salePrice": "1.150",
+            "rentPrice": "7,20"
+        },
+        {
+            "name": "Sale Marasino",
+            "salePrice": "1.950",
+            "rentPrice": "10,20"
+        },
+        {
+            "name": "Sulzano",
+            "salePrice": "2.150",
+            "rentPrice": "11,00"
+        },
+        {
+            "name": "Marone",
+            "salePrice": "1.650",
+            "rentPrice": "9,20"
+        }
+    ],
+    "Como": [
+        {
+            "name": "Como",
+            "salePrice": "3.185",
+            "rentPrice": "14,68"
+        },
+        {
+            "name": "Cantù",
+            "salePrice": "1.846",
+            "rentPrice": "10,98"
+        },
+        {
+            "name": "Mariano Comense",
+            "salePrice": "1.810",
+            "rentPrice": "10,20"
+        },
+        {
+            "name": "Erba",
+            "salePrice": "1.445",
+            "rentPrice": "9,50"
+        },
+        {
+            "name": "Olgiate Comasco",
+            "salePrice": "1.650",
+            "rentPrice": "9,80"
+        },
+        {
+            "name": "Lomazzo",
+            "salePrice": "1.750",
+            "rentPrice": "10,10"
+        },
+        {
+            "name": "Fino Mornasco",
+            "salePrice": "1.680",
+            "rentPrice": "9,60"
+        },
+        {
+            "name": "Turate",
+            "salePrice": "1.620",
+            "rentPrice": "9,40"
+        },
+        {
+            "name": "Inverigo",
+            "salePrice": "1.550",
+            "rentPrice": "9,10"
+        },
+        {
+            "name": "Lurate Caccivio",
+            "salePrice": "1.680",
+            "rentPrice": "9,70"
+        },
+        {
+            "name": "Villa Guardia",
+            "salePrice": "1.850",
+            "rentPrice": "10,20"
+        },
+        {
+            "name": "Cernobbio",
+            "salePrice": "4.879",
+            "rentPrice": "15,42"
+        },
+        {
+            "name": "Moltrasio",
+            "salePrice": "4.250",
+            "rentPrice": "14,50"
+        },
+        {
+            "name": "Carate Urio",
+            "salePrice": "3.850",
+            "rentPrice": "13,80"
+        },
+        {
+            "name": "Laglio",
+            "salePrice": "4.550",
+            "rentPrice": "15,10"
+        },
+        {
+            "name": "Brienno",
+            "salePrice": "2.950",
+            "rentPrice": "12,50"
+        },
+        {
+            "name": "Argegno",
+            "salePrice": "3.650",
+            "rentPrice": "13,90"
+        },
+        {
+            "name": "Tremezzina",
+            "salePrice": "4.150",
+            "rentPrice": "14,80"
+        },
+        {
+            "name": "Menaggio",
+            "salePrice": "3.500",
+            "rentPrice": "12,50"
+        },
+        {
+            "name": "Bellagio",
+            "salePrice": "3.759",
+            "rentPrice": "10,90"
+        },
+        {
+            "name": "Gravedona ed Uniti",
+            "salePrice": "1.950",
+            "rentPrice": "10,50"
+        },
+        {
+            "name": "Dongo",
+            "salePrice": "1.650",
+            "rentPrice": "9,20"
+        },
+        {
+            "name": "Porlezza",
+            "salePrice": "1.850",
+            "rentPrice": "10,10"
+        },
+        {
+            "name": "San Fermo della Battaglia",
+            "salePrice": "2.150",
+            "rentPrice": "11,20"
+        },
+        {
+            "name": "Lipomo",
+            "salePrice": "1.950",
+            "rentPrice": "10,50"
+        },
+        {
+            "name": "Tavernerio",
+            "salePrice": "1.850",
+            "rentPrice": "10,10"
+        },
+        {
+            "name": "Brunate",
+            "salePrice": "1.750",
+            "rentPrice": "9,80"
+        },
+        {
+            "name": "Campione d'Italia",
+            "salePrice": "5.711",
+            "rentPrice": "23,69"
+        },
+        {
+            "name": "Mozzate",
+            "salePrice": "1.550",
+            "rentPrice": "8,90"
+        },
+        {
+            "name": "Appiano Gentile",
+            "salePrice": "1.780",
+            "rentPrice": "10,30"
+        },
+        {
+            "name": "Cadorago",
+            "salePrice": "1.520",
+            "rentPrice": "8,80"
+        },
+        {
+            "name": "Rovellasca",
+            "salePrice": "1.850",
+            "rentPrice": "10,50"
+        },
+        {
+            "name": "Rovello Porro",
+            "salePrice": "1.920",
+            "rentPrice": "10,80"
+        },
+        {
+            "name": "Bregnano",
+            "salePrice": "1.650",
+            "rentPrice": "9,50"
+        },
+        {
+            "name": "Cermenate",
+            "salePrice": "1.580",
+            "rentPrice": "9,20"
+        },
+        {
+            "name": "Carugo",
+            "salePrice": "1.450",
+            "rentPrice": "8,50"
+        },
+        {
+            "name": "Arosio",
+            "salePrice": "1.550",
+            "rentPrice": "9,10"
+        },
+        {
+            "name": "Cabiate",
+            "salePrice": "1.620",
+            "rentPrice": "9,40"
+        }
+    ],
+    "Monza e Brianza": [
+        {
+            "name": "Monza",
+            "salePrice": "3.178",
+            "rentPrice": "14,06"
+        },
+        {
+            "name": "Lissone",
+            "salePrice": "2.421",
+            "rentPrice": "13,17"
+        },
+        {
+            "name": "Seregno",
+            "salePrice": "2.404",
+            "rentPrice": "12,36"
+        },
+        {
+            "name": "Desio",
+            "salePrice": "2.020",
+            "rentPrice": "10,91"
+        },
+        {
+            "name": "Cesano Maderno",
+            "salePrice": "1.980",
+            "rentPrice": "10,50"
+        },
+        {
+            "name": "Brugherio",
+            "salePrice": "2.150",
+            "rentPrice": "11,20"
+        },
+        {
+            "name": "Limbiate",
+            "salePrice": "1.750",
+            "rentPrice": "9,80"
+        },
+        {
+            "name": "Vimercate",
+            "salePrice": "2.502",
+            "rentPrice": "13,02"
+        },
+        {
+            "name": "Giussano",
+            "salePrice": "1.850",
+            "rentPrice": "10,20"
+        },
+        {
+            "name": "Muggiò",
+            "salePrice": "1.950",
+            "rentPrice": "10,60"
+        },
+        {
+            "name": "Meda",
+            "salePrice": "1.780",
+            "rentPrice": "9,90"
+        },
+        {
+            "name": "Nova Milanese",
+            "salePrice": "1.920",
+            "rentPrice": "10,40"
+        },
+        {
+            "name": "Seveso",
+            "salePrice": "1.850",
+            "rentPrice": "10,10"
+        },
+        {
+            "name": "Arcore",
+            "salePrice": "2.303",
+            "rentPrice": "11,90"
+        },
+        {
+            "name": "Carate Brianza",
+            "salePrice": "1.950",
+            "rentPrice": "10,50"
+        },
+        {
+            "name": "Agrate Brianza",
+            "salePrice": "2.050",
+            "rentPrice": "11,10"
+        },
+        {
+            "name": "Concorezzo",
+            "salePrice": "2.150",
+            "rentPrice": "11,30"
+        },
+        {
+            "name": "Villasanta",
+            "salePrice": "2.350",
+            "rentPrice": "12,10"
+        },
+        {
+            "name": "Bovisio-Masciago",
+            "salePrice": "1.880",
+            "rentPrice": "10,20"
+        },
+        {
+            "name": "Lentate sul Seveso",
+            "salePrice": "1.650",
+            "rentPrice": "9,50"
+        },
+        {
+            "name": "Besana in Brianza",
+            "salePrice": "1.720",
+            "rentPrice": "9,80"
+        },
+        {
+            "name": "Varedo",
+            "salePrice": "1.950",
+            "rentPrice": "10,40"
+        },
+        {
+            "name": "Biassono",
+            "salePrice": "2.100",
+            "rentPrice": "11,00"
+        },
+        {
+            "name": "Bernareggio",
+            "salePrice": "1.750",
+            "rentPrice": "9,60"
+        },
+        {
+            "name": "Cornate d'Adda",
+            "salePrice": "1.580",
+            "rentPrice": "9,10"
+        },
+        {
+            "name": "Usmate Velate",
+            "salePrice": "1.850",
+            "rentPrice": "10,10"
+        },
+        {
+            "name": "Verano Brianza",
+            "salePrice": "1.780",
+            "rentPrice": "9,90"
+        },
+        {
+            "name": "Triuggio",
+            "salePrice": "1.820",
+            "rentPrice": "10,00"
+        },
+        {
+            "name": "Sovico",
+            "salePrice": "1.750",
+            "rentPrice": "9,70"
+        },
+        {
+            "name": "Lesmo",
+            "salePrice": "2.050",
+            "rentPrice": "11,20"
+        },
+        {
+            "name": "Vedano al Lambro",
+            "salePrice": "2.450",
+            "rentPrice": "12,50"
+        },
+        {
+            "name": "Macherio",
+            "salePrice": "1.790",
+            "rentPrice": "9,90"
+        },
+        {
+            "name": "Bellusco",
+            "salePrice": "1.650",
+            "rentPrice": "9,40"
+        },
+        {
+            "name": "Cavenago di Brianza",
+            "salePrice": "1.680",
+            "rentPrice": "9,50"
+        },
+        {
+            "name": "Carnate",
+            "salePrice": "1.720",
+            "rentPrice": "9,60"
+        },
+        {
+            "name": "Lazzate",
+            "salePrice": "1.550",
+            "rentPrice": "8,90"
+        },
+        {
+            "name": "Misinto",
+            "salePrice": "1.450",
+            "rentPrice": "8,50"
+        },
+        {
+            "name": "Ornago",
+            "salePrice": "1.620",
+            "rentPrice": "9,20"
+        },
+        {
+            "name": "Burago di Molgora",
+            "salePrice": "1.750",
+            "rentPrice": "9,80"
+        },
+        {
+            "name": "Mezzago",
+            "salePrice": "1.550",
+            "rentPrice": "8,80"
+        },
+        {
+            "name": "Busnago",
+            "salePrice": "1.520",
+            "rentPrice": "8,70"
+        }
+    ],
+    "Sondrio": [
+        {
+            "name": "Sondrio",
+            "salePrice": "1.424",
+            "rentPrice": "8,75"
+        },
+        {
+            "name": "Morbegno",
+            "salePrice": "1.536",
+            "rentPrice": "8,50"
+        },
+        {
+            "name": "Tirano",
+            "salePrice": "1.407",
+            "rentPrice": "8,00"
+        },
+        {
+            "name": "Chiavenna",
+            "salePrice": "1.750",
+            "rentPrice": "9,50"
+        },
+        {
+            "name": "Livigno",
+            "salePrice": "6.775",
+            "rentPrice": "28,40"
+        },
+        {
+            "name": "Bormio",
+            "salePrice": "5.449",
+            "rentPrice": "30,34"
+        },
+        {
+            "name": "Valdidentro",
+            "salePrice": "3.260",
+            "rentPrice": "15,00"
+        },
+        {
+            "name": "Valdisotto",
+            "salePrice": "2.850",
+            "rentPrice": "13,50"
+        },
+        {
+            "name": "Valfurva",
+            "salePrice": "2.450",
+            "rentPrice": "12,80"
+        },
+        {
+            "name": "Aprica",
+            "salePrice": "2.425",
+            "rentPrice": "12,00"
+        },
+        {
+            "name": "Teglio",
+            "salePrice": "1.150",
+            "rentPrice": "7,20"
+        },
+        {
+            "name": "Chiesa in Valmalenco",
+            "salePrice": "1.650",
+            "rentPrice": "9,50"
+        },
+        {
+            "name": "Lanzada",
+            "salePrice": "1.250",
+            "rentPrice": "8,00"
+        },
+        {
+            "name": "Caspoggio",
+            "salePrice": "1.450",
+            "rentPrice": "8,90"
+        },
+        {
+            "name": "Madesimo",
+            "salePrice": "2.950",
+            "rentPrice": "14,50"
+        },
+        {
+            "name": "Campodolcino",
+            "salePrice": "1.850",
+            "rentPrice": "10,20"
+        },
+        {
+            "name": "Samolaco",
+            "salePrice": "950",
+            "rentPrice": "6,50"
+        },
+        {
+            "name": "Dubino",
+            "salePrice": "1.150",
+            "rentPrice": "7,20"
+        },
+        {
+            "name": "Delebio",
+            "salePrice": "1.050",
+            "rentPrice": "6,80"
+        },
+        {
+            "name": "Talamona",
+            "salePrice": "1.100",
+            "rentPrice": "7,00"
+        },
+        {
+            "name": "Cosio Valtellino",
+            "salePrice": "1.080",
+            "rentPrice": "6,90"
+        },
+        {
+            "name": "Berbenno di Valtellina",
+            "salePrice": "980",
+            "rentPrice": "6,40"
+        },
+        {
+            "name": "Poggiridenti",
+            "salePrice": "1.250",
+            "rentPrice": "7,80"
+        },
+        {
+            "name": "Montagna in Valtellina",
+            "salePrice": "1.180",
+            "rentPrice": "7,50"
+        },
+        {
+            "name": "Grosio",
+            "salePrice": "1.220",
+            "rentPrice": "7,60"
+        },
+        {
+            "name": "Sondalo",
+            "salePrice": "1.050",
+            "rentPrice": "6,80"
+        }
+    ]
+}

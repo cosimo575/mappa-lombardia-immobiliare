@@ -1,0 +1,16 @@
+FONTI DATI DEL PROGETTO
+
+1. Mappa di Base (Sfondo)
+   - Fornitore: CartoDB (stile Voyager)
+   - Dati cartografici: © OpenStreetMap contributors
+   - Licenza: ODbL (Open Database License) per i dati OSM, CartoDB terms of use per i tiles.
+
+2. Confini Amministrativi e Geografici
+   - Fonte aggregatore: Garda Informatica
+   - URL: https://www.gardainformatica.it/database-comuni-italiani
+   - File origine: 03_Lombardia-2025-03-12T15Z.gpkg
+   - Dati originali basati su fonti istituzionali (ISTAT, Agenzia delle Entrate, etc.) rielaborati.
+
+3. Dati Statistici (Integrazioni Future)
+   - Popolazione residente: ISTAT (Istituto Nazionale di Statistica)
+   - Prezzi di mercato immobiliare (OMI): Agenzia delle Entrate - Osservatorio del Mercato Immobiliare

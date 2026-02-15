@@ -1,0 +1,7496 @@
+{
+    "Milano": [
+        {
+            "name": "Milano",
+            "sale": "5.615",
+            "rent": "22,32"
+        },
+        {
+            "name": "Sesto San Giovanni",
+            "sale": "2.551",
+            "rent": "13,99"
+        },
+        {
+            "name": "Cinisello Balsamo",
+            "sale": "2.228",
+            "rent": "12,98"
+        },
+        {
+            "name": "Legnano",
+            "sale": "1.799",
+            "rent": "10,50"
+        },
+        {
+            "name": "Rho",
+            "sale": "2.050",
+            "rent": "11,50"
+        },
+        {
+            "name": "Cologno Monzese",
+            "sale": "2.049",
+            "rent": "12,46"
+        },
+        {
+            "name": "Paderno Dugnano",
+            "sale": "1.995",
+            "rent": "10,95"
+        },
+        {
+            "name": "Rozzano",
+            "sale": "2.350",
+            "rent": "12,50"
+        },
+        {
+            "name": "San Giuliano Milanese",
+            "sale": "2.150",
+            "rent": "11,80"
+        },
+        {
+            "name": "Pioltello",
+            "sale": "1.850",
+            "rent": "10,90"
+        },
+        {
+            "name": "Bollate",
+            "sale": "1.980",
+            "rent": "11,10"
+        },
+        {
+            "name": "Segrate",
+            "sale": "3.100",
+            "rent": "14,50"
+        },
+        {
+            "name": "Corsico",
+            "sale": "2.250",
+            "rent": "12,20"
+        },
+        {
+            "name": "Cernusco sul Naviglio",
+            "sale": "2.850",
+            "rent": "13,50"
+        },
+        {
+            "name": "San Donato Milanese",
+            "sale": "2.750",
+            "rent": "13,20"
+        },
+        {
+            "name": "Abbiategrasso",
+            "sale": "1.850",
+            "rent": "10,20"
+        },
+        {
+            "name": "Parabiago",
+            "sale": "1.750",
+            "rent": "9,80"
+        },
+        {
+            "name": "Buccinasco",
+            "sale": "2.650",
+            "rent": "12,80"
+        },
+        {
+            "name": "Garbagnate Milanese",
+            "sale": "1.950",
+            "rent": "10,50"
+        },
+        {
+            "name": "Bresso",
+            "sale": "2.150",
+            "rent": "11,90"
+        },
+        {
+            "name": "Lainate",
+            "sale": "1.890",
+            "rent": "10,40"
+        },
+        {
+            "name": "Cesano Boscone",
+            "sale": "2.300",
+            "rent": "12,10"
+        },
+        {
+            "name": "Magenta",
+            "sale": "1.780",
+            "rent": "9,90"
+        },
+        {
+            "name": "Peschiera Borromeo",
+            "sale": "2.450",
+            "rent": "12,60"
+        },
+        {
+            "name": "Senago",
+            "sale": "1.880",
+            "rent": "10,30"
+        },
+        {
+            "name": "Trezzano sul Naviglio",
+            "sale": "2.280",
+            "rent": "11,70"
+        },
+        {
+            "name": "Cornaredo",
+            "sale": "1.920",
+            "rent": "10,80"
+        },
+        {
+            "name": "Gorgonzola",
+            "sale": "2.180",
+            "rent": "11,40"
+        },
+        {
+            "name": "Cormano",
+            "sale": "2.080",
+            "rent": "11,60"
+        },
+        {
+            "name": "Novate Milanese",
+            "sale": "2.190",
+            "rent": "11,80"
+        },
+        {
+            "name": "Arese",
+            "sale": "2.550",
+            "rent": "12,90"
+        },
+        {
+            "name": "Cusano Milanino",
+            "sale": "2.120",
+            "rent": "11,50"
+        },
+        {
+            "name": "Cassano d'Adda",
+            "sale": "1.750",
+            "rent": "9,50"
+        },
+        {
+            "name": "Melzo",
+            "sale": "1.850",
+            "rent": "10,10"
+        },
+        {
+            "name": "Melegnano",
+            "sale": "2.050",
+            "rent": "11,20"
+        },
+        {
+            "name": "Bareggio",
+            "sale": "1.890",
+            "rent": "10,30"
+        },
+        {
+            "name": "Corbetta",
+            "sale": "1.780",
+            "rent": "9,80"
+        },
+        {
+            "name": "Nerviano",
+            "sale": "1.690",
+            "rent": "9,40"
+        },
+        {
+            "name": "Vimodrone",
+            "sale": "2.480",
+            "rent": "13,10"
+        },
+        {
+            "name": "Pieve Emanuele",
+            "sale": "1.750",
+            "rent": "10,80"
+        },
+        {
+            "name": "Carugate",
+            "sale": "2.050",
+            "rent": "11,30"
+        },
+        {
+            "name": "Cerro Maggiore",
+            "sale": "1.550",
+            "rent": "9,10"
+        },
+        {
+            "name": "Cesate",
+            "sale": "1.820",
+            "rent": "10,10"
+        },
+        {
+            "name": "Solaro",
+            "sale": "1.680",
+            "rent": "9,50"
+        },
+        {
+            "name": "Rescaldina",
+            "sale": "1.650",
+            "rent": "9,30"
+        },
+        {
+            "name": "Busto Garolfo",
+            "sale": "1.580",
+            "rent": "8,90"
+        },
+        {
+            "name": "Opera",
+            "sale": "2.350",
+            "rent": "12,40"
+        },
+        {
+            "name": "Cassina de' Pecchi",
+            "sale": "2.250",
+            "rent": "11,90"
+        },
+        {
+            "name": "Canegrate",
+            "sale": "1.590",
+            "rent": "9,00"
+        },
+        {
+            "name": "Mediglia",
+            "sale": "1.720",
+            "rent": "9,60"
+        },
+        {
+            "name": "Trezzo sull'Adda",
+            "sale": "1.680",
+            "rent": "9,40"
+        },
+        {
+            "name": "Sedriano",
+            "sale": "1.850",
+            "rent": "10,20"
+        },
+        {
+            "name": "Arluno",
+            "sale": "1.750",
+            "rent": "9,70"
+        },
+        {
+            "name": "Baranzate",
+            "sale": "1.950",
+            "rent": "11,80"
+        },
+        {
+            "name": "Paullo",
+            "sale": "1.820",
+            "rent": "10,00"
+        },
+        {
+            "name": "Castano Primo",
+            "sale": "1.450",
+            "rent": "8,50"
+        },
+        {
+            "name": "Pero",
+            "sale": "2.650",
+            "rent": "13,50"
+        },
+        {
+            "name": "Inzago",
+            "sale": "1.790",
+            "rent": "9,80"
+        },
+        {
+            "name": "Locate di Triulzi",
+            "sale": "1.980",
+            "rent": "10,90"
+        },
+        {
+            "name": "Vignate",
+            "sale": "1.950",
+            "rent": "10,50"
+        },
+        {
+            "name": "Magnago",
+            "sale": "1.480",
+            "rent": "8,60"
+        },
+        {
+            "name": "Vanzaghello",
+            "sale": "1.350",
+            "rent": "8,20"
+        },
+        {
+            "name": "Gaggiano",
+            "sale": "2.450",
+            "rent": "12,30"
+        },
+        {
+            "name": "Pessano con Bornago",
+            "sale": "1.850",
+            "rent": "10,10"
+        },
+        {
+            "name": "Vittuone",
+            "sale": "1.780",
+            "rent": "9,80"
+        },
+        {
+            "name": "Assago",
+            "sale": "3.250",
+            "rent": "15,10"
+        },
+        {
+            "name": "Vaprio d'Adda",
+            "sale": "1.620",
+            "rent": "9,10"
+        },
+        {
+            "name": "Lacchiarella",
+            "sale": "1.680",
+            "rent": "9,40"
+        },
+        {
+            "name": "Gessate",
+            "sale": "1.980",
+            "rent": "10,70"
+        },
+        {
+            "name": "Inveruno",
+            "sale": "1.520",
+            "rent": "8,80"
+        },
+        {
+            "name": "Bussero",
+            "sale": "2.050",
+            "rent": "11,00"
+        },
+        {
+            "name": "Pozzuolo Martesana",
+            "sale": "1.750",
+            "rent": "9,60"
+        },
+        {
+            "name": "San Vittore Olona",
+            "sale": "1.680",
+            "rent": "9,50"
+        },
+        {
+            "name": "Pogliano Milanese",
+            "sale": "1.720",
+            "rent": "9,60"
+        },
+        {
+            "name": "Cuggiono",
+            "sale": "1.450",
+            "rent": "8,40"
+        },
+        {
+            "name": "Motta Visconti",
+            "sale": "1.350",
+            "rent": "8,00"
+        },
+        {
+            "name": "Basiglio",
+            "sale": "3.450",
+            "rent": "15,80"
+        },
+        {
+            "name": "Settimo Milanese",
+            "sale": "2.250",
+            "rent": "11,80"
+        },
+        {
+            "name": "San Giorgio su Legnano",
+            "sale": "1.580",
+            "rent": "9,00"
+        },
+        {
+            "name": "Turbigo",
+            "sale": "1.250",
+            "rent": "7,80"
+        },
+        {
+            "name": "Binasco",
+            "sale": "1.750",
+            "rent": "9,90"
+        },
+        {
+            "name": "Cambiago",
+            "sale": "1.680",
+            "rent": "9,30"
+        },
+        {
+            "name": "Zibido San Giacomo",
+            "sale": "1.950",
+            "rent": "10,60"
+        },
+        {
+            "name": "Dairago",
+            "sale": "1.420",
+            "rent": "8,30"
+        },
+        {
+            "name": "Robbecco sul Naviglio",
+            "sale": "1.650",
+            "rent": "9,20"
+        },
+        {
+            "name": "Villa Cortese",
+            "sale": "1.620",
+            "rent": "9,10"
+        },
+        {
+            "name": "Arconate",
+            "sale": "1.450",
+            "rent": "8,50"
+        },
+        {
+            "name": "Marcallo con Casone",
+            "sale": "1.550",
+            "rent": "7,09"
+        },
+        {
+            "name": "Truccazzano",
+            "sale": "1.520",
+            "rent": "8,70"
+        },
+        {
+            "name": "Rosate",
+            "sale": "1.650",
+            "rent": "9,30"
+        },
+        {
+            "name": "Casorezzo",
+            "sale": "1.480",
+            "rent": "8,60"
+        },
+        {
+            "name": "Vanzago",
+            "sale": "1.950",
+            "rent": "10,40"
+        },
+        {
+            "name": "Trezzano Rosa",
+            "sale": "1.650",
+            "rent": "9,20"
+        },
+        {
+            "name": "Cerro al Lambro",
+            "sale": "1.580",
+            "rent": "8,90"
+        },
+        {
+            "name": "Boffalora sopra Ticino",
+            "sale": "1.420",
+            "rent": "8,20"
+        },
+        {
+            "name": "Buscate",
+            "sale": "1.350",
+            "rent": "8,00"
+        },
+        {
+            "name": "Albairate",
+            "sale": "1.550",
+            "rent": "8,80"
+        },
+        {
+            "name": "Mesero",
+            "sale": "1.480",
+            "rent": "8,50"
+        },
+        {
+            "name": "Carpiano",
+            "sale": "1.620",
+            "rent": "9,10"
+        },
+        {
+            "name": "Santo Stefano Ticino",
+            "sale": "1.680",
+            "rent": "9,40"
+        },
+        {
+            "name": "Liscate",
+            "sale": "1.850",
+            "rent": "10,20"
+        },
+        {
+            "name": "Casarile",
+            "sale": "1.550",
+            "rent": "8,80"
+        },
+        {
+            "name": "Vermezzo con Zelo",
+            "sale": "1.650",
+            "rent": "9,30"
+        },
+        {
+            "name": "Bellinzago Lombardo",
+            "sale": "1.750",
+            "rent": "9,80"
+        },
+        {
+            "name": "Basiano",
+            "sale": "1.580",
+            "rent": "8,90"
+        },
+        {
+            "name": "Masate",
+            "sale": "1.620",
+            "rent": "9,00"
+        },
+        {
+            "name": "Tribiano",
+            "sale": "1.550",
+            "rent": "8,70"
+        },
+        {
+            "name": "Vizzolo Predabissi",
+            "sale": "1.950",
+            "rent": "10,50"
+        },
+        {
+            "name": "Pantigliate",
+            "sale": "1.780",
+            "rent": "9,90"
+        },
+        {
+            "name": "Colturano",
+            "sale": "1.480",
+            "rent": "8,50"
+        },
+        {
+            "name": "San Zenone al Lambro",
+            "sale": "1.350",
+            "rent": "8,00"
+        },
+        {
+            "name": "Ossona",
+            "sale": "1.520",
+            "rent": "8,70"
+        },
+        {
+            "name": "Robecchetto con Induno",
+            "sale": "1.280",
+            "rent": "7,80"
+        },
+        {
+            "name": "Noviglio",
+            "sale": "1.450",
+            "rent": "8,40"
+        },
+        {
+            "name": "Cisliano",
+            "sale": "1.680",
+            "rent": "9,20"
+        },
+        {
+            "name": "Pozzo d'Adda",
+            "sale": "1.550",
+            "rent": "8,80"
+        },
+        {
+            "name": "Rodano",
+            "sale": "1.850",
+            "rent": "9,90"
+        },
+        {
+            "name": "Nosate",
+            "sale": "1.150",
+            "rent": "7,20"
+        },
+        {
+            "name": "Bubbiano",
+            "sale": "1.420",
+            "rent": "8,10"
+        },
+        {
+            "name": "Besate",
+            "sale": "1.180",
+            "rent": "7,50"
+        },
+        {
+            "name": "Ozzero",
+            "sale": "1.250",
+            "rent": "7,80"
+        },
+        {
+            "name": "Gudo Visconti",
+            "sale": "1.380",
+            "rent": "8,10"
+        },
+        {
+            "name": "Morimondo",
+            "sale": "1.450",
+            "rent": "8,30"
+        },
+        {
+            "name": "Calvignasco",
+            "sale": "1.350",
+            "rent": "8,00"
+        },
+        {
+            "name": "San Colombano al Lambro",
+            "sale": "996",
+            "rent": "7,50"
+        }
+    ],
+    "Brescia": [
+        {
+            "name": "Brescia",
+            "sale": "2.288",
+            "rent": "12,13"
+        },
+        {
+            "name": "Acquafredda",
+            "sale": "916",
+            "rent": "6,66"
+        },
+        {
+            "name": "Adro",
+            "sale": "1.563",
+            "rent": "8,39"
+        },
+        {
+            "name": "Agnosine",
+            "sale": "921",
+            "rent": "6,47"
+        },
+        {
+            "name": "Alfianello",
+            "sale": "918",
+            "rent": "6,85"
+        },
+        {
+            "name": "Anfo",
+            "sale": "1.526",
+            "rent": "6,36"
+        },
+        {
+            "name": "Angolo Terme",
+            "sale": "664",
+            "rent": "6,34"
+        },
+        {
+            "name": "Artogne",
+            "sale": "1.103",
+            "rent": "7,73"
+        },
+        {
+            "name": "Azzano Mella",
+            "sale": "1.706",
+            "rent": "8,97"
+        },
+        {
+            "name": "Bagnolo Mella",
+            "sale": "1.311",
+            "rent": "10,41"
+        },
+        {
+            "name": "Bagolino",
+            "sale": "876",
+            "rent": "7,62"
+        },
+        {
+            "name": "Barbariga",
+            "sale": "1.121",
+            "rent": "7,71"
+        },
+        {
+            "name": "Barghe",
+            "sale": "676",
+            "rent": "6,38"
+        },
+        {
+            "name": "Bassano Bresciano",
+            "sale": "1.403",
+            "rent": "9,81"
+        },
+        {
+            "name": "Bedizzole",
+            "sale": "1.545",
+            "rent": "10,58"
+        },
+        {
+            "name": "Berlingo",
+            "sale": "1.206",
+            "rent": "9,3"
+        },
+        {
+            "name": "Berzo Demo",
+            "sale": "647",
+            "rent": "6,6"
+        },
+        {
+            "name": "Berzo Inferiore",
+            "sale": "912",
+            "rent": "6,18"
+        },
+        {
+            "name": "Bienno",
+            "sale": "695",
+            "rent": "6,94"
+        },
+        {
+            "name": "Bione",
+            "sale": "637",
+            "rent": "6,31"
+        },
+        {
+            "name": "Borgo San Giacomo",
+            "sale": "953",
+            "rent": "8,73"
+        },
+        {
+            "name": "Borgosatollo",
+            "sale": "1.816",
+            "rent": "11,95"
+        },
+        {
+            "name": "Borno",
+            "sale": "1.189",
+            "rent": "7,77"
+        },
+        {
+            "name": "Botticino",
+            "sale": "1.972",
+            "rent": "8,51"
+        },
+        {
+            "name": "Bovegno",
+            "sale": "667",
+            "rent": "3,3"
+        },
+        {
+            "name": "Bovezzo",
+            "sale": "1.873",
+            "rent": "9,51"
+        },
+        {
+            "name": "Brandico",
+            "sale": "1.454",
+            "rent": "8,97"
+        },
+        {
+            "name": "Braone",
+            "sale": "513",
+            "rent": "7,55"
+        },
+        {
+            "name": "Breno",
+            "sale": "850",
+            "rent": "8,81"
+        },
+        {
+            "name": "Brione",
+            "sale": "885",
+            "rent": "6,62"
+        },
+        {
+            "name": "Caino",
+            "sale": "1.307",
+            "rent": "8,09"
+        },
+        {
+            "name": "Calcinato",
+            "sale": "1.554",
+            "rent": "9,12"
+        },
+        {
+            "name": "Calvagese della Riviera",
+            "sale": "1.945",
+            "rent": "10,34"
+        },
+        {
+            "name": "Calvisano",
+            "sale": "1.066",
+            "rent": "6,93"
+        },
+        {
+            "name": "Capo di Ponte",
+            "sale": "852",
+            "rent": "6,72"
+        },
+        {
+            "name": "Capovalle",
+            "sale": "766",
+            "rent": "6,4"
+        },
+        {
+            "name": "Capriano del Colle",
+            "sale": "1.516",
+            "rent": "7,75"
+        },
+        {
+            "name": "Capriolo",
+            "sale": "1.467",
+            "rent": "10,03"
+        },
+        {
+            "name": "Carpenedolo",
+            "sale": "1.437",
+            "rent": "8,62"
+        },
+        {
+            "name": "Castegnato",
+            "sale": "1.846",
+            "rent": "8,25"
+        },
+        {
+            "name": "Castel Mella",
+            "sale": "2.143",
+            "rent": "9"
+        },
+        {
+            "name": "Castelcovati",
+            "sale": "1.569",
+            "rent": "8,55"
+        },
+        {
+            "name": "Castenedolo",
+            "sale": "1.700",
+            "rent": "10,24"
+        },
+        {
+            "name": "Casto",
+            "sale": "546",
+            "rent": "6,18"
+        },
+        {
+            "name": "Castrezzato",
+            "sale": "1.671",
+            "rent": "8,28"
+        },
+        {
+            "name": "Cazzago San Martino",
+            "sale": "1.389",
+            "rent": "7,8"
+        },
+        {
+            "name": "Cedegolo",
+            "sale": "586",
+            "rent": "6,81"
+        },
+        {
+            "name": "Cellatica",
+            "sale": "2.289",
+            "rent": "9,07"
+        },
+        {
+            "name": "Cerveno",
+            "sale": "1.390",
+            "rent": "6,75"
+        },
+        {
+            "name": "Ceto",
+            "sale": "676",
+            "rent": "7,32"
+        },
+        {
+            "name": "Cevo",
+            "sale": "401",
+            "rent": "6,84"
+        },
+        {
+            "name": "Chiari",
+            "sale": "1.555",
+            "rent": "9,52"
+        },
+        {
+            "name": "Cigole",
+            "sale": "826",
+            "rent": "7,01"
+        },
+        {
+            "name": "Cimbergo",
+            "sale": "783",
+            "rent": "7,05"
+        },
+        {
+            "name": "Cividate Camuno",
+            "sale": "880",
+            "rent": "6,67"
+        },
+        {
+            "name": "Coccaglio",
+            "sale": "1.604",
+            "rent": "8,79"
+        },
+        {
+            "name": "Collebeato",
+            "sale": "2.299",
+            "rent": "10,36"
+        },
+        {
+            "name": "Collio",
+            "sale": "674",
+            "rent": "7,54"
+        },
+        {
+            "name": "Cologne",
+            "sale": "1.599",
+            "rent": "6,3"
+        },
+        {
+            "name": "Comezzano-Cizzago",
+            "sale": "1.631",
+            "rent": "9,05"
+        },
+        {
+            "name": "Concesio",
+            "sale": "1.774",
+            "rent": "9,5"
+        },
+        {
+            "name": "Corte Franca",
+            "sale": "1.830",
+            "rent": "9,4"
+        },
+        {
+            "name": "Corteno Golgi",
+            "sale": "1.760",
+            "rent": "6,87"
+        },
+        {
+            "name": "Corzano",
+            "sale": "1.097",
+            "rent": "8,82"
+        },
+        {
+            "name": "Darfo Boario Terme",
+            "sale": "1.220",
+            "rent": "8,32"
+        },
+        {
+            "name": "Dello",
+            "sale": "1.355",
+            "rent": "9,31"
+        },
+        {
+            "name": "Desenzano del Garda",
+            "sale": "3.930",
+            "rent": "14,21"
+        },
+        {
+            "name": "Edolo",
+            "sale": "1.111",
+            "rent": "7,28"
+        },
+        {
+            "name": "Erbusco",
+            "sale": "1.923",
+            "rent": "10,68"
+        },
+        {
+            "name": "Esine",
+            "sale": "1.053",
+            "rent": "7,2"
+        },
+        {
+            "name": "Fiesse",
+            "sale": "657",
+            "rent": "6,97"
+        },
+        {
+            "name": "Flero",
+            "sale": "1.895",
+            "rent": "9,79"
+        },
+        {
+            "name": "Gambara",
+            "sale": "1.036",
+            "rent": "6,92"
+        },
+        {
+            "name": "Gardone Riviera",
+            "sale": "4.626",
+            "rent": "12,97"
+        },
+        {
+            "name": "Gardone Val Trompia",
+            "sale": "1.007",
+            "rent": "8,37"
+        },
+        {
+            "name": "Gargnano",
+            "sale": "3.220",
+            "rent": "12,27"
+        },
+        {
+            "name": "Gavardo",
+            "sale": "1.795",
+            "rent": "9,36"
+        },
+        {
+            "name": "Ghedi",
+            "sale": "1.454",
+            "rent": "8,91"
+        },
+        {
+            "name": "Gianico",
+            "sale": "1.302",
+            "rent": "5,95"
+        },
+        {
+            "name": "Gottolengo",
+            "sale": "1.092",
+            "rent": "7,8"
+        },
+        {
+            "name": "Gussago",
+            "sale": "2.072",
+            "rent": "9,93"
+        },
+        {
+            "name": "Idro",
+            "sale": "1.152",
+            "rent": "8,39"
+        },
+        {
+            "name": "Incudine",
+            "sale": "861",
+            "rent": "6,53"
+        },
+        {
+            "name": "Irma",
+            "sale": "567",
+            "rent": "5,19"
+        },
+        {
+            "name": "Iseo",
+            "sale": "2.695",
+            "rent": "12,31"
+        },
+        {
+            "name": "Isorella",
+            "sale": "831",
+            "rent": "7,53"
+        },
+        {
+            "name": "Lavenone",
+            "sale": "441",
+            "rent": "6,14"
+        },
+        {
+            "name": "Leno",
+            "sale": "1.214",
+            "rent": "9,19"
+        },
+        {
+            "name": "Limone sul Garda",
+            "sale": "4.656",
+            "rent": "11,97"
+        },
+        {
+            "name": "Lodrino",
+            "sale": "662",
+            "rent": "7,28"
+        },
+        {
+            "name": "Lograto",
+            "sale": "1.254",
+            "rent": "8,88"
+        },
+        {
+            "name": "Lonato del Garda",
+            "sale": "2.773",
+            "rent": "10,82"
+        },
+        {
+            "name": "Longhena",
+            "sale": "447",
+            "rent": "7,78"
+        },
+        {
+            "name": "Losine",
+            "sale": "385",
+            "rent": "6,91"
+        },
+        {
+            "name": "Lozio",
+            "sale": "711",
+            "rent": "6,67"
+        },
+        {
+            "name": "Lumezzane",
+            "sale": "882",
+            "rent": "6,78"
+        },
+        {
+            "name": "Maclodio",
+            "sale": "1.795",
+            "rent": "9,14"
+        },
+        {
+            "name": "Magasa",
+            "sale": "655",
+            "rent": "9,58"
+        },
+        {
+            "name": "Mairano",
+            "sale": "1.612",
+            "rent": "8,78"
+        },
+        {
+            "name": "Malegno",
+            "sale": "819",
+            "rent": "6,73"
+        },
+        {
+            "name": "Malonno",
+            "sale": "891",
+            "rent": "6,45"
+        },
+        {
+            "name": "Manerba del Garda",
+            "sale": "4.083",
+            "rent": "13,05"
+        },
+        {
+            "name": "Manerbio",
+            "sale": "1.075",
+            "rent": "7,3"
+        },
+        {
+            "name": "Marcheno",
+            "sale": "935",
+            "rent": "7,6"
+        },
+        {
+            "name": "Marmentino",
+            "sale": "428",
+            "rent": "5,5"
+        },
+        {
+            "name": "Marone",
+            "sale": "2.340",
+            "rent": "7,57"
+        },
+        {
+            "name": "Mazzano",
+            "sale": "1.890",
+            "rent": "9,74"
+        },
+        {
+            "name": "Milzano",
+            "sale": "775",
+            "rent": "7,18"
+        },
+        {
+            "name": "Moniga del Garda",
+            "sale": "3.988",
+            "rent": "12,46"
+        },
+        {
+            "name": "Monno",
+            "sale": "1.353",
+            "rent": "6,49"
+        },
+        {
+            "name": "Monte Isola",
+            "sale": "1.960",
+            "rent": "8,17"
+        },
+        {
+            "name": "Monticelli Brusati",
+            "sale": "1.957",
+            "rent": "7,59"
+        },
+        {
+            "name": "Montichiari",
+            "sale": "1.665",
+            "rent": "10,04"
+        },
+        {
+            "name": "Montirone",
+            "sale": "1.740",
+            "rent": "8,85"
+        },
+        {
+            "name": "Mura",
+            "sale": "757",
+            "rent": "6,08"
+        },
+        {
+            "name": "Muscoline",
+            "sale": "2.502",
+            "rent": "10,49"
+        },
+        {
+            "name": "Nave",
+            "sale": "1.418",
+            "rent": "8,52"
+        },
+        {
+            "name": "Niardo",
+            "sale": "863",
+            "rent": "7,53"
+        },
+        {
+            "name": "Nuvolento",
+            "sale": "1.541",
+            "rent": "8,73"
+        },
+        {
+            "name": "Nuvolera",
+            "sale": "1.858",
+            "rent": "8,56"
+        },
+        {
+            "name": "Odolo",
+            "sale": "678",
+            "rent": "6,51"
+        },
+        {
+            "name": "Offlaga",
+            "sale": "1.174",
+            "rent": "9,14"
+        },
+        {
+            "name": "Ome",
+            "sale": "1.647",
+            "rent": "8,09"
+        },
+        {
+            "name": "Ono San Pietro",
+            "sale": "473",
+            "rent": "6,72"
+        },
+        {
+            "name": "Orzinuovi",
+            "sale": "1.639",
+            "rent": "10,36"
+        },
+        {
+            "name": "Orzivecchi",
+            "sale": "997",
+            "rent": "9,16"
+        },
+        {
+            "name": "Ospitaletto",
+            "sale": "1.646",
+            "rent": "9,24"
+        },
+        {
+            "name": "Ossimo",
+            "sale": "694",
+            "rent": "6,61"
+        },
+        {
+            "name": "Padenghe sul Garda",
+            "sale": "4.971",
+            "rent": "12,45"
+        },
+        {
+            "name": "Paderno Franciacorta",
+            "sale": "1.467",
+            "rent": "8,69"
+        },
+        {
+            "name": "Paisco Loveno",
+            "sale": "388",
+            "rent": "6,48"
+        },
+        {
+            "name": "Paitone",
+            "sale": "1.740",
+            "rent": "8,56"
+        },
+        {
+            "name": "Palazzolo sull'Oglio",
+            "sale": "1.318",
+            "rent": "9,54"
+        },
+        {
+            "name": "Paratico",
+            "sale": "2.966",
+            "rent": "10,96"
+        },
+        {
+            "name": "Paspardo",
+            "sale": "473",
+            "rent": "6,89"
+        },
+        {
+            "name": "Passirano",
+            "sale": "1.548",
+            "rent": "8,81"
+        },
+        {
+            "name": "Pavone del Mella",
+            "sale": "653",
+            "rent": "8,1"
+        },
+        {
+            "name": "Pertica Alta",
+            "sale": "1.013",
+            "rent": "5,79"
+        },
+        {
+            "name": "Pertica Bassa",
+            "sale": "747",
+            "rent": "5,88"
+        },
+        {
+            "name": "Pezzaze",
+            "sale": "678",
+            "rent": "5,34"
+        },
+        {
+            "name": "Pian Camuno",
+            "sale": "1.241",
+            "rent": "7,5"
+        },
+        {
+            "name": "Piancogno",
+            "sale": "1.057",
+            "rent": "6,48"
+        },
+        {
+            "name": "Pisogne",
+            "sale": "1.927",
+            "rent": "8,12"
+        },
+        {
+            "name": "Polaveno",
+            "sale": "695",
+            "rent": "6,91"
+        },
+        {
+            "name": "Polpenazze del Garda",
+            "sale": "3.459",
+            "rent": "12,81"
+        },
+        {
+            "name": "Pompiano",
+            "sale": "1.151",
+            "rent": "9,2"
+        },
+        {
+            "name": "Poncarale",
+            "sale": "1.829",
+            "rent": "9,53"
+        },
+        {
+            "name": "Ponte di Legno",
+            "sale": "4.539",
+            "rent": "18,68"
+        },
+        {
+            "name": "Pontevico",
+            "sale": "891",
+            "rent": "10,5"
+        },
+        {
+            "name": "Pontoglio",
+            "sale": "1.269",
+            "rent": "8,46"
+        },
+        {
+            "name": "Pozzolengo",
+            "sale": "2.443",
+            "rent": "16,26"
+        },
+        {
+            "name": "Pralboino",
+            "sale": "953",
+            "rent": "6,73"
+        },
+        {
+            "name": "Preseglie",
+            "sale": "527",
+            "rent": "6,4"
+        },
+        {
+            "name": "Prevalle",
+            "sale": "1.236",
+            "rent": "7,83"
+        },
+        {
+            "name": "Provaglio d'Iseo",
+            "sale": "2.024",
+            "rent": "10,49"
+        },
+        {
+            "name": "Provaglio Val Sabbia",
+            "sale": "448",
+            "rent": "6,44"
+        },
+        {
+            "name": "Puegnago sul Garda",
+            "sale": "2.775",
+            "rent": "13,34"
+        },
+        {
+            "name": "Quinzano d'Oglio",
+            "sale": "977",
+            "rent": "7,56"
+        },
+        {
+            "name": "Remedello",
+            "sale": "879",
+            "rent": "7,55"
+        },
+        {
+            "name": "Rezzato",
+            "sale": "2.023",
+            "rent": "8,7"
+        },
+        {
+            "name": "Roccafranca",
+            "sale": "1.628",
+            "rent": "8,71"
+        },
+        {
+            "name": "Rodengo Saiano",
+            "sale": "2.331",
+            "rent": "8,35"
+        },
+        {
+            "name": "Roè Volciano",
+            "sale": "1.769",
+            "rent": "8,67"
+        },
+        {
+            "name": "Roncadelle",
+            "sale": "2.076",
+            "rent": "10,97"
+        },
+        {
+            "name": "Rovato",
+            "sale": "1.665",
+            "rent": "8,96"
+        },
+        {
+            "name": "Rudiano",
+            "sale": "1.087",
+            "rent": "8,22"
+        },
+        {
+            "name": "Sabbio Chiese",
+            "sale": "1.292",
+            "rent": "9,05"
+        },
+        {
+            "name": "Sale Marasino",
+            "sale": "2.561",
+            "rent": "13,33"
+        },
+        {
+            "name": "Salò",
+            "sale": "3.828",
+            "rent": "12,42"
+        },
+        {
+            "name": "San Felice del Benaco",
+            "sale": "3.666",
+            "rent": "12,15"
+        },
+        {
+            "name": "San Gervasio Bresciano",
+            "sale": "1.066",
+            "rent": "7,28"
+        },
+        {
+            "name": "San Paolo",
+            "sale": "1.192",
+            "rent": "8,69"
+        },
+        {
+            "name": "San Zeno Naviglio",
+            "sale": "1.749",
+            "rent": "11,07"
+        },
+        {
+            "name": "Sarezzo",
+            "sale": "1.440",
+            "rent": "6,92"
+        },
+        {
+            "name": "Saviore dell'Adamello",
+            "sale": "652",
+            "rent": "6,74"
+        },
+        {
+            "name": "Sellero",
+            "sale": "453",
+            "rent": "6,68"
+        },
+        {
+            "name": "Seniga",
+            "sale": "678",
+            "rent": "5,7"
+        },
+        {
+            "name": "Serle",
+            "sale": "750",
+            "rent": "6,98"
+        },
+        {
+            "name": "Sirmione",
+            "sale": "4.084",
+            "rent": "15,52"
+        },
+        {
+            "name": "Soiano del Lago",
+            "sale": "3.483",
+            "rent": "12,56"
+        },
+        {
+            "name": "Sonico",
+            "sale": "710",
+            "rent": "6,63"
+        },
+        {
+            "name": "Sulzano",
+            "sale": "2.563",
+            "rent": "7,88"
+        },
+        {
+            "name": "Tavernole sul Mella",
+            "sale": "496",
+            "rent": "5,38"
+        },
+        {
+            "name": "Temù",
+            "sale": "3.508",
+            "rent": "14,13"
+        },
+        {
+            "name": "Tignale",
+            "sale": "2.788",
+            "rent": "9,73"
+        },
+        {
+            "name": "Torbole Casaglia",
+            "sale": "1.837",
+            "rent": "10,36"
+        },
+        {
+            "name": "Toscolano-Maderno",
+            "sale": "4.009",
+            "rent": "16,96"
+        },
+        {
+            "name": "Travagliato",
+            "sale": "1.736",
+            "rent": "8,97"
+        },
+        {
+            "name": "Tremosine sul Garda",
+            "sale": "3.639",
+            "rent": "9,69"
+        },
+        {
+            "name": "Trenzano",
+            "sale": "1.332",
+            "rent": "8,21"
+        },
+        {
+            "name": "Treviso Bresciano",
+            "sale": "501",
+            "rent": "6,45"
+        },
+        {
+            "name": "Urago d'Oglio",
+            "sale": "1.309",
+            "rent": "8,62"
+        },
+        {
+            "name": "Vallio Terme",
+            "sale": "1.067",
+            "rent": "10,59"
+        },
+        {
+            "name": "Valvestino",
+            "sale": "731",
+            "rent": "9,5"
+        },
+        {
+            "name": "Verolanuova",
+            "sale": "1.136",
+            "rent": "8,61"
+        },
+        {
+            "name": "Verolavecchia",
+            "sale": "1.215",
+            "rent": "8,55"
+        },
+        {
+            "name": "Vestone",
+            "sale": "856",
+            "rent": "6,37"
+        },
+        {
+            "name": "Vezza d'Oglio",
+            "sale": "1.954",
+            "rent": "7,32"
+        },
+        {
+            "name": "Villa Carcina",
+            "sale": "1.301",
+            "rent": "8,93"
+        },
+        {
+            "name": "Villachiara",
+            "sale": "1.015",
+            "rent": "8,15"
+        },
+        {
+            "name": "Villanuova sul Clisi",
+            "sale": "1.926",
+            "rent": "9,6"
+        },
+        {
+            "name": "Vione",
+            "sale": "2.849",
+            "rent": "6,82"
+        },
+        {
+            "name": "Visano",
+            "sale": "1.138",
+            "rent": "6,59"
+        },
+        {
+            "name": "Vobarno",
+            "sale": "1.096",
+            "rent": "9,53"
+        },
+        {
+            "name": "Zone",
+            "sale": "1.367",
+            "rent": "9"
+        }
+    ],
+    "Como": [
+        {
+            "name": "Como",
+            "sale": "3.185",
+            "rent": "14,68"
+        },
+        {
+            "name": "Albavilla",
+            "sale": "1.687",
+            "rent": "7,22"
+        },
+        {
+            "name": "Albese con Cassano",
+            "sale": "1.867",
+            "rent": "13,02"
+        },
+        {
+            "name": "Albiolo",
+            "sale": "1.655",
+            "rent": "10,78"
+        },
+        {
+            "name": "Alserio",
+            "sale": "2.569",
+            "rent": "7,99"
+        },
+        {
+            "name": "Alta Valle Intelvi",
+            "sale": "1.329",
+            "rent": "9,69"
+        },
+        {
+            "name": "Alzate Brianza",
+            "sale": "1.637",
+            "rent": "7,77"
+        },
+        {
+            "name": "Anzano del Parco",
+            "sale": "1.846",
+            "rent": "10,31"
+        },
+        {
+            "name": "Appiano Gentile",
+            "sale": "2.305",
+            "rent": "11,31"
+        },
+        {
+            "name": "Argegno",
+            "sale": "4.684",
+            "rent": "19,31"
+        },
+        {
+            "name": "Arosio",
+            "sale": "2.123",
+            "rent": "10,33"
+        },
+        {
+            "name": "Asso",
+            "sale": "1.178",
+            "rent": "9,71"
+        },
+        {
+            "name": "Barni",
+            "sale": "848",
+            "rent": "7,89"
+        },
+        {
+            "name": "Bellagio",
+            "sale": "3.759",
+            "rent": "10,9"
+        },
+        {
+            "name": "Bene Lario",
+            "sale": "1.649",
+            "rent": "9,38"
+        },
+        {
+            "name": "Beregazzo con Figliaro",
+            "sale": "2.659",
+            "rent": "12,42"
+        },
+        {
+            "name": "Binago",
+            "sale": "1.792",
+            "rent": "9,88"
+        },
+        {
+            "name": "Bizzarone",
+            "sale": "2.598",
+            "rent": "12,35"
+        },
+        {
+            "name": "Blessagno",
+            "sale": "775",
+            "rent": "8,27"
+        },
+        {
+            "name": "Blevio",
+            "sale": "3.337",
+            "rent": "13,02"
+        },
+        {
+            "name": "Bregnano",
+            "sale": "2.036",
+            "rent": "8,09"
+        },
+        {
+            "name": "Brenna",
+            "sale": "1.924",
+            "rent": "12,31"
+        },
+        {
+            "name": "Brienno",
+            "sale": "3.987",
+            "rent": "12,22"
+        },
+        {
+            "name": "Brunate",
+            "sale": "2.005",
+            "rent": "7,77"
+        },
+        {
+            "name": "Bulgarograsso",
+            "sale": "1.715",
+            "rent": "10,08"
+        },
+        {
+            "name": "Cabiate",
+            "sale": "2.008",
+            "rent": "11,19"
+        },
+        {
+            "name": "Cadorago",
+            "sale": "2.149",
+            "rent": "11,37"
+        },
+        {
+            "name": "Caglio",
+            "sale": "898",
+            "rent": "8,37"
+        },
+        {
+            "name": "Campione d'Italia",
+            "sale": "5.711",
+            "rent": "23,69"
+        },
+        {
+            "name": "Cantù",
+            "sale": "1.846",
+            "rent": "10,98"
+        },
+        {
+            "name": "Canzo",
+            "sale": "1.225",
+            "rent": "11,15"
+        },
+        {
+            "name": "Capiago Intimiano",
+            "sale": "1.903",
+            "rent": "11,63"
+        },
+        {
+            "name": "Carate Urio",
+            "sale": "4.249",
+            "rent": "16,31"
+        },
+        {
+            "name": "Carbonate",
+            "sale": "1.518",
+            "rent": "10,48"
+        },
+        {
+            "name": "Carimate",
+            "sale": "2.144",
+            "rent": "13,15"
+        },
+        {
+            "name": "Carlazzo",
+            "sale": "2.204",
+            "rent": "9,54"
+        },
+        {
+            "name": "Carugo",
+            "sale": "1.695",
+            "rent": "9,66"
+        },
+        {
+            "name": "Caslino d'Erba",
+            "sale": "981",
+            "rent": "9,36"
+        },
+        {
+            "name": "Casnate con Bernate",
+            "sale": "2.275",
+            "rent": "11,34"
+        },
+        {
+            "name": "Cassina Rizzardi",
+            "sale": "3.044",
+            "rent": "13,61"
+        },
+        {
+            "name": "Castelmarte",
+            "sale": "1.111",
+            "rent": "8,36"
+        },
+        {
+            "name": "Castelnuovo Bozzente",
+            "sale": "1.414",
+            "rent": "11,55"
+        },
+        {
+            "name": "Cavargna",
+            "sale": "371",
+            "rent": "7,92"
+        },
+        {
+            "name": "Centro Valle Intelvi",
+            "sale": "1.234",
+            "rent": "7,93"
+        },
+        {
+            "name": "Cerano d'Intelvi",
+            "sale": "777",
+            "rent": "8,61"
+        },
+        {
+            "name": "Cermenate",
+            "sale": "1.576",
+            "rent": "10,79"
+        },
+        {
+            "name": "Cernobbio",
+            "sale": "4.879",
+            "rent": "15,42"
+        },
+        {
+            "name": "Cirimido",
+            "sale": "1.488",
+            "rent": "8,74"
+        },
+        {
+            "name": "Claino con Osteno",
+            "sale": "1.688",
+            "rent": "8,71"
+        },
+        {
+            "name": "Colonno",
+            "sale": "2.575",
+            "rent": "15,22"
+        },
+        {
+            "name": "Colverde",
+            "sale": "2.635",
+            "rent": "11,82"
+        },
+        {
+            "name": "Corrido",
+            "sale": "1.552",
+            "rent": "9,31"
+        },
+        {
+            "name": "Cremia",
+            "sale": "2.795",
+            "rent": "10,66"
+        },
+        {
+            "name": "Cucciago",
+            "sale": "1.580",
+            "rent": "10,99"
+        },
+        {
+            "name": "Cusino",
+            "sale": "1.159",
+            "rent": "10,04"
+        },
+        {
+            "name": "Dizzasco",
+            "sale": "3.153",
+            "rent": "8,67"
+        },
+        {
+            "name": "Domaso",
+            "sale": "3.243",
+            "rent": "9,26"
+        },
+        {
+            "name": "Dongo",
+            "sale": "1.245",
+            "rent": "10,24"
+        },
+        {
+            "name": "Dosso del Liro",
+            "sale": "519",
+            "rent": "6,58"
+        },
+        {
+            "name": "Erba",
+            "sale": "1.569",
+            "rent": "10,36"
+        },
+        {
+            "name": "Eupilio",
+            "sale": "1.618",
+            "rent": "8,74"
+        },
+        {
+            "name": "Faggeto Lario",
+            "sale": "2.832",
+            "rent": "14,54"
+        },
+        {
+            "name": "Faloppio",
+            "sale": "2.020",
+            "rent": "11,6"
+        },
+        {
+            "name": "Fenegrò",
+            "sale": "1.622",
+            "rent": "9,57"
+        },
+        {
+            "name": "Figino Serenza",
+            "sale": "1.720",
+            "rent": "9,41"
+        },
+        {
+            "name": "Fino Mornasco",
+            "sale": "1.824",
+            "rent": "12,02"
+        },
+        {
+            "name": "Garzeno",
+            "sale": "535",
+            "rent": "6,57"
+        },
+        {
+            "name": "Gera Lario",
+            "sale": "2.824",
+            "rent": "10,14"
+        },
+        {
+            "name": "Grandate",
+            "sale": "1.796",
+            "rent": "10,33"
+        },
+        {
+            "name": "Grandola ed Uniti",
+            "sale": "1.383",
+            "rent": "9,9"
+        },
+        {
+            "name": "Gravedona ed Uniti",
+            "sale": "1.969",
+            "rent": "10,3"
+        },
+        {
+            "name": "Griante",
+            "sale": "5.596",
+            "rent": "9,98"
+        },
+        {
+            "name": "Guanzate",
+            "sale": "1.948",
+            "rent": "12,12"
+        },
+        {
+            "name": "Inverigo",
+            "sale": "1.688",
+            "rent": "9,29"
+        },
+        {
+            "name": "Laglio",
+            "sale": "4.493",
+            "rent": "10,4"
+        },
+        {
+            "name": "Laino",
+            "sale": "1.302",
+            "rent": "7,19"
+        },
+        {
+            "name": "Lambrugo",
+            "sale": "1.405",
+            "rent": "7,33"
+        },
+        {
+            "name": "Lasnigo",
+            "sale": "527",
+            "rent": "8,32"
+        },
+        {
+            "name": "Lezzeno",
+            "sale": "4.445",
+            "rent": "13,93"
+        },
+        {
+            "name": "Limido Comasco",
+            "sale": "2.050",
+            "rent": "10,61"
+        },
+        {
+            "name": "Lipomo",
+            "sale": "1.825",
+            "rent": "11,56"
+        },
+        {
+            "name": "Livo",
+            "sale": "530",
+            "rent": "6,57"
+        },
+        {
+            "name": "Locate Varesino",
+            "sale": "1.852",
+            "rent": "10,06"
+        },
+        {
+            "name": "Lomazzo",
+            "sale": "2.149",
+            "rent": "10,96"
+        },
+        {
+            "name": "Longone al Segrino",
+            "sale": "1.899",
+            "rent": "8,97"
+        },
+        {
+            "name": "Luisago",
+            "sale": "1.753",
+            "rent": "9,71"
+        },
+        {
+            "name": "Lurago d'Erba",
+            "sale": "1.772",
+            "rent": "9,63"
+        },
+        {
+            "name": "Lurago Marinone",
+            "sale": "1.687",
+            "rent": "9,13"
+        },
+        {
+            "name": "Lurate Caccivio",
+            "sale": "1.573",
+            "rent": "8,83"
+        },
+        {
+            "name": "Magreglio",
+            "sale": "1.146",
+            "rent": "7,89"
+        },
+        {
+            "name": "Mariano Comense",
+            "sale": "2.005",
+            "rent": "10,67"
+        },
+        {
+            "name": "Maslianico",
+            "sale": "2.240",
+            "rent": "11,91"
+        },
+        {
+            "name": "Menaggio",
+            "sale": "4.939",
+            "rent": "10,2"
+        },
+        {
+            "name": "Merone",
+            "sale": "1.402",
+            "rent": "8,73"
+        },
+        {
+            "name": "Moltrasio",
+            "sale": "4.629",
+            "rent": "16,03"
+        },
+        {
+            "name": "Monguzzo",
+            "sale": "1.801",
+            "rent": "8,81"
+        },
+        {
+            "name": "Montano Lucino",
+            "sale": "2.548",
+            "rent": "11,99"
+        },
+        {
+            "name": "Montemezzo",
+            "sale": "2.538",
+            "rent": "6,56"
+        },
+        {
+            "name": "Montorfano",
+            "sale": "1.877",
+            "rent": "10,6"
+        },
+        {
+            "name": "Mozzate",
+            "sale": "1.608",
+            "rent": "9,64"
+        },
+        {
+            "name": "Musso",
+            "sale": "2.699",
+            "rent": "10,31"
+        },
+        {
+            "name": "Nesso",
+            "sale": "3.991",
+            "rent": "14,38"
+        },
+        {
+            "name": "Novedrate",
+            "sale": "1.453",
+            "rent": "10,6"
+        },
+        {
+            "name": "Olgiate Comasco",
+            "sale": "2.287",
+            "rent": "11,91"
+        },
+        {
+            "name": "Oltrona di San Mamette",
+            "sale": "1.962",
+            "rent": "12,44"
+        },
+        {
+            "name": "Orsenigo",
+            "sale": "1.874",
+            "rent": "12,08"
+        },
+        {
+            "name": "Peglio",
+            "sale": "775",
+            "rent": "6,58"
+        },
+        {
+            "name": "Pianello del Lario",
+            "sale": "2.455",
+            "rent": "10,45"
+        },
+        {
+            "name": "Pigra",
+            "sale": "645",
+            "rent": "8,41"
+        },
+        {
+            "name": "Plesio",
+            "sale": "1.538",
+            "rent": "10,51"
+        },
+        {
+            "name": "Pognana Lario",
+            "sale": "2.171",
+            "rent": "13,82"
+        },
+        {
+            "name": "Ponna",
+            "sale": "484",
+            "rent": "8,29"
+        },
+        {
+            "name": "Ponte Lambro",
+            "sale": "1.293",
+            "rent": "9,27"
+        },
+        {
+            "name": "Porlezza",
+            "sale": "2.780",
+            "rent": "10,53"
+        },
+        {
+            "name": "Proserpio",
+            "sale": "1.241",
+            "rent": "9,29"
+        },
+        {
+            "name": "Pusiano",
+            "sale": "1.338",
+            "rent": "8,42"
+        },
+        {
+            "name": "Rezzago",
+            "sale": "771",
+            "rent": "8,33"
+        },
+        {
+            "name": "Rodero",
+            "sale": "1.733",
+            "rent": "10,88"
+        },
+        {
+            "name": "Rovellasca",
+            "sale": "2.125",
+            "rent": "9,82"
+        },
+        {
+            "name": "Rovello Porro",
+            "sale": "1.632",
+            "rent": "10,12"
+        },
+        {
+            "name": "Sala Comacina",
+            "sale": "3.976",
+            "rent": "14,76"
+        },
+        {
+            "name": "San Bartolomeo Val Cavargna",
+            "sale": "589",
+            "rent": "9,96"
+        },
+        {
+            "name": "San Fermo della Battaglia",
+            "sale": "2.677",
+            "rent": "13,12"
+        },
+        {
+            "name": "San Nazzaro Val Cavargna",
+            "sale": "500",
+            "rent": "9,85"
+        },
+        {
+            "name": "San Siro",
+            "sale": "2.278",
+            "rent": "11,92"
+        },
+        {
+            "name": "Schignano",
+            "sale": "784",
+            "rent": "8,82"
+        },
+        {
+            "name": "Senna Comasco",
+            "sale": "1.780",
+            "rent": "10,48"
+        },
+        {
+            "name": "Solbiate con Cagno",
+            "sale": "1.736",
+            "rent": "9,75"
+        },
+        {
+            "name": "Sorico",
+            "sale": "1.319",
+            "rent": "9,79"
+        },
+        {
+            "name": "Sormano",
+            "sale": "844",
+            "rent": "8,33"
+        },
+        {
+            "name": "Stazzona",
+            "sale": "1.002",
+            "rent": "6,46"
+        },
+        {
+            "name": "Tavernerio",
+            "sale": "1.802",
+            "rent": "12,02"
+        },
+        {
+            "name": "Torno",
+            "sale": "3.838",
+            "rent": "15,11"
+        },
+        {
+            "name": "Tremezzina",
+            "sale": "4.064",
+            "rent": "12,4"
+        },
+        {
+            "name": "Trezzone",
+            "sale": "947",
+            "rent": "6,57"
+        },
+        {
+            "name": "Turate",
+            "sale": "1.848",
+            "rent": "9,33"
+        },
+        {
+            "name": "Uggiate con Ronago",
+            "sale": "1.985",
+            "rent": "11,14"
+        },
+        {
+            "name": "Val Rezzo",
+            "sale": "566",
+            "rent": "7,88"
+        },
+        {
+            "name": "Valbrona",
+            "sale": "975",
+            "rent": "8,32"
+        },
+        {
+            "name": "Valmorea",
+            "sale": "1.625",
+            "rent": "9,66"
+        },
+        {
+            "name": "Valsolda",
+            "sale": "4.055",
+            "rent": "9,2"
+        },
+        {
+            "name": "Veleso",
+            "sale": "495",
+            "rent": "7,88"
+        },
+        {
+            "name": "Veniano",
+            "sale": "1.822",
+            "rent": "10,05"
+        },
+        {
+            "name": "Vercana",
+            "sale": "4.564",
+            "rent": "6,64"
+        },
+        {
+            "name": "Vertemate con Minoprio",
+            "sale": "1.626",
+            "rent": "9,67"
+        },
+        {
+            "name": "Villa Guardia",
+            "sale": "2.124",
+            "rent": "12,54"
+        },
+        {
+            "name": "Zelbio",
+            "sale": "820",
+            "rent": "8,37"
+        }
+    ],
+    "Monza e Brianza": [
+        {
+            "name": "Monza",
+            "sale": "3.178",
+            "rent": "14,06"
+        },
+        {
+            "name": "Agrate Brianza",
+            "sale": "2.268",
+            "rent": "12,26"
+        },
+        {
+            "name": "Aicurzio",
+            "sale": "1.545",
+            "rent": "10,91"
+        },
+        {
+            "name": "Albiate",
+            "sale": "1.843",
+            "rent": "11,65"
+        },
+        {
+            "name": "Arcore",
+            "sale": "2.303",
+            "rent": "11,9"
+        },
+        {
+            "name": "Barlassina",
+            "sale": "1.926",
+            "rent": "11,21"
+        },
+        {
+            "name": "Bellusco",
+            "sale": "1.944",
+            "rent": "11,97"
+        },
+        {
+            "name": "Bernareggio",
+            "sale": "2.053",
+            "rent": "11,07"
+        },
+        {
+            "name": "Besana in Brianza",
+            "sale": "1.797",
+            "rent": "10,33"
+        },
+        {
+            "name": "Biassono",
+            "sale": "2.613",
+            "rent": "12,38"
+        },
+        {
+            "name": "Bovisio-Masciago",
+            "sale": "2.352",
+            "rent": "12,37"
+        },
+        {
+            "name": "Briosco",
+            "sale": "2.064",
+            "rent": "11,81"
+        },
+        {
+            "name": "Brugherio",
+            "sale": "2.543",
+            "rent": "12,2"
+        },
+        {
+            "name": "Burago di Molgora",
+            "sale": "2.276",
+            "rent": "11,11"
+        },
+        {
+            "name": "Busnago",
+            "sale": "2.062",
+            "rent": "11,67"
+        },
+        {
+            "name": "Camparada",
+            "sale": "1.823",
+            "rent": "12,46"
+        },
+        {
+            "name": "Caponago",
+            "sale": "2.038",
+            "rent": "10,79"
+        },
+        {
+            "name": "Carate Brianza",
+            "sale": "2.197",
+            "rent": "11,11"
+        },
+        {
+            "name": "Carnate",
+            "sale": "1.890",
+            "rent": "11,24"
+        },
+        {
+            "name": "Cavenago di Brianza",
+            "sale": "1.862",
+            "rent": "10,41"
+        },
+        {
+            "name": "Ceriano Laghetto",
+            "sale": "1.867",
+            "rent": "10,52"
+        },
+        {
+            "name": "Cesano Maderno",
+            "sale": "2.357",
+            "rent": "11,44"
+        },
+        {
+            "name": "Cogliate",
+            "sale": "1.917",
+            "rent": "9,32"
+        },
+        {
+            "name": "Concorezzo",
+            "sale": "2.251",
+            "rent": "11,76"
+        },
+        {
+            "name": "Cornate d'Adda",
+            "sale": "1.632",
+            "rent": "12,36"
+        },
+        {
+            "name": "Correzzana",
+            "sale": "2.317",
+            "rent": "12,03"
+        },
+        {
+            "name": "Desio",
+            "sale": "2.020",
+            "rent": "10,91"
+        },
+        {
+            "name": "Giussano",
+            "sale": "1.943",
+            "rent": "9,94"
+        },
+        {
+            "name": "Lazzate",
+            "sale": "2.222",
+            "rent": "9,13"
+        },
+        {
+            "name": "Lentate sul Seveso",
+            "sale": "1.936",
+            "rent": "11,13"
+        },
+        {
+            "name": "Lesmo",
+            "sale": "2.028",
+            "rent": "11,04"
+        },
+        {
+            "name": "Limbiate",
+            "sale": "1.861",
+            "rent": "10,41"
+        },
+        {
+            "name": "Lissone",
+            "sale": "2.421",
+            "rent": "13,17"
+        },
+        {
+            "name": "Macherio",
+            "sale": "2.153",
+            "rent": "10,54"
+        },
+        {
+            "name": "Meda",
+            "sale": "1.943",
+            "rent": "10,47"
+        },
+        {
+            "name": "Mezzago",
+            "sale": "1.512",
+            "rent": "11,16"
+        },
+        {
+            "name": "Misinto",
+            "sale": "1.902",
+            "rent": "9,08"
+        },
+        {
+            "name": "Muggiò",
+            "sale": "2.082",
+            "rent": "10,08"
+        },
+        {
+            "name": "Nova Milanese",
+            "sale": "2.469",
+            "rent": "10,3"
+        },
+        {
+            "name": "Ornago",
+            "sale": "1.866",
+            "rent": "10,76"
+        },
+        {
+            "name": "Renate",
+            "sale": "1.707",
+            "rent": "10,47"
+        },
+        {
+            "name": "Roncello",
+            "sale": "1.784",
+            "rent": "10,72"
+        },
+        {
+            "name": "Ronco Briantino",
+            "sale": "1.805",
+            "rent": "8,97"
+        },
+        {
+            "name": "Seregno",
+            "sale": "2.404",
+            "rent": "12,36"
+        },
+        {
+            "name": "Seveso",
+            "sale": "1.878",
+            "rent": "10,86"
+        },
+        {
+            "name": "Sovico",
+            "sale": "1.978",
+            "rent": "10,55"
+        },
+        {
+            "name": "Sulbiate",
+            "sale": "1.719",
+            "rent": "10,95"
+        },
+        {
+            "name": "Triuggio",
+            "sale": "2.002",
+            "rent": "9,31"
+        },
+        {
+            "name": "Usmate Velate",
+            "sale": "1.851",
+            "rent": "10,99"
+        },
+        {
+            "name": "Varedo",
+            "sale": "2.214",
+            "rent": "10,6"
+        },
+        {
+            "name": "Vedano al Lambro",
+            "sale": "3.130",
+            "rent": "11,36"
+        },
+        {
+            "name": "Veduggio con Colzano",
+            "sale": "1.243",
+            "rent": "7,73"
+        },
+        {
+            "name": "Verano Brianza",
+            "sale": "1.819",
+            "rent": "10,16"
+        },
+        {
+            "name": "Villasanta",
+            "sale": "2.593",
+            "rent": "10,74"
+        },
+        {
+            "name": "Vimercate",
+            "sale": "2.502",
+            "rent": "13,02"
+        }
+    ],
+    "Sondrio": [
+        {
+            "name": "Sondrio",
+            "sale": "1.424",
+            "rent": "8,75"
+        },
+        {
+            "name": "Albaredo per San Marco",
+            "sale": "273",
+            "rent": "6,55"
+        },
+        {
+            "name": "Albosaggia",
+            "sale": "891",
+            "rent": "6,61"
+        },
+        {
+            "name": "Andalo Valtellino",
+            "sale": "1.118",
+            "rent": "10,04"
+        },
+        {
+            "name": "Aprica",
+            "sale": "2.748",
+            "rent": "21,56"
+        },
+        {
+            "name": "Ardenno",
+            "sale": "696",
+            "rent": "8,98"
+        },
+        {
+            "name": "Bema",
+            "sale": "927",
+            "rent": "9,45"
+        },
+        {
+            "name": "Berbenno di Valtellina",
+            "sale": "612",
+            "rent": "9,53"
+        },
+        {
+            "name": "Bianzone",
+            "sale": "1.005",
+            "rent": "8,4"
+        },
+        {
+            "name": "Bormio",
+            "sale": "5.645",
+            "rent": "31,7"
+        },
+        {
+            "name": "Buglio in Monte",
+            "sale": "551",
+            "rent": "8,92"
+        },
+        {
+            "name": "Caiolo",
+            "sale": "592",
+            "rent": "6,57"
+        },
+        {
+            "name": "Campodolcino",
+            "sale": "2.222",
+            "rent": "13,54"
+        },
+        {
+            "name": "Caspoggio",
+            "sale": "1.809",
+            "rent": "9,9"
+        },
+        {
+            "name": "Castello dell'Acqua",
+            "sale": "701",
+            "rent": "6,46"
+        },
+        {
+            "name": "Castione Andevenno",
+            "sale": "602",
+            "rent": "8,04"
+        },
+        {
+            "name": "Cedrasco",
+            "sale": "671",
+            "rent": "6,51"
+        },
+        {
+            "name": "Cercino",
+            "sale": "769",
+            "rent": "6,59"
+        },
+        {
+            "name": "Chiavenna",
+            "sale": "1.932",
+            "rent": "8,58"
+        },
+        {
+            "name": "Chiesa in Valmalenco",
+            "sale": "1.998",
+            "rent": "11,06"
+        },
+        {
+            "name": "Chiuro",
+            "sale": "720",
+            "rent": "7,02"
+        },
+        {
+            "name": "Cino",
+            "sale": "965",
+            "rent": "6,54"
+        },
+        {
+            "name": "Civo",
+            "sale": "758",
+            "rent": "6,55"
+        },
+        {
+            "name": "Colorina",
+            "sale": "468",
+            "rent": "6,63"
+        },
+        {
+            "name": "Cosio Valtellino",
+            "sale": "829",
+            "rent": "9,26"
+        },
+        {
+            "name": "Dazio",
+            "sale": "977",
+            "rent": "9,43"
+        },
+        {
+            "name": "Delebio",
+            "sale": "1.118",
+            "rent": "10,12"
+        },
+        {
+            "name": "Dubino",
+            "sale": "1.662",
+            "rent": "9,78"
+        },
+        {
+            "name": "Faedo Valtellino",
+            "sale": "297",
+            "rent": "6,49"
+        },
+        {
+            "name": "Forcola",
+            "sale": "455",
+            "rent": "6,53"
+        },
+        {
+            "name": "Fusine",
+            "sale": "328",
+            "rent": "6,52"
+        },
+        {
+            "name": "Gerola Alta",
+            "sale": "690",
+            "rent": "9,27"
+        },
+        {
+            "name": "Gordona",
+            "sale": "620",
+            "rent": "6,57"
+        },
+        {
+            "name": "Grosio",
+            "sale": "1.539",
+            "rent": "7,8"
+        },
+        {
+            "name": "Grosotto",
+            "sale": "635",
+            "rent": "6,49"
+        },
+        {
+            "name": "Lanzada",
+            "sale": "1.080",
+            "rent": "11,98"
+        },
+        {
+            "name": "Livigno",
+            "sale": "7.220",
+            "rent": "19,16"
+        },
+        {
+            "name": "Lovero",
+            "sale": "580",
+            "rent": "6,42"
+        },
+        {
+            "name": "Madesimo",
+            "sale": "4.409",
+            "rent": "21,6"
+        },
+        {
+            "name": "Mantello",
+            "sale": "1.581",
+            "rent": "9,77"
+        },
+        {
+            "name": "Mazzo di Valtellina",
+            "sale": "604",
+            "rent": "6,47"
+        },
+        {
+            "name": "Mello",
+            "sale": "436",
+            "rent": "9,66"
+        },
+        {
+            "name": "Mese",
+            "sale": "1.200",
+            "rent": "9,53"
+        },
+        {
+            "name": "Montagna in Valtellina",
+            "sale": "686",
+            "rent": "6,07"
+        },
+        {
+            "name": "Morbegno",
+            "sale": "1.661",
+            "rent": "9,71"
+        },
+        {
+            "name": "Novate Mezzola",
+            "sale": "1.159",
+            "rent": "9,61"
+        },
+        {
+            "name": "Pedesina",
+            "sale": "660",
+            "rent": "6,54"
+        },
+        {
+            "name": "Piantedo",
+            "sale": "1.076",
+            "rent": "10,15"
+        },
+        {
+            "name": "Piateda",
+            "sale": "572",
+            "rent": "7,35"
+        },
+        {
+            "name": "Piuro",
+            "sale": "1.176",
+            "rent": "6,57"
+        },
+        {
+            "name": "Poggiridenti",
+            "sale": "1.022",
+            "rent": "7,64"
+        },
+        {
+            "name": "Ponte in Valtellina",
+            "sale": "601",
+            "rent": "7,55"
+        },
+        {
+            "name": "Postalesio",
+            "sale": "464",
+            "rent": "6,6"
+        },
+        {
+            "name": "Prata Camportaccio",
+            "sale": "1.370",
+            "rent": "9,6"
+        },
+        {
+            "name": "Rasura",
+            "sale": "553",
+            "rent": "6,56"
+        },
+        {
+            "name": "Rogolo",
+            "sale": "1.285",
+            "rent": "10,02"
+        },
+        {
+            "name": "Samolaco",
+            "sale": "729",
+            "rent": "6,56"
+        },
+        {
+            "name": "San Giacomo Filippo",
+            "sale": "885",
+            "rent": "6,56"
+        },
+        {
+            "name": "Sernio",
+            "sale": "490",
+            "rent": "6,41"
+        },
+        {
+            "name": "Sondalo",
+            "sale": "963",
+            "rent": "6,9"
+        },
+        {
+            "name": "Spriana",
+            "sale": "1.212",
+            "rent": "6,5"
+        },
+        {
+            "name": "Talamona",
+            "sale": "808",
+            "rent": "9,24"
+        },
+        {
+            "name": "Tartano",
+            "sale": "556",
+            "rent": "6,53"
+        },
+        {
+            "name": "Teglio",
+            "sale": "948",
+            "rent": "8,33"
+        },
+        {
+            "name": "Tirano",
+            "sale": "1.753",
+            "rent": "10,21"
+        },
+        {
+            "name": "Torre di Santa Maria",
+            "sale": "1.080",
+            "rent": "7,94"
+        },
+        {
+            "name": "Tovo di Sant'Agata",
+            "sale": "435",
+            "rent": "6,45"
+        },
+        {
+            "name": "Traona",
+            "sale": "1.293",
+            "rent": "9,7"
+        },
+        {
+            "name": "Tresivio",
+            "sale": "831",
+            "rent": "9,03"
+        },
+        {
+            "name": "Val Masino",
+            "sale": "828",
+            "rent": "9,23"
+        },
+        {
+            "name": "Valdidentro",
+            "sale": "3.941",
+            "rent": "22,25"
+        },
+        {
+            "name": "Valdisotto",
+            "sale": "3.700",
+            "rent": "22,62"
+        },
+        {
+            "name": "Valfurva",
+            "sale": "3.019",
+            "rent": "22,66"
+        },
+        {
+            "name": "Verceia",
+            "sale": "792",
+            "rent": "9,75"
+        },
+        {
+            "name": "Vervio",
+            "sale": "590",
+            "rent": "6,46"
+        },
+        {
+            "name": "Villa di Chiavenna",
+            "sale": "812",
+            "rent": "6,57"
+        },
+        {
+            "name": "Villa di Tirano",
+            "sale": "1.607",
+            "rent": "6,38"
+        }
+    ],
+    "Lecco": [
+        {
+            "name": "Lecco",
+            "sale": "2.624",
+            "rent": "11,66"
+        },
+        {
+            "name": "Abbadia Lariana",
+            "sale": "1.182",
+            "rent": "9,28"
+        },
+        {
+            "name": "Airuno",
+            "sale": "1.344",
+            "rent": "8,67"
+        },
+        {
+            "name": "Annone di Brianza",
+            "sale": "1.332",
+            "rent": "8,85"
+        },
+        {
+            "name": "Ballabio",
+            "sale": "1.283",
+            "rent": "9"
+        },
+        {
+            "name": "Barzago",
+            "sale": "1.516",
+            "rent": "8,82"
+        },
+        {
+            "name": "Barzanò",
+            "sale": "1.661",
+            "rent": "9,1"
+        },
+        {
+            "name": "Barzio",
+            "sale": "1.499",
+            "rent": "8,58"
+        },
+        {
+            "name": "Bellano",
+            "sale": "2.544",
+            "rent": "11,05"
+        },
+        {
+            "name": "Bosisio Parini",
+            "sale": "1.389",
+            "rent": "9,65"
+        },
+        {
+            "name": "Brivio",
+            "sale": "1.476",
+            "rent": "8,29"
+        },
+        {
+            "name": "Bulciago",
+            "sale": "1.268",
+            "rent": "7,64"
+        },
+        {
+            "name": "Calco",
+            "sale": "1.534",
+            "rent": "8,07"
+        },
+        {
+            "name": "Calolziocorte",
+            "sale": "1.496",
+            "rent": "9,03"
+        },
+        {
+            "name": "Carenno",
+            "sale": "809",
+            "rent": "9,34"
+        },
+        {
+            "name": "Casargo",
+            "sale": "850",
+            "rent": "10,39"
+        },
+        {
+            "name": "Casatenovo",
+            "sale": "1.888",
+            "rent": "10,72"
+        },
+        {
+            "name": "Cassago Brianza",
+            "sale": "1.267",
+            "rent": "8,72"
+        },
+        {
+            "name": "Cassina Valsassina",
+            "sale": "1.278",
+            "rent": "8,52"
+        },
+        {
+            "name": "Castello di Brianza",
+            "sale": "1.457",
+            "rent": "8,49"
+        },
+        {
+            "name": "Cernusco Lombardone",
+            "sale": "1.627",
+            "rent": "8,91"
+        },
+        {
+            "name": "Cesana Brianza",
+            "sale": "1.549",
+            "rent": "9,61"
+        },
+        {
+            "name": "Civate",
+            "sale": "1.444",
+            "rent": "9,34"
+        },
+        {
+            "name": "Colico",
+            "sale": "2.511",
+            "rent": "10,84"
+        },
+        {
+            "name": "Colle Brianza",
+            "sale": "1.127",
+            "rent": "6,93"
+        },
+        {
+            "name": "Cortenova",
+            "sale": "641",
+            "rent": "10,43"
+        },
+        {
+            "name": "Costa Masnaga",
+            "sale": "1.744",
+            "rent": "9,03"
+        },
+        {
+            "name": "Crandola Valsassina",
+            "sale": "700",
+            "rent": "10,51"
+        },
+        {
+            "name": "Cremella",
+            "sale": "1.448",
+            "rent": "8,98"
+        },
+        {
+            "name": "Cremeno",
+            "sale": "1.284",
+            "rent": "8,44"
+        },
+        {
+            "name": "Dervio",
+            "sale": "1.772",
+            "rent": "11,25"
+        },
+        {
+            "name": "Dolzago",
+            "sale": "1.537",
+            "rent": "10,8"
+        },
+        {
+            "name": "Dorio",
+            "sale": "3.101",
+            "rent": "10,35"
+        },
+        {
+            "name": "Ello",
+            "sale": "1.465",
+            "rent": "8,17"
+        },
+        {
+            "name": "Erve",
+            "sale": "446",
+            "rent": "9,29"
+        },
+        {
+            "name": "Esino Lario",
+            "sale": "550",
+            "rent": "10,02"
+        },
+        {
+            "name": "Galbiate",
+            "sale": "1.584",
+            "rent": "9,16"
+        },
+        {
+            "name": "Garbagnate Monastero",
+            "sale": "1.724",
+            "rent": "8,48"
+        },
+        {
+            "name": "Garlate",
+            "sale": "1.903",
+            "rent": "9,11"
+        },
+        {
+            "name": "Imbersago",
+            "sale": "1.538",
+            "rent": "9,27"
+        },
+        {
+            "name": "Introbio",
+            "sale": "1.044",
+            "rent": "9,55"
+        },
+        {
+            "name": "La Valletta Brianza",
+            "sale": "1.425",
+            "rent": "8,7"
+        },
+        {
+            "name": "Lierna",
+            "sale": "2.965",
+            "rent": "8,73"
+        },
+        {
+            "name": "Lomagna",
+            "sale": "2.100",
+            "rent": "11,57"
+        },
+        {
+            "name": "Malgrate",
+            "sale": "2.875",
+            "rent": "12,01"
+        },
+        {
+            "name": "Mandello del Lario",
+            "sale": "2.076",
+            "rent": "11,25"
+        },
+        {
+            "name": "Margno",
+            "sale": "729",
+            "rent": "10,75"
+        },
+        {
+            "name": "Merate",
+            "sale": "1.788",
+            "rent": "9,7"
+        },
+        {
+            "name": "Missaglia",
+            "sale": "1.534",
+            "rent": "10,5"
+        },
+        {
+            "name": "Moggio",
+            "sale": "1.236",
+            "rent": "8,57"
+        },
+        {
+            "name": "Molteno",
+            "sale": "1.339",
+            "rent": "7,78"
+        },
+        {
+            "name": "Monte Marenzo",
+            "sale": "1.098",
+            "rent": "9,34"
+        },
+        {
+            "name": "Montevecchia",
+            "sale": "2.218",
+            "rent": "9,06"
+        },
+        {
+            "name": "Monticello Brianza",
+            "sale": "1.413",
+            "rent": "9"
+        },
+        {
+            "name": "Morterone",
+            "sale": "1.493",
+            "rent": "9,07"
+        },
+        {
+            "name": "Nibionno",
+            "sale": "1.209",
+            "rent": "8,45"
+        },
+        {
+            "name": "Oggiono",
+            "sale": "1.788",
+            "rent": "8,84"
+        },
+        {
+            "name": "Olgiate Molgora",
+            "sale": "1.915",
+            "rent": "9,83"
+        },
+        {
+            "name": "Olginate",
+            "sale": "1.600",
+            "rent": "9,71"
+        },
+        {
+            "name": "Oliveto Lario",
+            "sale": "2.938",
+            "rent": "8,86"
+        },
+        {
+            "name": "Osnago",
+            "sale": "1.547",
+            "rent": "10,36"
+        },
+        {
+            "name": "Paderno d'Adda",
+            "sale": "1.321",
+            "rent": "9,05"
+        },
+        {
+            "name": "Pagnona",
+            "sale": "794",
+            "rent": "10,3"
+        },
+        {
+            "name": "Parlasco",
+            "sale": "1.659",
+            "rent": "10,81"
+        },
+        {
+            "name": "Pasturo",
+            "sale": "1.004",
+            "rent": "9,75"
+        },
+        {
+            "name": "Perledo",
+            "sale": "2.756",
+            "rent": "10,37"
+        },
+        {
+            "name": "Pescate",
+            "sale": "2.930",
+            "rent": "6,79"
+        },
+        {
+            "name": "Premana",
+            "sale": "528",
+            "rent": "10,2"
+        },
+        {
+            "name": "Primaluna",
+            "sale": "820",
+            "rent": "10,52"
+        },
+        {
+            "name": "Robbiate",
+            "sale": "1.558",
+            "rent": "8,88"
+        },
+        {
+            "name": "Rogeno",
+            "sale": "1.824",
+            "rent": "8,76"
+        },
+        {
+            "name": "Santa Maria Hoè",
+            "sale": "1.342",
+            "rent": "8,26"
+        },
+        {
+            "name": "Sirone",
+            "sale": "1.613",
+            "rent": "8,98"
+        },
+        {
+            "name": "Sirtori",
+            "sale": "1.595",
+            "rent": "9,1"
+        },
+        {
+            "name": "Sueglio",
+            "sale": "807",
+            "rent": "10,46"
+        },
+        {
+            "name": "Suello",
+            "sale": "973",
+            "rent": "9,14"
+        },
+        {
+            "name": "Taceno",
+            "sale": "814",
+            "rent": "10,76"
+        },
+        {
+            "name": "Valgreghentino",
+            "sale": "1.221",
+            "rent": "8,34"
+        },
+        {
+            "name": "Valmadrera",
+            "sale": "2.145",
+            "rent": "10,66"
+        },
+        {
+            "name": "Valvarrone",
+            "sale": "885",
+            "rent": "10,42"
+        },
+        {
+            "name": "Varenna",
+            "sale": "3.462",
+            "rent": "9,83"
+        },
+        {
+            "name": "Vercurago",
+            "sale": "1.602",
+            "rent": "8,31"
+        },
+        {
+            "name": "Verderio",
+            "sale": "1.568",
+            "rent": "10,44"
+        },
+        {
+            "name": "Viganò",
+            "sale": "1.584",
+            "rent": "9,21"
+        }
+    ],
+    "Bergamo": [
+        {
+            "name": "Bergamo",
+            "sale": "2.860",
+            "rent": "13,34"
+        },
+        {
+            "name": "Adrara San Martino",
+            "sale": "942",
+            "rent": "7,42"
+        },
+        {
+            "name": "Adrara San Rocco",
+            "sale": "746",
+            "rent": "8,44"
+        },
+        {
+            "name": "Albano Sant'Alessandro",
+            "sale": "1.750",
+            "rent": "9,73"
+        },
+        {
+            "name": "Albino",
+            "sale": "1.440",
+            "rent": "8,48"
+        },
+        {
+            "name": "Algua",
+            "sale": "529",
+            "rent": "8,86"
+        },
+        {
+            "name": "Almè",
+            "sale": "1.768",
+            "rent": "10,3"
+        },
+        {
+            "name": "Almenno San Bartolomeo",
+            "sale": "1.484",
+            "rent": "7,61"
+        },
+        {
+            "name": "Almenno San Salvatore",
+            "sale": "1.314",
+            "rent": "8,68"
+        },
+        {
+            "name": "Alzano Lombardo",
+            "sale": "1.624",
+            "rent": "9,84"
+        },
+        {
+            "name": "Ambivere",
+            "sale": "1.256",
+            "rent": "9,31"
+        },
+        {
+            "name": "Antegnate",
+            "sale": "1.398",
+            "rent": "6,65"
+        },
+        {
+            "name": "Arcene",
+            "sale": "1.366",
+            "rent": "10,11"
+        },
+        {
+            "name": "Ardesio",
+            "sale": "863",
+            "rent": "7,03"
+        },
+        {
+            "name": "Arzago d'Adda",
+            "sale": "1.311",
+            "rent": "10,78"
+        },
+        {
+            "name": "Averara",
+            "sale": "831",
+            "rent": "7,91"
+        },
+        {
+            "name": "Aviatico",
+            "sale": "1.281",
+            "rent": "10,86"
+        },
+        {
+            "name": "Azzano San Paolo",
+            "sale": "2.236",
+            "rent": "11,35"
+        },
+        {
+            "name": "Azzone",
+            "sale": "1.112",
+            "rent": "7,71"
+        },
+        {
+            "name": "Bagnatica",
+            "sale": "1.810",
+            "rent": "12,74"
+        },
+        {
+            "name": "Barbata",
+            "sale": "1.285",
+            "rent": "8,65"
+        },
+        {
+            "name": "Bariano",
+            "sale": "1.434",
+            "rent": "8,13"
+        },
+        {
+            "name": "Barzana",
+            "sale": "1.865",
+            "rent": "9,41"
+        },
+        {
+            "name": "Bedulita",
+            "sale": "517",
+            "rent": "8,73"
+        },
+        {
+            "name": "Berbenno",
+            "sale": "613",
+            "rent": "8,41"
+        },
+        {
+            "name": "Berzo San Fermo",
+            "sale": "896",
+            "rent": "9,73"
+        },
+        {
+            "name": "Bianzano",
+            "sale": "1.317",
+            "rent": "6,87"
+        },
+        {
+            "name": "Blello",
+            "sale": "338",
+            "rent": "8,03"
+        },
+        {
+            "name": "Bolgare",
+            "sale": "2.002",
+            "rent": "9,42"
+        },
+        {
+            "name": "Boltiere",
+            "sale": "1.579",
+            "rent": "8,97"
+        },
+        {
+            "name": "Bonate Sopra",
+            "sale": "1.854",
+            "rent": "10,27"
+        },
+        {
+            "name": "Bonate Sotto",
+            "sale": "1.646",
+            "rent": "9,03"
+        },
+        {
+            "name": "Borgo di Terzo",
+            "sale": "1.007",
+            "rent": "9,34"
+        },
+        {
+            "name": "Bossico",
+            "sale": "1.054",
+            "rent": "6,76"
+        },
+        {
+            "name": "Bottanuco",
+            "sale": "1.279",
+            "rent": "10,82"
+        },
+        {
+            "name": "Bracca",
+            "sale": "740",
+            "rent": "9,45"
+        },
+        {
+            "name": "Branzi",
+            "sale": "1.268",
+            "rent": "9,14"
+        },
+        {
+            "name": "Brembate",
+            "sale": "1.348",
+            "rent": "10,29"
+        },
+        {
+            "name": "Brembate di Sopra",
+            "sale": "1.751",
+            "rent": "9,24"
+        },
+        {
+            "name": "Brignano Gera d'Adda",
+            "sale": "1.355",
+            "rent": "6,98"
+        },
+        {
+            "name": "Brumano",
+            "sale": "644",
+            "rent": "8,63"
+        },
+        {
+            "name": "Brusaporto",
+            "sale": "1.753",
+            "rent": "10,27"
+        },
+        {
+            "name": "Calcinate",
+            "sale": "1.705",
+            "rent": "10,35"
+        },
+        {
+            "name": "Calcio",
+            "sale": "1.484",
+            "rent": "10,14"
+        },
+        {
+            "name": "Calusco d'Adda",
+            "sale": "1.745",
+            "rent": "9,81"
+        },
+        {
+            "name": "Calvenzano",
+            "sale": "1.560",
+            "rent": "10,16"
+        },
+        {
+            "name": "Camerata Cornello",
+            "sale": "1.390",
+            "rent": "7,64"
+        },
+        {
+            "name": "Canonica d'Adda",
+            "sale": "1.311",
+            "rent": "12"
+        },
+        {
+            "name": "Capizzone",
+            "sale": "644",
+            "rent": "7,76"
+        },
+        {
+            "name": "Capriate San Gervasio",
+            "sale": "1.759",
+            "rent": "11"
+        },
+        {
+            "name": "Caprino Bergamasco",
+            "sale": "1.036",
+            "rent": "9,33"
+        },
+        {
+            "name": "Caravaggio",
+            "sale": "1.646",
+            "rent": "10,81"
+        },
+        {
+            "name": "Carobbio degli Angeli",
+            "sale": "1.601",
+            "rent": "9,97"
+        },
+        {
+            "name": "Carona",
+            "sale": "1.872",
+            "rent": "9,41"
+        },
+        {
+            "name": "Carvico",
+            "sale": "1.395",
+            "rent": "6,77"
+        },
+        {
+            "name": "Casazza",
+            "sale": "1.274",
+            "rent": "8,13"
+        },
+        {
+            "name": "Casirate d'Adda",
+            "sale": "1.836",
+            "rent": "9,62"
+        },
+        {
+            "name": "Casnigo",
+            "sale": "957",
+            "rent": "6,44"
+        },
+        {
+            "name": "Cassiglio",
+            "sale": "872",
+            "rent": "7,14"
+        },
+        {
+            "name": "Castel Rozzone",
+            "sale": "1.200",
+            "rent": "9,11"
+        },
+        {
+            "name": "Castelli Calepio",
+            "sale": "1.555",
+            "rent": "7,28"
+        },
+        {
+            "name": "Castione della Presolana",
+            "sale": "1.537",
+            "rent": "10,32"
+        },
+        {
+            "name": "Castro",
+            "sale": "1.300",
+            "rent": "9,01"
+        },
+        {
+            "name": "Cavernago",
+            "sale": "1.895",
+            "rent": "8,05"
+        },
+        {
+            "name": "Cazzano Sant'Andrea",
+            "sale": "1.118",
+            "rent": "6,32"
+        },
+        {
+            "name": "Cenate Sopra",
+            "sale": "1.758",
+            "rent": "9,26"
+        },
+        {
+            "name": "Cenate Sotto",
+            "sale": "1.993",
+            "rent": "10,13"
+        },
+        {
+            "name": "Cene",
+            "sale": "1.059",
+            "rent": "8,96"
+        },
+        {
+            "name": "Cerete",
+            "sale": "972",
+            "rent": "6,53"
+        },
+        {
+            "name": "Chignolo d'Isola",
+            "sale": "1.814",
+            "rent": "9,83"
+        },
+        {
+            "name": "Chiuduno",
+            "sale": "1.411",
+            "rent": "9,02"
+        },
+        {
+            "name": "Cisano Bergamasco",
+            "sale": "1.679",
+            "rent": "8,66"
+        },
+        {
+            "name": "Ciserano",
+            "sale": "1.590",
+            "rent": "10,54"
+        },
+        {
+            "name": "Cividate al Piano",
+            "sale": "1.134",
+            "rent": "11,96"
+        },
+        {
+            "name": "Clusone",
+            "sale": "1.320",
+            "rent": "7,91"
+        },
+        {
+            "name": "Colere",
+            "sale": "1.283",
+            "rent": "8,02"
+        },
+        {
+            "name": "Cologno al Serio",
+            "sale": "1.832",
+            "rent": "7,67"
+        },
+        {
+            "name": "Colzate",
+            "sale": "907",
+            "rent": "7,97"
+        },
+        {
+            "name": "Comun Nuovo",
+            "sale": "1.729",
+            "rent": "10,23"
+        },
+        {
+            "name": "Corna Imagna",
+            "sale": "470",
+            "rent": "8,18"
+        },
+        {
+            "name": "Cornalba",
+            "sale": "881",
+            "rent": "8,38"
+        },
+        {
+            "name": "Cortenuova",
+            "sale": "1.093",
+            "rent": "8,09"
+        },
+        {
+            "name": "Costa di Mezzate",
+            "sale": "1.703",
+            "rent": "10,46"
+        },
+        {
+            "name": "Costa Serina",
+            "sale": "861",
+            "rent": "10,08"
+        },
+        {
+            "name": "Costa Valle Imagna",
+            "sale": "832",
+            "rent": "9,37"
+        },
+        {
+            "name": "Costa Volpino",
+            "sale": "1.247",
+            "rent": "9,31"
+        },
+        {
+            "name": "Covo",
+            "sale": "1.306",
+            "rent": "7,56"
+        },
+        {
+            "name": "Credaro",
+            "sale": "1.630",
+            "rent": "9,22"
+        },
+        {
+            "name": "Curno",
+            "sale": "2.786",
+            "rent": "10,89"
+        },
+        {
+            "name": "Cusio",
+            "sale": "669",
+            "rent": "8,24"
+        },
+        {
+            "name": "Dalmine",
+            "sale": "1.869",
+            "rent": "10,4"
+        },
+        {
+            "name": "Dossena",
+            "sale": "645",
+            "rent": "7,44"
+        },
+        {
+            "name": "Endine Gaiano",
+            "sale": "935",
+            "rent": "6,38"
+        },
+        {
+            "name": "Entratico",
+            "sale": "842",
+            "rent": "9,47"
+        },
+        {
+            "name": "Fara Gera d'Adda",
+            "sale": "1.547",
+            "rent": "8,95"
+        },
+        {
+            "name": "Fara Olivana con Sola",
+            "sale": "1.361",
+            "rent": "8,06"
+        },
+        {
+            "name": "Filago",
+            "sale": "1.442",
+            "rent": "10,84"
+        },
+        {
+            "name": "Fino del Monte",
+            "sale": "1.045",
+            "rent": "9,66"
+        },
+        {
+            "name": "Fiorano al Serio",
+            "sale": "883",
+            "rent": "8,21"
+        },
+        {
+            "name": "Fontanella",
+            "sale": "1.368",
+            "rent": "7,73"
+        },
+        {
+            "name": "Fonteno",
+            "sale": "1.151",
+            "rent": "7,09"
+        },
+        {
+            "name": "Foppolo",
+            "sale": "1.381",
+            "rent": "11,27"
+        },
+        {
+            "name": "Foresto Sparso",
+            "sale": "951",
+            "rent": "9,51"
+        },
+        {
+            "name": "Fornovo San Giovanni",
+            "sale": "1.590",
+            "rent": "8,4"
+        },
+        {
+            "name": "Fuipiano Valle Imagna",
+            "sale": "636",
+            "rent": "8,18"
+        },
+        {
+            "name": "Gandellino",
+            "sale": "1.033",
+            "rent": "8,04"
+        },
+        {
+            "name": "Gandino",
+            "sale": "739",
+            "rent": "4,43"
+        },
+        {
+            "name": "Gandosso",
+            "sale": "1.016",
+            "rent": "8,92"
+        },
+        {
+            "name": "Gaverina Terme",
+            "sale": "373",
+            "rent": "8,27"
+        },
+        {
+            "name": "Gazzaniga",
+            "sale": "993",
+            "rent": "9,15"
+        },
+        {
+            "name": "Ghisalba",
+            "sale": "1.461",
+            "rent": "9,27"
+        },
+        {
+            "name": "Gorlago",
+            "sale": "1.577",
+            "rent": "10,02"
+        },
+        {
+            "name": "Gorle",
+            "sale": "2.231",
+            "rent": "10,58"
+        },
+        {
+            "name": "Gorno",
+            "sale": "579",
+            "rent": "6,5"
+        },
+        {
+            "name": "Grassobbio",
+            "sale": "2.038",
+            "rent": "11,5"
+        },
+        {
+            "name": "Gromo",
+            "sale": "1.040",
+            "rent": "8,14"
+        },
+        {
+            "name": "Grone",
+            "sale": "868",
+            "rent": "8,46"
+        },
+        {
+            "name": "Grumello del Monte",
+            "sale": "1.900",
+            "rent": "9,12"
+        },
+        {
+            "name": "Isola di Fondra",
+            "sale": "720",
+            "rent": "6,8"
+        },
+        {
+            "name": "Isso",
+            "sale": "879",
+            "rent": "8,64"
+        },
+        {
+            "name": "Lallio",
+            "sale": "2.095",
+            "rent": "8,8"
+        },
+        {
+            "name": "Leffe",
+            "sale": "819",
+            "rent": "5,59"
+        },
+        {
+            "name": "Lenna",
+            "sale": "1.022",
+            "rent": "7,78"
+        },
+        {
+            "name": "Levate",
+            "sale": "1.387",
+            "rent": "10,44"
+        },
+        {
+            "name": "Locatello",
+            "sale": "589",
+            "rent": "8,26"
+        },
+        {
+            "name": "Lovere",
+            "sale": "1.577",
+            "rent": "9,33"
+        },
+        {
+            "name": "Lurano",
+            "sale": "1.759",
+            "rent": "8,76"
+        },
+        {
+            "name": "Luzzana",
+            "sale": "1.131",
+            "rent": "9,4"
+        },
+        {
+            "name": "Madone",
+            "sale": "1.567",
+            "rent": "10,91"
+        },
+        {
+            "name": "Mapello",
+            "sale": "1.500",
+            "rent": "9,27"
+        },
+        {
+            "name": "Martinengo",
+            "sale": "1.484",
+            "rent": "7,43"
+        },
+        {
+            "name": "Medolago",
+            "sale": "1.582",
+            "rent": "9,3"
+        },
+        {
+            "name": "Mezzoldo",
+            "sale": "550",
+            "rent": "8,02"
+        },
+        {
+            "name": "Misano di Gera d'Adda",
+            "sale": "1.348",
+            "rent": "9,2"
+        },
+        {
+            "name": "Moio de' Calvi",
+            "sale": "683",
+            "rent": "7,96"
+        },
+        {
+            "name": "Monasterolo del Castello",
+            "sale": "1.299",
+            "rent": "8,2"
+        },
+        {
+            "name": "Montello",
+            "sale": "1.454",
+            "rent": "10,34"
+        },
+        {
+            "name": "Morengo",
+            "sale": "1.181",
+            "rent": "7,91"
+        },
+        {
+            "name": "Mornico al Serio",
+            "sale": "1.517",
+            "rent": "9,27"
+        },
+        {
+            "name": "Mozzanica",
+            "sale": "1.172",
+            "rent": "8,63"
+        },
+        {
+            "name": "Mozzo",
+            "sale": "2.658",
+            "rent": "9,17"
+        },
+        {
+            "name": "Nembro",
+            "sale": "1.496",
+            "rent": "10,69"
+        },
+        {
+            "name": "Olmo al Brembo",
+            "sale": "345",
+            "rent": "7,55"
+        },
+        {
+            "name": "Oltre il Colle",
+            "sale": "651",
+            "rent": "7,85"
+        },
+        {
+            "name": "Oltressenda Alta",
+            "sale": "650",
+            "rent": "8,27"
+        },
+        {
+            "name": "Oneta",
+            "sale": "925",
+            "rent": "8,23"
+        },
+        {
+            "name": "Onore",
+            "sale": "1.277",
+            "rent": "7,51"
+        },
+        {
+            "name": "Orio al Serio",
+            "sale": "1.863",
+            "rent": "12,11"
+        },
+        {
+            "name": "Ornica",
+            "sale": "775",
+            "rent": "8,05"
+        },
+        {
+            "name": "Osio Sopra",
+            "sale": "1.707",
+            "rent": "12,29"
+        },
+        {
+            "name": "Osio Sotto",
+            "sale": "1.481",
+            "rent": "9,13"
+        },
+        {
+            "name": "Pagazzano",
+            "sale": "1.238",
+            "rent": "8,28"
+        },
+        {
+            "name": "Paladina",
+            "sale": "2.229",
+            "rent": "10,12"
+        },
+        {
+            "name": "Palazzago",
+            "sale": "1.480",
+            "rent": "8,98"
+        },
+        {
+            "name": "Palosco",
+            "sale": "1.415",
+            "rent": "8,76"
+        },
+        {
+            "name": "Parre",
+            "sale": "818",
+            "rent": "6,84"
+        },
+        {
+            "name": "Parzanica",
+            "sale": "2.215",
+            "rent": "9,59"
+        },
+        {
+            "name": "Pedrengo",
+            "sale": "2.255",
+            "rent": "8,6"
+        },
+        {
+            "name": "Peia",
+            "sale": "694",
+            "rent": "6,15"
+        },
+        {
+            "name": "Pianico",
+            "sale": "908",
+            "rent": "6,63"
+        },
+        {
+            "name": "Piario",
+            "sale": "741",
+            "rent": "7"
+        },
+        {
+            "name": "Piazza Brembana",
+            "sale": "883",
+            "rent": "8,39"
+        },
+        {
+            "name": "Piazzatorre",
+            "sale": "899",
+            "rent": "7,68"
+        },
+        {
+            "name": "Piazzolo",
+            "sale": "620",
+            "rent": "7,61"
+        },
+        {
+            "name": "Pognano",
+            "sale": "1.376",
+            "rent": "10,24"
+        },
+        {
+            "name": "Ponte Nossa",
+            "sale": "756",
+            "rent": "6,68"
+        },
+        {
+            "name": "Ponte San Pietro",
+            "sale": "1.566",
+            "rent": "10,21"
+        },
+        {
+            "name": "Ponteranica",
+            "sale": "2.338",
+            "rent": "9,76"
+        },
+        {
+            "name": "Pontida",
+            "sale": "1.274",
+            "rent": "10,43"
+        },
+        {
+            "name": "Pontirolo Nuovo",
+            "sale": "1.382",
+            "rent": "10,26"
+        },
+        {
+            "name": "Pradalunga",
+            "sale": "1.348",
+            "rent": "9,62"
+        },
+        {
+            "name": "Predore",
+            "sale": "2.441",
+            "rent": "11,48"
+        },
+        {
+            "name": "Premolo",
+            "sale": "969",
+            "rent": "8,03"
+        },
+        {
+            "name": "Presezzo",
+            "sale": "1.619",
+            "rent": "8,48"
+        },
+        {
+            "name": "Pumenengo",
+            "sale": "936",
+            "rent": "8,56"
+        },
+        {
+            "name": "Ranica",
+            "sale": "2.188",
+            "rent": "10,45"
+        },
+        {
+            "name": "Ranzanico",
+            "sale": "1.413",
+            "rent": "8,35"
+        },
+        {
+            "name": "Riva di Solto",
+            "sale": "2.421",
+            "rent": "9,04"
+        },
+        {
+            "name": "Rogno",
+            "sale": "1.040",
+            "rent": "9,2"
+        },
+        {
+            "name": "Romano di Lombardia",
+            "sale": "1.769",
+            "rent": "10,58"
+        },
+        {
+            "name": "Roncobello",
+            "sale": "592",
+            "rent": "7,15"
+        },
+        {
+            "name": "Roncola",
+            "sale": "866",
+            "rent": "8,75"
+        },
+        {
+            "name": "Rota d'Imagna",
+            "sale": "684",
+            "rent": "9,1"
+        },
+        {
+            "name": "Rovetta",
+            "sale": "1.464",
+            "rent": "11,05"
+        },
+        {
+            "name": "San Giovanni Bianco",
+            "sale": "644",
+            "rent": "6,62"
+        },
+        {
+            "name": "San Paolo d'Argon",
+            "sale": "1.705",
+            "rent": "7,26"
+        },
+        {
+            "name": "San Pellegrino Terme",
+            "sale": "1.239",
+            "rent": "8,75"
+        },
+        {
+            "name": "Sant'Omobono Terme",
+            "sale": "761",
+            "rent": "9,15"
+        },
+        {
+            "name": "Santa Brigida",
+            "sale": "809",
+            "rent": "8,17"
+        },
+        {
+            "name": "Sarnico",
+            "sale": "3.109",
+            "rent": "10,65"
+        },
+        {
+            "name": "Scanzorosciate",
+            "sale": "2.208",
+            "rent": "8,12"
+        },
+        {
+            "name": "Schilpario",
+            "sale": "884",
+            "rent": "6,29"
+        },
+        {
+            "name": "Sedrina",
+            "sale": "730",
+            "rent": "6,96"
+        },
+        {
+            "name": "Selvino",
+            "sale": "1.553",
+            "rent": "14,86"
+        },
+        {
+            "name": "Seriate",
+            "sale": "1.765",
+            "rent": "11,63"
+        },
+        {
+            "name": "Serina",
+            "sale": "871",
+            "rent": "5,9"
+        },
+        {
+            "name": "Solto Collina",
+            "sale": "1.486",
+            "rent": "8,55"
+        },
+        {
+            "name": "Solza",
+            "sale": "1.370",
+            "rent": "9,18"
+        },
+        {
+            "name": "Songavazzo",
+            "sale": "1.447",
+            "rent": "7,19"
+        },
+        {
+            "name": "Sorisole",
+            "sale": "1.574",
+            "rent": "11,17"
+        },
+        {
+            "name": "Sotto il Monte Giovanni XXIII",
+            "sale": "1.540",
+            "rent": "9,31"
+        },
+        {
+            "name": "Sovere",
+            "sale": "998",
+            "rent": "5,96"
+        },
+        {
+            "name": "Spinone al Lago",
+            "sale": "1.251",
+            "rent": "8,32"
+        },
+        {
+            "name": "Spirano",
+            "sale": "1.410",
+            "rent": "9,84"
+        },
+        {
+            "name": "Stezzano",
+            "sale": "1.749",
+            "rent": "10,74"
+        },
+        {
+            "name": "Strozza",
+            "sale": "814",
+            "rent": "8,29"
+        },
+        {
+            "name": "Suisio",
+            "sale": "1.336",
+            "rent": "10,39"
+        },
+        {
+            "name": "Taleggio",
+            "sale": "646",
+            "rent": "7,37"
+        },
+        {
+            "name": "Tavernola Bergamasca",
+            "sale": "1.451",
+            "rent": "11,38"
+        },
+        {
+            "name": "Telgate",
+            "sale": "1.468",
+            "rent": "9,93"
+        },
+        {
+            "name": "Terno d'Isola",
+            "sale": "1.495",
+            "rent": "8,84"
+        },
+        {
+            "name": "Torre Boldone",
+            "sale": "2.574",
+            "rent": "9,94"
+        },
+        {
+            "name": "Torre de' Busi",
+            "sale": "1.043",
+            "rent": "10,76"
+        },
+        {
+            "name": "Torre de' Roveri",
+            "sale": "2.465",
+            "rent": "9,37"
+        },
+        {
+            "name": "Torre Pallavicina",
+            "sale": "597",
+            "rent": "8,96"
+        },
+        {
+            "name": "Trescore Balneario",
+            "sale": "1.871",
+            "rent": "8,66"
+        },
+        {
+            "name": "Treviglio",
+            "sale": "2.160",
+            "rent": "10,87"
+        },
+        {
+            "name": "Treviolo",
+            "sale": "2.669",
+            "rent": "10,61"
+        },
+        {
+            "name": "Ubiale Clanezzo",
+            "sale": "754",
+            "rent": "7,97"
+        },
+        {
+            "name": "Urgnano",
+            "sale": "1.637",
+            "rent": "10,05"
+        },
+        {
+            "name": "Val Brembilla",
+            "sale": "686",
+            "rent": "7,86"
+        },
+        {
+            "name": "Valbondione",
+            "sale": "989",
+            "rent": "8,12"
+        },
+        {
+            "name": "Valbrembo",
+            "sale": "2.077",
+            "rent": "10,74"
+        },
+        {
+            "name": "Valgoglio",
+            "sale": "991",
+            "rent": "7,79"
+        },
+        {
+            "name": "Valleve",
+            "sale": "1.303",
+            "rent": "7,9"
+        },
+        {
+            "name": "Valnegra",
+            "sale": "554",
+            "rent": "7,93"
+        },
+        {
+            "name": "Valtorta",
+            "sale": "742",
+            "rent": "7,96"
+        },
+        {
+            "name": "Vedeseta",
+            "sale": "471",
+            "rent": "7,56"
+        },
+        {
+            "name": "Verdellino",
+            "sale": "1.251",
+            "rent": "10,18"
+        },
+        {
+            "name": "Verdello",
+            "sale": "1.621",
+            "rent": "10,16"
+        },
+        {
+            "name": "Vertova",
+            "sale": "884",
+            "rent": "8,7"
+        },
+        {
+            "name": "Viadanica",
+            "sale": "833",
+            "rent": "9,66"
+        },
+        {
+            "name": "Vigano San Martino",
+            "sale": "1.619",
+            "rent": "8,47"
+        },
+        {
+            "name": "Vigolo",
+            "sale": "664",
+            "rent": "10,93"
+        },
+        {
+            "name": "Villa d'Adda",
+            "sale": "1.152",
+            "rent": "8,5"
+        },
+        {
+            "name": "Villa d'Almè",
+            "sale": "1.707",
+            "rent": "10,49"
+        },
+        {
+            "name": "Villa d'Ogna",
+            "sale": "856",
+            "rent": "7,31"
+        },
+        {
+            "name": "Villa di Serio",
+            "sale": "1.700",
+            "rent": "9,24"
+        },
+        {
+            "name": "Villongo",
+            "sale": "1.425",
+            "rent": "8,82"
+        },
+        {
+            "name": "Vilminore di Scalve",
+            "sale": "924",
+            "rent": "7,95"
+        },
+        {
+            "name": "Zandobbio",
+            "sale": "1.227",
+            "rent": "9,72"
+        },
+        {
+            "name": "Zanica",
+            "sale": "1.967",
+            "rent": "11,72"
+        },
+        {
+            "name": "Zogno",
+            "sale": "1.003",
+            "rent": "6,55"
+        }
+    ],
+    "Varese": [
+        {
+            "name": "Varese",
+            "sale": "1.887",
+            "rent": "11,77"
+        },
+        {
+            "name": "Agra",
+            "sale": "1.250",
+            "rent": "11,29"
+        },
+        {
+            "name": "Albizzate",
+            "sale": "1.275",
+            "rent": "10,64"
+        },
+        {
+            "name": "Angera",
+            "sale": "1.563",
+            "rent": "10,06"
+        },
+        {
+            "name": "Arcisate",
+            "sale": "1.400",
+            "rent": "9,03"
+        },
+        {
+            "name": "Arsago Seprio",
+            "sale": "1.336",
+            "rent": "9,41"
+        },
+        {
+            "name": "Azzate",
+            "sale": "1.488",
+            "rent": "9,47"
+        },
+        {
+            "name": "Azzio",
+            "sale": "776",
+            "rent": "8,79"
+        },
+        {
+            "name": "Barasso",
+            "sale": "2.280",
+            "rent": "8,67"
+        },
+        {
+            "name": "Bardello con Malgesso e Bregano",
+            "sale": "1.473",
+            "rent": "9,61"
+        },
+        {
+            "name": "Bedero Valcuvia",
+            "sale": "681",
+            "rent": "8,97"
+        },
+        {
+            "name": "Besano",
+            "sale": "992",
+            "rent": "10,62"
+        },
+        {
+            "name": "Besnate",
+            "sale": "1.320",
+            "rent": "8,81"
+        },
+        {
+            "name": "Besozzo",
+            "sale": "1.502",
+            "rent": "10,62"
+        },
+        {
+            "name": "Biandronno",
+            "sale": "1.229",
+            "rent": "10,13"
+        },
+        {
+            "name": "Bisuschio",
+            "sale": "1.349",
+            "rent": "9,45"
+        },
+        {
+            "name": "Bodio Lomnago",
+            "sale": "1.987",
+            "rent": "8,34"
+        },
+        {
+            "name": "Brebbia",
+            "sale": "1.393",
+            "rent": "9,46"
+        },
+        {
+            "name": "Brenta",
+            "sale": "1.047",
+            "rent": "9,01"
+        },
+        {
+            "name": "Brezzo di Bedero",
+            "sale": "2.613",
+            "rent": "9,79"
+        },
+        {
+            "name": "Brinzio",
+            "sale": "890",
+            "rent": "8,87"
+        },
+        {
+            "name": "Brissago-Valtravaglia",
+            "sale": "1.042",
+            "rent": "9,28"
+        },
+        {
+            "name": "Brunello",
+            "sale": "1.320",
+            "rent": "9,52"
+        },
+        {
+            "name": "Brusimpiano",
+            "sale": "1.834",
+            "rent": "12,44"
+        },
+        {
+            "name": "Buguggiate",
+            "sale": "2.177",
+            "rent": "9,54"
+        },
+        {
+            "name": "Busto Arsizio",
+            "sale": "1.829",
+            "rent": "11,36"
+        },
+        {
+            "name": "Cadegliano-Viconago",
+            "sale": "2.255",
+            "rent": "9,38"
+        },
+        {
+            "name": "Cadrezzate con Osmate",
+            "sale": "1.733",
+            "rent": "9,51"
+        },
+        {
+            "name": "Cairate",
+            "sale": "1.503",
+            "rent": "8,61"
+        },
+        {
+            "name": "Cantello",
+            "sale": "2.308",
+            "rent": "11,43"
+        },
+        {
+            "name": "Caravate",
+            "sale": "919",
+            "rent": "9,4"
+        },
+        {
+            "name": "Cardano al Campo",
+            "sale": "1.590",
+            "rent": "10,8"
+        },
+        {
+            "name": "Carnago",
+            "sale": "1.299",
+            "rent": "7,14"
+        },
+        {
+            "name": "Caronno Pertusella",
+            "sale": "2.195",
+            "rent": "10,11"
+        },
+        {
+            "name": "Caronno Varesino",
+            "sale": "1.079",
+            "rent": "8,45"
+        },
+        {
+            "name": "Casale Litta",
+            "sale": "792",
+            "rent": "8,77"
+        },
+        {
+            "name": "Casalzuigno",
+            "sale": "658",
+            "rent": "8,89"
+        },
+        {
+            "name": "Casciago",
+            "sale": "1.588",
+            "rent": "10,18"
+        },
+        {
+            "name": "Casorate Sempione",
+            "sale": "1.319",
+            "rent": "11,89"
+        },
+        {
+            "name": "Cassano Magnago",
+            "sale": "1.591",
+            "rent": "10,42"
+        },
+        {
+            "name": "Cassano Valcuvia",
+            "sale": "1.059",
+            "rent": "9,11"
+        },
+        {
+            "name": "Castellanza",
+            "sale": "1.657",
+            "rent": "11,66"
+        },
+        {
+            "name": "Castello Cabiaglio",
+            "sale": "914",
+            "rent": "8,74"
+        },
+        {
+            "name": "Castelseprio",
+            "sale": "1.046",
+            "rent": "9,01"
+        },
+        {
+            "name": "Castelveccana",
+            "sale": "1.828",
+            "rent": "9,53"
+        },
+        {
+            "name": "Castiglione Olona",
+            "sale": "1.386",
+            "rent": "9,3"
+        },
+        {
+            "name": "Castronno",
+            "sale": "1.385",
+            "rent": "8,63"
+        },
+        {
+            "name": "Cavaria con Premezzo",
+            "sale": "1.358",
+            "rent": "12,2"
+        },
+        {
+            "name": "Cazzago Brabbia",
+            "sale": "838",
+            "rent": "9,3"
+        },
+        {
+            "name": "Cislago",
+            "sale": "1.786",
+            "rent": "10,83"
+        },
+        {
+            "name": "Cittiglio",
+            "sale": "1.197",
+            "rent": "9,03"
+        },
+        {
+            "name": "Clivio",
+            "sale": "1.501",
+            "rent": "10,63"
+        },
+        {
+            "name": "Cocquio-Trevisago",
+            "sale": "1.101",
+            "rent": "7,62"
+        },
+        {
+            "name": "Comabbio",
+            "sale": "1.990",
+            "rent": "9,44"
+        },
+        {
+            "name": "Comerio",
+            "sale": "2.156",
+            "rent": "9,63"
+        },
+        {
+            "name": "Cremenaga",
+            "sale": "1.651",
+            "rent": "9,95"
+        },
+        {
+            "name": "Crosio della Valle",
+            "sale": "1.340",
+            "rent": "9,31"
+        },
+        {
+            "name": "Cuasso al Monte",
+            "sale": "1.144",
+            "rent": "8,19"
+        },
+        {
+            "name": "Cugliate-Fabiasco",
+            "sale": "1.235",
+            "rent": "9,69"
+        },
+        {
+            "name": "Cunardo",
+            "sale": "1.767",
+            "rent": "9,44"
+        },
+        {
+            "name": "Curiglia con Monteviasco",
+            "sale": "442",
+            "rent": "11,23"
+        },
+        {
+            "name": "Cuveglio",
+            "sale": "1.133",
+            "rent": "9,16"
+        },
+        {
+            "name": "Cuvio",
+            "sale": "951",
+            "rent": "7,96"
+        },
+        {
+            "name": "Daverio",
+            "sale": "1.540",
+            "rent": "9,8"
+        },
+        {
+            "name": "Dumenza",
+            "sale": "1.219",
+            "rent": "10,62"
+        },
+        {
+            "name": "Duno",
+            "sale": "587",
+            "rent": "8,9"
+        },
+        {
+            "name": "Fagnano Olona",
+            "sale": "1.551",
+            "rent": "10,71"
+        },
+        {
+            "name": "Ferno",
+            "sale": "1.396",
+            "rent": "11,63"
+        },
+        {
+            "name": "Ferrera di Varese",
+            "sale": "1.265",
+            "rent": "9,2"
+        },
+        {
+            "name": "Gallarate",
+            "sale": "1.783",
+            "rent": "11,01"
+        },
+        {
+            "name": "Galliate Lombardo",
+            "sale": "1.808",
+            "rent": "9,14"
+        },
+        {
+            "name": "Gavirate",
+            "sale": "1.508",
+            "rent": "10,32"
+        },
+        {
+            "name": "Gazzada Schianno",
+            "sale": "1.272",
+            "rent": "9,48"
+        },
+        {
+            "name": "Gemonio",
+            "sale": "1.073",
+            "rent": "9,22"
+        },
+        {
+            "name": "Gerenzano",
+            "sale": "1.814",
+            "rent": "9,69"
+        },
+        {
+            "name": "Germignaga",
+            "sale": "1.960",
+            "rent": "9,87"
+        },
+        {
+            "name": "Golasecca",
+            "sale": "971",
+            "rent": "9,9"
+        },
+        {
+            "name": "Gorla Maggiore",
+            "sale": "1.345",
+            "rent": "10,21"
+        },
+        {
+            "name": "Gorla Minore",
+            "sale": "1.578",
+            "rent": "9,21"
+        },
+        {
+            "name": "Gornate-Olona",
+            "sale": "1.439",
+            "rent": "8,82"
+        },
+        {
+            "name": "Grantola",
+            "sale": "1.117",
+            "rent": "9,27"
+        },
+        {
+            "name": "Inarzo",
+            "sale": "1.170",
+            "rent": "9,26"
+        },
+        {
+            "name": "Induno Olona",
+            "sale": "1.639",
+            "rent": "10,54"
+        },
+        {
+            "name": "Ispra",
+            "sale": "1.895",
+            "rent": "9,74"
+        },
+        {
+            "name": "Jerago con Orago",
+            "sale": "1.309",
+            "rent": "7,99"
+        },
+        {
+            "name": "Lavena Ponte Tresa",
+            "sale": "2.452",
+            "rent": "12,94"
+        },
+        {
+            "name": "Laveno-Mombello",
+            "sale": "2.044",
+            "rent": "9,11"
+        },
+        {
+            "name": "Leggiuno",
+            "sale": "1.767",
+            "rent": "11,15"
+        },
+        {
+            "name": "Lonate Ceppino",
+            "sale": "1.384",
+            "rent": "8,73"
+        },
+        {
+            "name": "Lonate Pozzolo",
+            "sale": "1.395",
+            "rent": "9,52"
+        },
+        {
+            "name": "Lozza",
+            "sale": "1.890",
+            "rent": "9,67"
+        },
+        {
+            "name": "Luino",
+            "sale": "2.056",
+            "rent": "11,25"
+        },
+        {
+            "name": "Luvinate",
+            "sale": "1.953",
+            "rent": "9,58"
+        },
+        {
+            "name": "Maccagno con Pino e Veddasca",
+            "sale": "2.248",
+            "rent": "12,63"
+        },
+        {
+            "name": "Malnate",
+            "sale": "1.597",
+            "rent": "9,78"
+        },
+        {
+            "name": "Marchirolo",
+            "sale": "1.366",
+            "rent": "10,6"
+        },
+        {
+            "name": "Marnate",
+            "sale": "1.831",
+            "rent": "10,29"
+        },
+        {
+            "name": "Marzio",
+            "sale": "1.619",
+            "rent": "10,4"
+        },
+        {
+            "name": "Masciago Primo",
+            "sale": "782",
+            "rent": "9,11"
+        },
+        {
+            "name": "Mercallo",
+            "sale": "1.528",
+            "rent": "9,07"
+        },
+        {
+            "name": "Mesenzana",
+            "sale": "1.783",
+            "rent": "9,13"
+        },
+        {
+            "name": "Montegrino Valtravaglia",
+            "sale": "1.002",
+            "rent": "9,93"
+        },
+        {
+            "name": "Monvalle",
+            "sale": "1.649",
+            "rent": "9,3"
+        },
+        {
+            "name": "Morazzone",
+            "sale": "1.453",
+            "rent": "10,22"
+        },
+        {
+            "name": "Mornago",
+            "sale": "1.438",
+            "rent": "8,59"
+        },
+        {
+            "name": "Oggiona con Santo Stefano",
+            "sale": "1.573",
+            "rent": "11,66"
+        },
+        {
+            "name": "Olgiate Olona",
+            "sale": "1.761",
+            "rent": "9,8"
+        },
+        {
+            "name": "Origgio",
+            "sale": "2.138",
+            "rent": "10,67"
+        },
+        {
+            "name": "Orino",
+            "sale": "1.140",
+            "rent": "8,86"
+        },
+        {
+            "name": "Porto Ceresio",
+            "sale": "1.879",
+            "rent": "9,07"
+        },
+        {
+            "name": "Porto Valtravaglia",
+            "sale": "2.304",
+            "rent": "9,45"
+        },
+        {
+            "name": "Rancio Valcuvia",
+            "sale": "1.058",
+            "rent": "8,94"
+        },
+        {
+            "name": "Ranco",
+            "sale": "2.916",
+            "rent": "11,58"
+        },
+        {
+            "name": "Saltrio",
+            "sale": "1.694",
+            "rent": "8,97"
+        },
+        {
+            "name": "Samarate",
+            "sale": "1.303",
+            "rent": "10,3"
+        },
+        {
+            "name": "Sangiano",
+            "sale": "1.058",
+            "rent": "10,05"
+        },
+        {
+            "name": "Saronno",
+            "sale": "2.428",
+            "rent": "12,42"
+        },
+        {
+            "name": "Sesto Calende",
+            "sale": "2.183",
+            "rent": "10,94"
+        },
+        {
+            "name": "Solbiate Arno",
+            "sale": "1.390",
+            "rent": "11,49"
+        },
+        {
+            "name": "Solbiate Olona",
+            "sale": "1.626",
+            "rent": "11,31"
+        },
+        {
+            "name": "Somma Lombardo",
+            "sale": "1.456",
+            "rent": "10,97"
+        },
+        {
+            "name": "Sumirago",
+            "sale": "1.215",
+            "rent": "10,2"
+        },
+        {
+            "name": "Taino",
+            "sale": "1.488",
+            "rent": "9,22"
+        },
+        {
+            "name": "Ternate",
+            "sale": "1.794",
+            "rent": "9,37"
+        },
+        {
+            "name": "Tradate",
+            "sale": "1.563",
+            "rent": "10,77"
+        },
+        {
+            "name": "Travedona-Monate",
+            "sale": "1.557",
+            "rent": "10,42"
+        },
+        {
+            "name": "Tronzano Lago Maggiore",
+            "sale": "2.394",
+            "rent": "11,43"
+        },
+        {
+            "name": "Uboldo",
+            "sale": "1.965",
+            "rent": "9,36"
+        },
+        {
+            "name": "Valganna",
+            "sale": "1.047",
+            "rent": "8,55"
+        },
+        {
+            "name": "Varano Borghi",
+            "sale": "1.384",
+            "rent": "9,25"
+        },
+        {
+            "name": "Vedano Olona",
+            "sale": "1.498",
+            "rent": "8,25"
+        },
+        {
+            "name": "Venegono Inferiore",
+            "sale": "1.507",
+            "rent": "7,77"
+        },
+        {
+            "name": "Venegono Superiore",
+            "sale": "1.421",
+            "rent": "11,49"
+        },
+        {
+            "name": "Vergiate",
+            "sale": "1.435",
+            "rent": "10,07"
+        },
+        {
+            "name": "Viggiù",
+            "sale": "1.477",
+            "rent": "10,63"
+        },
+        {
+            "name": "Vizzola Ticino",
+            "sale": "1.749",
+            "rent": "8,96"
+        }
+    ],
+    "Lodi": [
+        {
+            "name": "Lodi",
+            "sale": "1.984",
+            "rent": "10,47"
+        },
+        {
+            "name": "Abbadia Cerreto",
+            "sale": "795",
+            "rent": "8,62"
+        },
+        {
+            "name": "Bertonico",
+            "sale": "870",
+            "rent": "8,06"
+        },
+        {
+            "name": "Boffalora d'Adda",
+            "sale": "1.368",
+            "rent": "10,55"
+        },
+        {
+            "name": "Borghetto Lodigiano",
+            "sale": "1.242",
+            "rent": "8,4"
+        },
+        {
+            "name": "Borgo San Giovanni",
+            "sale": "1.369",
+            "rent": "7,11"
+        },
+        {
+            "name": "Brembio",
+            "sale": "1.085",
+            "rent": "7,95"
+        },
+        {
+            "name": "Casaletto Lodigiano",
+            "sale": "1.491",
+            "rent": "9,04"
+        },
+        {
+            "name": "Casalmaiocco",
+            "sale": "1.734",
+            "rent": "8,24"
+        },
+        {
+            "name": "Casalpusterlengo",
+            "sale": "1.369",
+            "rent": "7,29"
+        },
+        {
+            "name": "Caselle Landi",
+            "sale": "460",
+            "rent": "6,39"
+        },
+        {
+            "name": "Caselle Lurani",
+            "sale": "1.242",
+            "rent": "9,86"
+        },
+        {
+            "name": "Castelgerundo",
+            "sale": "1.038",
+            "rent": "7,63"
+        },
+        {
+            "name": "Castelnuovo Bocca d'Adda",
+            "sale": "630",
+            "rent": "3,44"
+        },
+        {
+            "name": "Castiglione d'Adda",
+            "sale": "964",
+            "rent": "6,12"
+        },
+        {
+            "name": "Castiraga Vidardo",
+            "sale": "1.598",
+            "rent": "8,55"
+        },
+        {
+            "name": "Cavenago d'Adda",
+            "sale": "1.010",
+            "rent": "7,91"
+        },
+        {
+            "name": "Cervignano d'Adda",
+            "sale": "1.787",
+            "rent": "9,96"
+        },
+        {
+            "name": "Codogno",
+            "sale": "1.414",
+            "rent": "8,46"
+        },
+        {
+            "name": "Comazzo",
+            "sale": "1.732",
+            "rent": "11,7"
+        },
+        {
+            "name": "Cornegliano Laudense",
+            "sale": "1.422",
+            "rent": "11,26"
+        },
+        {
+            "name": "Corno Giovine",
+            "sale": "685",
+            "rent": "7,49"
+        },
+        {
+            "name": "Cornovecchio",
+            "sale": "444",
+            "rent": "6,77"
+        },
+        {
+            "name": "Corte Palasio",
+            "sale": "1.130",
+            "rent": "8,78"
+        },
+        {
+            "name": "Crespiatica",
+            "sale": "1.031",
+            "rent": "9,35"
+        },
+        {
+            "name": "Fombio",
+            "sale": "1.376",
+            "rent": "11,04"
+        },
+        {
+            "name": "Galgagnano",
+            "sale": "1.414",
+            "rent": "9,73"
+        },
+        {
+            "name": "Graffignana",
+            "sale": "1.398",
+            "rent": "8,13"
+        },
+        {
+            "name": "Guardamiglio",
+            "sale": "950",
+            "rent": "8,97"
+        },
+        {
+            "name": "Livraga",
+            "sale": "1.004",
+            "rent": "8,46"
+        },
+        {
+            "name": "Lodi Vecchio",
+            "sale": "1.417",
+            "rent": "8,82"
+        },
+        {
+            "name": "Maccastorna",
+            "sale": "580",
+            "rent": "7,24"
+        },
+        {
+            "name": "Mairago",
+            "sale": "1.126",
+            "rent": "8,07"
+        },
+        {
+            "name": "Maleo",
+            "sale": "1.028",
+            "rent": "7,63"
+        },
+        {
+            "name": "Marudo",
+            "sale": "1.307",
+            "rent": "7,31"
+        },
+        {
+            "name": "Massalengo",
+            "sale": "1.451",
+            "rent": "9,47"
+        },
+        {
+            "name": "Meleti",
+            "sale": "349",
+            "rent": "5,88"
+        },
+        {
+            "name": "Merlino",
+            "sale": "1.595",
+            "rent": "10,3"
+        },
+        {
+            "name": "Montanaso Lombardo",
+            "sale": "1.606",
+            "rent": "8,87"
+        },
+        {
+            "name": "Mulazzano",
+            "sale": "1.486",
+            "rent": "10,89"
+        },
+        {
+            "name": "Orio Litta",
+            "sale": "852",
+            "rent": "8,37"
+        },
+        {
+            "name": "Ospedaletto Lodigiano",
+            "sale": "937",
+            "rent": "8,33"
+        },
+        {
+            "name": "Ossago Lodigiano",
+            "sale": "1.064",
+            "rent": "8,6"
+        },
+        {
+            "name": "Pieve Fissiraga",
+            "sale": "1.510",
+            "rent": "8,34"
+        },
+        {
+            "name": "Salerano sul Lambro",
+            "sale": "1.391",
+            "rent": "8,6"
+        },
+        {
+            "name": "San Fiorano",
+            "sale": "1.164",
+            "rent": "9,05"
+        },
+        {
+            "name": "San Martino in Strada",
+            "sale": "1.579",
+            "rent": "7,85"
+        },
+        {
+            "name": "San Rocco al Porto",
+            "sale": "1.156",
+            "rent": "8,28"
+        },
+        {
+            "name": "Sant'Angelo Lodigiano",
+            "sale": "1.137",
+            "rent": "8,88"
+        },
+        {
+            "name": "Santo Stefano Lodigiano",
+            "sale": "987",
+            "rent": "8,37"
+        },
+        {
+            "name": "Secugnago",
+            "sale": "1.105",
+            "rent": "8,02"
+        },
+        {
+            "name": "Senna Lodigiana",
+            "sale": "760",
+            "rent": "8,68"
+        },
+        {
+            "name": "Somaglia",
+            "sale": "1.119",
+            "rent": "8,62"
+        },
+        {
+            "name": "Sordio",
+            "sale": "1.826",
+            "rent": "10,39"
+        },
+        {
+            "name": "Tavazzano con Villavesco",
+            "sale": "1.665",
+            "rent": "10,37"
+        },
+        {
+            "name": "Terranova dei Passerini",
+            "sale": "1.025",
+            "rent": "7,62"
+        },
+        {
+            "name": "Turano Lodigiano",
+            "sale": "925",
+            "rent": "8,33"
+        },
+        {
+            "name": "Valera Fratta",
+            "sale": "1.216",
+            "rent": "8,28"
+        },
+        {
+            "name": "Villanova del Sillaro",
+            "sale": "1.224",
+            "rent": "8,64"
+        },
+        {
+            "name": "Zelo Buon Persico",
+            "sale": "1.849",
+            "rent": "10,52"
+        }
+    ],
+    "Cremona": [
+        {
+            "name": "Cremona",
+            "sale": "1.535",
+            "rent": "8,72"
+        },
+        {
+            "name": "Acquanegra Cremonese",
+            "sale": "615",
+            "rent": "7,32"
+        },
+        {
+            "name": "Agnadello",
+            "sale": "1.400",
+            "rent": "7,97"
+        },
+        {
+            "name": "Annicco",
+            "sale": "690",
+            "rent": "7,8"
+        },
+        {
+            "name": "Azzanello",
+            "sale": "447",
+            "rent": "7,85"
+        },
+        {
+            "name": "Bagnolo Cremasco",
+            "sale": "1.358",
+            "rent": "9,41"
+        },
+        {
+            "name": "Bonemerse",
+            "sale": "1.432",
+            "rent": "6,68"
+        },
+        {
+            "name": "Bordolano",
+            "sale": "495",
+            "rent": "7,35"
+        },
+        {
+            "name": "Calvatone",
+            "sale": "393",
+            "rent": "7,31"
+        },
+        {
+            "name": "Camisano",
+            "sale": "774",
+            "rent": "8,44"
+        },
+        {
+            "name": "Campagnola Cremasca",
+            "sale": "1.606",
+            "rent": "8,06"
+        },
+        {
+            "name": "Capergnanica",
+            "sale": "935",
+            "rent": "8,81"
+        },
+        {
+            "name": "Cappella Cantone",
+            "sale": "717",
+            "rent": "7,58"
+        },
+        {
+            "name": "Cappella de' Picenardi",
+            "sale": "345",
+            "rent": "5,56"
+        },
+        {
+            "name": "Capralba",
+            "sale": "1.245",
+            "rent": "8,14"
+        },
+        {
+            "name": "Casalbuttano ed Uniti",
+            "sale": "773",
+            "rent": "7,77"
+        },
+        {
+            "name": "Casale Cremasco-Vidolasco",
+            "sale": "1.233",
+            "rent": "8,18"
+        },
+        {
+            "name": "Casaletto Ceredano",
+            "sale": "866",
+            "rent": "7,95"
+        },
+        {
+            "name": "Casaletto di Sopra",
+            "sale": "996",
+            "rent": "8,26"
+        },
+        {
+            "name": "Casaletto Vaprio",
+            "sale": "1.178",
+            "rent": "8,21"
+        },
+        {
+            "name": "Casalmaggiore",
+            "sale": "1.042",
+            "rent": "7,5"
+        },
+        {
+            "name": "Casalmorano",
+            "sale": "543",
+            "rent": "7,78"
+        },
+        {
+            "name": "Castel Gabbiano",
+            "sale": "1.077",
+            "rent": "8,19"
+        },
+        {
+            "name": "Casteldidone",
+            "sale": "382",
+            "rent": "6,79"
+        },
+        {
+            "name": "Castelleone",
+            "sale": "1.120",
+            "rent": "6,96"
+        },
+        {
+            "name": "Castelverde",
+            "sale": "1.171",
+            "rent": "6,44"
+        },
+        {
+            "name": "Castelvisconti",
+            "sale": "261",
+            "rent": "7,43"
+        },
+        {
+            "name": "Cella Dati",
+            "sale": "507",
+            "rent": "6,41"
+        },
+        {
+            "name": "Chieve",
+            "sale": "1.384",
+            "rent": "8,79"
+        },
+        {
+            "name": "Cicognolo",
+            "sale": "792",
+            "rent": "6,41"
+        },
+        {
+            "name": "Cingia de' Botti",
+            "sale": "571",
+            "rent": "6,43"
+        },
+        {
+            "name": "Corte de' Cortesi con Cignone",
+            "sale": "624",
+            "rent": "7,6"
+        },
+        {
+            "name": "Corte de' Frati",
+            "sale": "859",
+            "rent": "7,27"
+        },
+        {
+            "name": "Credera Rubbiano",
+            "sale": "746",
+            "rent": "7,92"
+        },
+        {
+            "name": "Crema",
+            "sale": "1.747",
+            "rent": "10,49"
+        },
+        {
+            "name": "Cremosano",
+            "sale": "1.139",
+            "rent": "8,04"
+        },
+        {
+            "name": "Crotta d'Adda",
+            "sale": "483",
+            "rent": "7,25"
+        },
+        {
+            "name": "Cumignano sul Naviglio",
+            "sale": "959",
+            "rent": "8,29"
+        },
+        {
+            "name": "Derovere",
+            "sale": "551",
+            "rent": "6,25"
+        },
+        {
+            "name": "Dovera",
+            "sale": "1.424",
+            "rent": "8,29"
+        },
+        {
+            "name": "Fiesco",
+            "sale": "1.629",
+            "rent": "8,08"
+        },
+        {
+            "name": "Formigara",
+            "sale": "599",
+            "rent": "7,55"
+        },
+        {
+            "name": "Gabbioneta-Binanuova",
+            "sale": "456",
+            "rent": "6,36"
+        },
+        {
+            "name": "Gadesco-Pieve Delmona",
+            "sale": "1.004",
+            "rent": "8,72"
+        },
+        {
+            "name": "Genivolta",
+            "sale": "761",
+            "rent": "8,05"
+        },
+        {
+            "name": "Gerre de' Caprioli",
+            "sale": "1.030",
+            "rent": "7,01"
+        },
+        {
+            "name": "Gombito",
+            "sale": "799",
+            "rent": "7,71"
+        },
+        {
+            "name": "Grontardo",
+            "sale": "814",
+            "rent": "7,08"
+        },
+        {
+            "name": "Grumello Cremonese ed Uniti",
+            "sale": "651",
+            "rent": "7,46"
+        },
+        {
+            "name": "Gussola",
+            "sale": "591",
+            "rent": "6,8"
+        },
+        {
+            "name": "Isola Dovarese",
+            "sale": "497",
+            "rent": "6,4"
+        },
+        {
+            "name": "Izano",
+            "sale": "1.116",
+            "rent": "8,62"
+        },
+        {
+            "name": "Madignano",
+            "sale": "1.182",
+            "rent": "9,79"
+        },
+        {
+            "name": "Malagnino",
+            "sale": "1.384",
+            "rent": "7,25"
+        },
+        {
+            "name": "Martignana di Po",
+            "sale": "862",
+            "rent": "7,13"
+        },
+        {
+            "name": "Monte Cremasco",
+            "sale": "1.356",
+            "rent": "8,57"
+        },
+        {
+            "name": "Montodine",
+            "sale": "794",
+            "rent": "7,85"
+        },
+        {
+            "name": "Moscazzano",
+            "sale": "728",
+            "rent": "7,9"
+        },
+        {
+            "name": "Motta Baluffi",
+            "sale": "760",
+            "rent": "6,53"
+        },
+        {
+            "name": "Offanengo",
+            "sale": "1.228",
+            "rent": "7,4"
+        },
+        {
+            "name": "Olmeneta",
+            "sale": "436",
+            "rent": "7,31"
+        },
+        {
+            "name": "Ostiano",
+            "sale": "499",
+            "rent": "6,38"
+        },
+        {
+            "name": "Paderno Ponchielli",
+            "sale": "512",
+            "rent": "7,68"
+        },
+        {
+            "name": "Palazzo Pignano",
+            "sale": "1.105",
+            "rent": "7,29"
+        },
+        {
+            "name": "Pandino",
+            "sale": "1.574",
+            "rent": "8,65"
+        },
+        {
+            "name": "Persico Dosimo",
+            "sale": "1.039",
+            "rent": "8"
+        },
+        {
+            "name": "Pescarolo ed Uniti",
+            "sale": "481",
+            "rent": "6,62"
+        },
+        {
+            "name": "Pessina Cremonese",
+            "sale": "206",
+            "rent": "6,37"
+        },
+        {
+            "name": "Piadena Drizzona",
+            "sale": "723",
+            "rent": "6,29"
+        },
+        {
+            "name": "Pianengo",
+            "sale": "982",
+            "rent": "8,08"
+        },
+        {
+            "name": "Pieranica",
+            "sale": "1.794",
+            "rent": "8,03"
+        },
+        {
+            "name": "Pieve d'Olmi",
+            "sale": "963",
+            "rent": "6,75"
+        },
+        {
+            "name": "Pieve San Giacomo",
+            "sale": "772",
+            "rent": "5,94"
+        },
+        {
+            "name": "Pizzighettone",
+            "sale": "813",
+            "rent": "6,58"
+        },
+        {
+            "name": "Pozzaglio ed Uniti",
+            "sale": "902",
+            "rent": "7,46"
+        },
+        {
+            "name": "Quintano",
+            "sale": "1.532",
+            "rent": "8,14"
+        },
+        {
+            "name": "Ricengo",
+            "sale": "1.371",
+            "rent": "8,19"
+        },
+        {
+            "name": "Ripalta Arpina",
+            "sale": "641",
+            "rent": "7,89"
+        },
+        {
+            "name": "Ripalta Cremasca",
+            "sale": "1.282",
+            "rent": "8,88"
+        },
+        {
+            "name": "Ripalta Guerina",
+            "sale": "1.175",
+            "rent": "7,95"
+        },
+        {
+            "name": "Rivarolo del Re ed Uniti",
+            "sale": "489",
+            "rent": "6,88"
+        },
+        {
+            "name": "Rivolta d'Adda",
+            "sale": "1.583",
+            "rent": "7,72"
+        },
+        {
+            "name": "Robecco d'Oglio",
+            "sale": "787",
+            "rent": "7,22"
+        },
+        {
+            "name": "Romanengo",
+            "sale": "1.080",
+            "rent": "8,4"
+        },
+        {
+            "name": "Salvirola",
+            "sale": "1.438",
+            "rent": "8,29"
+        },
+        {
+            "name": "San Bassano",
+            "sale": "781",
+            "rent": "7,49"
+        },
+        {
+            "name": "San Daniele Po",
+            "sale": "474",
+            "rent": "6,61"
+        },
+        {
+            "name": "San Giovanni in Croce",
+            "sale": "834",
+            "rent": "6,71"
+        },
+        {
+            "name": "San Martino del Lago",
+            "sale": "395",
+            "rent": "6,47"
+        },
+        {
+            "name": "Scandolara Ravara",
+            "sale": "347",
+            "rent": "6,52"
+        },
+        {
+            "name": "Scandolara Ripa d'Oglio",
+            "sale": "549",
+            "rent": "7,29"
+        },
+        {
+            "name": "Sergnano",
+            "sale": "1.060",
+            "rent": "8,19"
+        },
+        {
+            "name": "Sesto ed Uniti",
+            "sale": "1.033",
+            "rent": "7,44"
+        },
+        {
+            "name": "Solarolo Rainerio",
+            "sale": "848",
+            "rent": "6,63"
+        },
+        {
+            "name": "Soncino",
+            "sale": "958",
+            "rent": "8,34"
+        },
+        {
+            "name": "Soresina",
+            "sale": "802",
+            "rent": "7,02"
+        },
+        {
+            "name": "Sospiro",
+            "sale": "959",
+            "rent": "6,55"
+        },
+        {
+            "name": "Spinadesco",
+            "sale": "829",
+            "rent": "7,25"
+        },
+        {
+            "name": "Spineda",
+            "sale": "434",
+            "rent": "7,07"
+        },
+        {
+            "name": "Spino d'Adda",
+            "sale": "1.639",
+            "rent": "8,17"
+        },
+        {
+            "name": "Stagno Lombardo",
+            "sale": "1.492",
+            "rent": "6,86"
+        },
+        {
+            "name": "Ticengo",
+            "sale": "1.021",
+            "rent": "8,29"
+        },
+        {
+            "name": "Torlino Vimercati",
+            "sale": "1.640",
+            "rent": "8,02"
+        },
+        {
+            "name": "Tornata",
+            "sale": "510",
+            "rent": "6,58"
+        },
+        {
+            "name": "Torre de' Picenardi",
+            "sale": "611",
+            "rent": "6,31"
+        },
+        {
+            "name": "Torricella del Pizzo",
+            "sale": "563",
+            "rent": "6,57"
+        },
+        {
+            "name": "Trescore Cremasco",
+            "sale": "1.265",
+            "rent": "8,05"
+        },
+        {
+            "name": "Trigolo",
+            "sale": "661",
+            "rent": "8,1"
+        },
+        {
+            "name": "Vaiano Cremasco",
+            "sale": "1.079",
+            "rent": "8,76"
+        },
+        {
+            "name": "Vailate",
+            "sale": "1.456",
+            "rent": "8,82"
+        },
+        {
+            "name": "Vescovato",
+            "sale": "836",
+            "rent": "7,03"
+        },
+        {
+            "name": "Volongo",
+            "sale": "545",
+            "rent": "6,37"
+        },
+        {
+            "name": "Voltido",
+            "sale": "689",
+            "rent": "6,44"
+        }
+    ],
+    "Pavia": [
+        {
+            "name": "Pavia",
+            "sale": "2.477",
+            "rent": "11,33"
+        },
+        {
+            "name": "Alagna",
+            "sale": "676",
+            "rent": "6,59"
+        },
+        {
+            "name": "Albonese",
+            "sale": "406",
+            "rent": "6,75"
+        },
+        {
+            "name": "Albuzzano",
+            "sale": "1.281",
+            "rent": "7,39"
+        },
+        {
+            "name": "Arena Po",
+            "sale": "552",
+            "rent": "6,99"
+        },
+        {
+            "name": "Badia Pavese",
+            "sale": "673",
+            "rent": "6,86"
+        },
+        {
+            "name": "Bagnaria",
+            "sale": "505",
+            "rent": "7,3"
+        },
+        {
+            "name": "Barbianello",
+            "sale": "684",
+            "rent": "7,63"
+        },
+        {
+            "name": "Bascapè",
+            "sale": "1.169",
+            "rent": "7,57"
+        },
+        {
+            "name": "Bastida Pancarana",
+            "sale": "559",
+            "rent": "7,3"
+        },
+        {
+            "name": "Battuda",
+            "sale": "1.109",
+            "rent": "9,06"
+        },
+        {
+            "name": "Belgioioso",
+            "sale": "1.094",
+            "rent": "7,12"
+        },
+        {
+            "name": "Bereguardo",
+            "sale": "1.620",
+            "rent": "6,9"
+        },
+        {
+            "name": "Borgarello",
+            "sale": "1.588",
+            "rent": "6,89"
+        },
+        {
+            "name": "Borgo Priolo",
+            "sale": "751",
+            "rent": "7,29"
+        },
+        {
+            "name": "Borgo San Siro",
+            "sale": "797",
+            "rent": "8,46"
+        },
+        {
+            "name": "Borgoratto Mormorolo",
+            "sale": "428",
+            "rent": "7,54"
+        },
+        {
+            "name": "Bornasco",
+            "sale": "1.305",
+            "rent": "10,15"
+        },
+        {
+            "name": "Bosnasco",
+            "sale": "835",
+            "rent": "7,02"
+        },
+        {
+            "name": "Brallo di Pregola",
+            "sale": "424",
+            "rent": "7,41"
+        },
+        {
+            "name": "Breme",
+            "sale": "452",
+            "rent": "5,16"
+        },
+        {
+            "name": "Bressana Bottarone",
+            "sale": "784",
+            "rent": "7,49"
+        },
+        {
+            "name": "Broni",
+            "sale": "906",
+            "rent": "6,03"
+        },
+        {
+            "name": "Calvignano",
+            "sale": "1.420",
+            "rent": "7,06"
+        },
+        {
+            "name": "Campospinoso Albaredo",
+            "sale": "704",
+            "rent": "8,03"
+        },
+        {
+            "name": "Candia Lomellina",
+            "sale": "498",
+            "rent": "5,62"
+        },
+        {
+            "name": "Canneto Pavese",
+            "sale": "645",
+            "rent": "7,74"
+        },
+        {
+            "name": "Carbonara al Ticino",
+            "sale": "942",
+            "rent": "8,12"
+        },
+        {
+            "name": "Casanova Lonati",
+            "sale": "488",
+            "rent": "7,75"
+        },
+        {
+            "name": "Casatisma",
+            "sale": "804",
+            "rent": "7,43"
+        },
+        {
+            "name": "Casei Gerola",
+            "sale": "626",
+            "rent": "6,42"
+        },
+        {
+            "name": "Casorate Primo",
+            "sale": "1.647",
+            "rent": "11,12"
+        },
+        {
+            "name": "Cassolnovo",
+            "sale": "918",
+            "rent": "7,7"
+        },
+        {
+            "name": "Castana",
+            "sale": "791",
+            "rent": "7,63"
+        },
+        {
+            "name": "Casteggio",
+            "sale": "1.016",
+            "rent": "6,58"
+        },
+        {
+            "name": "Castelletto di Branduzzo",
+            "sale": "1.041",
+            "rent": "7,18"
+        },
+        {
+            "name": "Castello d'Agogna",
+            "sale": "706",
+            "rent": "6,63"
+        },
+        {
+            "name": "Castelnovetto",
+            "sale": "549",
+            "rent": "6,2"
+        },
+        {
+            "name": "Cava Manara",
+            "sale": "1.343",
+            "rent": "8,75"
+        },
+        {
+            "name": "Cecima",
+            "sale": "553",
+            "rent": "7,18"
+        },
+        {
+            "name": "Ceranova",
+            "sale": "1.379",
+            "rent": "8,13"
+        },
+        {
+            "name": "Ceretto Lomellina",
+            "sale": "656",
+            "rent": "6,54"
+        },
+        {
+            "name": "Cergnago",
+            "sale": "697",
+            "rent": "6,65"
+        },
+        {
+            "name": "Certosa di Pavia",
+            "sale": "1.560",
+            "rent": "10,13"
+        },
+        {
+            "name": "Cervesina",
+            "sale": "382",
+            "rent": "6,95"
+        },
+        {
+            "name": "Chignolo Po",
+            "sale": "750",
+            "rent": "7,3"
+        },
+        {
+            "name": "Cigognola",
+            "sale": "557",
+            "rent": "7,52"
+        },
+        {
+            "name": "Cilavegna",
+            "sale": "866",
+            "rent": "6,62"
+        },
+        {
+            "name": "Codevilla",
+            "sale": "614",
+            "rent": "7,7"
+        },
+        {
+            "name": "Colli Verdi",
+            "sale": "617",
+            "rent": "7,43"
+        },
+        {
+            "name": "Confienza",
+            "sale": "514",
+            "rent": "6,08"
+        },
+        {
+            "name": "Copiano",
+            "sale": "1.065",
+            "rent": "7,46"
+        },
+        {
+            "name": "Corana",
+            "sale": "587",
+            "rent": "6,46"
+        },
+        {
+            "name": "Cornale e Bastida",
+            "sale": "515",
+            "rent": "6,36"
+        },
+        {
+            "name": "Corteolona e Genzone",
+            "sale": "650",
+            "rent": "6,95"
+        },
+        {
+            "name": "Corvino San Quirico",
+            "sale": "546",
+            "rent": "6,98"
+        },
+        {
+            "name": "Costa de' Nobili",
+            "sale": "634",
+            "rent": "6,87"
+        },
+        {
+            "name": "Cozzo",
+            "sale": "310",
+            "rent": "6,06"
+        },
+        {
+            "name": "Cura Carpignano",
+            "sale": "1.415",
+            "rent": "8,57"
+        },
+        {
+            "name": "Dorno",
+            "sale": "786",
+            "rent": "6,62"
+        },
+        {
+            "name": "Ferrera Erbognone",
+            "sale": "629",
+            "rent": "5,72"
+        },
+        {
+            "name": "Filighera",
+            "sale": "825",
+            "rent": "7,44"
+        },
+        {
+            "name": "Fortunago",
+            "sale": "724",
+            "rent": "7,34"
+        },
+        {
+            "name": "Frascarolo",
+            "sale": "466",
+            "rent": "5,38"
+        },
+        {
+            "name": "Galliavola",
+            "sale": "323",
+            "rent": "5,46"
+        },
+        {
+            "name": "Gambarana",
+            "sale": "281",
+            "rent": "5,46"
+        },
+        {
+            "name": "Gambolò",
+            "sale": "984",
+            "rent": "7,49"
+        },
+        {
+            "name": "Garlasco",
+            "sale": "1.052",
+            "rent": "6,91"
+        },
+        {
+            "name": "Gerenzago",
+            "sale": "992",
+            "rent": "6,74"
+        },
+        {
+            "name": "Giussago",
+            "sale": "1.498",
+            "rent": "9,84"
+        },
+        {
+            "name": "Godiasco Salice Terme",
+            "sale": "1.208",
+            "rent": "8,57"
+        },
+        {
+            "name": "Golferenzo",
+            "sale": "951",
+            "rent": "7,23"
+        },
+        {
+            "name": "Gravellona Lomellina",
+            "sale": "1.061",
+            "rent": "7,34"
+        },
+        {
+            "name": "Gropello Cairoli",
+            "sale": "1.057",
+            "rent": "6,42"
+        },
+        {
+            "name": "Inverno e Monteleone",
+            "sale": "837",
+            "rent": "7,83"
+        },
+        {
+            "name": "Landriano",
+            "sale": "1.577",
+            "rent": "9,24"
+        },
+        {
+            "name": "Langosco",
+            "sale": "375",
+            "rent": "7,58"
+        },
+        {
+            "name": "Lardirago",
+            "sale": "1.295",
+            "rent": "8,55"
+        },
+        {
+            "name": "Linarolo",
+            "sale": "1.095",
+            "rent": "8,15"
+        },
+        {
+            "name": "Lirio",
+            "sale": "764",
+            "rent": "7,66"
+        },
+        {
+            "name": "Lomello",
+            "sale": "652",
+            "rent": "5,73"
+        },
+        {
+            "name": "Lungavilla",
+            "sale": "985",
+            "rent": "7,29"
+        },
+        {
+            "name": "Magherno",
+            "sale": "1.162",
+            "rent": "7,21"
+        },
+        {
+            "name": "Marcignago",
+            "sale": "1.235",
+            "rent": "8,64"
+        },
+        {
+            "name": "Marzano",
+            "sale": "1.358",
+            "rent": "8,35"
+        },
+        {
+            "name": "Mede",
+            "sale": "746",
+            "rent": "4,93"
+        },
+        {
+            "name": "Menconico",
+            "sale": "750",
+            "rent": "7,42"
+        },
+        {
+            "name": "Mezzana Bigli",
+            "sale": "552",
+            "rent": "5,78"
+        },
+        {
+            "name": "Mezzana Rabattone",
+            "sale": "755",
+            "rent": "6,82"
+        },
+        {
+            "name": "Mezzanino",
+            "sale": "753",
+            "rent": "7,77"
+        },
+        {
+            "name": "Miradolo Terme",
+            "sale": "763",
+            "rent": "6,28"
+        },
+        {
+            "name": "Montalto Pavese",
+            "sale": "566",
+            "rent": "7,55"
+        },
+        {
+            "name": "Montebello della Battaglia",
+            "sale": "857",
+            "rent": "7,29"
+        },
+        {
+            "name": "Montecalvo Versiggia",
+            "sale": "736",
+            "rent": "7,65"
+        },
+        {
+            "name": "Montescano",
+            "sale": "794",
+            "rent": "7,61"
+        },
+        {
+            "name": "Montesegale",
+            "sale": "670",
+            "rent": "7,3"
+        },
+        {
+            "name": "Monticelli Pavese",
+            "sale": "357",
+            "rent": "8,76"
+        },
+        {
+            "name": "Montù Beccaria",
+            "sale": "624",
+            "rent": "7,1"
+        },
+        {
+            "name": "Mornico Losana",
+            "sale": "1.019",
+            "rent": "7,29"
+        },
+        {
+            "name": "Mortara",
+            "sale": "800",
+            "rent": "7,1"
+        },
+        {
+            "name": "Nicorvo",
+            "sale": "628",
+            "rent": "6,43"
+        },
+        {
+            "name": "Olevano di Lomellina",
+            "sale": "461",
+            "rent": "6,62"
+        },
+        {
+            "name": "Oliva Gessi",
+            "sale": "970",
+            "rent": "7,17"
+        },
+        {
+            "name": "Ottobiano",
+            "sale": "556",
+            "rent": "6,58"
+        },
+        {
+            "name": "Palestro",
+            "sale": "526",
+            "rent": "5,9"
+        },
+        {
+            "name": "Pancarana",
+            "sale": "737",
+            "rent": "7,04"
+        },
+        {
+            "name": "Parona",
+            "sale": "908",
+            "rent": "7,11"
+        },
+        {
+            "name": "Pietra de' Giorgi",
+            "sale": "711",
+            "rent": "7,57"
+        },
+        {
+            "name": "Pieve Albignola",
+            "sale": "509",
+            "rent": "6,77"
+        },
+        {
+            "name": "Pieve del Cairo",
+            "sale": "612",
+            "rent": "5,4"
+        },
+        {
+            "name": "Pieve Porto Morone",
+            "sale": "717",
+            "rent": "6,88"
+        },
+        {
+            "name": "Pinarolo Po",
+            "sale": "747",
+            "rent": "7,84"
+        },
+        {
+            "name": "Pizzale",
+            "sale": "742",
+            "rent": "7,67"
+        },
+        {
+            "name": "Ponte Nizza",
+            "sale": "569",
+            "rent": "7,29"
+        },
+        {
+            "name": "Portalbera",
+            "sale": "893",
+            "rent": "8,21"
+        },
+        {
+            "name": "Rea",
+            "sale": "446",
+            "rent": "8,29"
+        },
+        {
+            "name": "Redavalle",
+            "sale": "545",
+            "rent": "7,51"
+        },
+        {
+            "name": "Retorbido",
+            "sale": "779",
+            "rent": "7,88"
+        },
+        {
+            "name": "Rivanazzano Terme",
+            "sale": "1.182",
+            "rent": "8,24"
+        },
+        {
+            "name": "Robbio",
+            "sale": "892",
+            "rent": "5,69"
+        },
+        {
+            "name": "Robecco Pavese",
+            "sale": "504",
+            "rent": "7,35"
+        },
+        {
+            "name": "Rocca de' Giorgi",
+            "sale": "710",
+            "rent": "7,44"
+        },
+        {
+            "name": "Rocca Susella",
+            "sale": "807",
+            "rent": "7,18"
+        },
+        {
+            "name": "Rognano",
+            "sale": "1.533",
+            "rent": "9,44"
+        },
+        {
+            "name": "Romagnese",
+            "sale": "476",
+            "rent": "7,04"
+        },
+        {
+            "name": "Roncaro",
+            "sale": "1.325",
+            "rent": "8,14"
+        },
+        {
+            "name": "Rosasco",
+            "sale": "619",
+            "rent": "6,07"
+        },
+        {
+            "name": "Rovescala",
+            "sale": "622",
+            "rent": "7,04"
+        },
+        {
+            "name": "San Cipriano Po",
+            "sale": "766",
+            "rent": "7,48"
+        },
+        {
+            "name": "San Damiano al Colle",
+            "sale": "430",
+            "rent": "7,77"
+        },
+        {
+            "name": "San Genesio ed Uniti",
+            "sale": "1.918",
+            "rent": "8,54"
+        },
+        {
+            "name": "San Giorgio di Lomellina",
+            "sale": "407",
+            "rent": "6,31"
+        },
+        {
+            "name": "San Martino Siccomario",
+            "sale": "1.718",
+            "rent": "8,72"
+        },
+        {
+            "name": "San Zenone al Po",
+            "sale": "570",
+            "rent": "6,97"
+        },
+        {
+            "name": "Sannazzaro de' Burgondi",
+            "sale": "673",
+            "rent": "6,52"
+        },
+        {
+            "name": "Sant'Alessio con Vialone",
+            "sale": "1.885",
+            "rent": "8,1"
+        },
+        {
+            "name": "Sant'Angelo Lomellina",
+            "sale": "815",
+            "rent": "6,32"
+        },
+        {
+            "name": "Santa Cristina e Bissone",
+            "sale": "977",
+            "rent": "6,67"
+        },
+        {
+            "name": "Santa Giuletta",
+            "sale": "689",
+            "rent": "7,49"
+        },
+        {
+            "name": "Santa Margherita di Staffora",
+            "sale": "583",
+            "rent": "7,32"
+        },
+        {
+            "name": "Santa Maria della Versa",
+            "sale": "869",
+            "rent": "7,23"
+        },
+        {
+            "name": "Sartirana Lomellina",
+            "sale": "577",
+            "rent": "4,07"
+        },
+        {
+            "name": "Scaldasole",
+            "sale": "634",
+            "rent": "6,22"
+        },
+        {
+            "name": "Semiana",
+            "sale": "207",
+            "rent": "5,56"
+        },
+        {
+            "name": "Silvano Pietra",
+            "sale": "550",
+            "rent": "6,43"
+        },
+        {
+            "name": "Siziano",
+            "sale": "2.062",
+            "rent": "7,22"
+        },
+        {
+            "name": "Sommo",
+            "sale": "950",
+            "rent": "8,24"
+        },
+        {
+            "name": "Spessa",
+            "sale": "1.114",
+            "rent": "7,08"
+        },
+        {
+            "name": "Stradella",
+            "sale": "1.087",
+            "rent": "8,9"
+        },
+        {
+            "name": "Suardi",
+            "sale": "417",
+            "rent": "5,43"
+        },
+        {
+            "name": "Torrazza Coste",
+            "sale": "1.110",
+            "rent": "7,42"
+        },
+        {
+            "name": "Torre Beretti e Castellaro",
+            "sale": "660",
+            "rent": "5,04"
+        },
+        {
+            "name": "Torre d'Arese",
+            "sale": "1.148",
+            "rent": "8,34"
+        },
+        {
+            "name": "Torre d'Isola",
+            "sale": "1.924",
+            "rent": "9,76"
+        },
+        {
+            "name": "Torre de' Negri",
+            "sale": "608",
+            "rent": "7,05"
+        },
+        {
+            "name": "Torrevecchia Pia",
+            "sale": "1.410",
+            "rent": "6,57"
+        },
+        {
+            "name": "Torricella Verzate",
+            "sale": "1.018",
+            "rent": "7,14"
+        },
+        {
+            "name": "Travacò Siccomario",
+            "sale": "1.492",
+            "rent": "8,96"
+        },
+        {
+            "name": "Trivolzio",
+            "sale": "1.802",
+            "rent": "8,96"
+        },
+        {
+            "name": "Tromello",
+            "sale": "890",
+            "rent": "7,73"
+        },
+        {
+            "name": "Trovo",
+            "sale": "1.037",
+            "rent": "8,64"
+        },
+        {
+            "name": "Val di Nizza",
+            "sale": "561",
+            "rent": "7,32"
+        },
+        {
+            "name": "Valeggio",
+            "sale": "661",
+            "rent": "6,23"
+        },
+        {
+            "name": "Valle Lomellina",
+            "sale": "488",
+            "rent": "5,57"
+        },
+        {
+            "name": "Valle Salimbene",
+            "sale": "1.317",
+            "rent": "8,43"
+        },
+        {
+            "name": "Varzi",
+            "sale": "663",
+            "rent": "7,32"
+        },
+        {
+            "name": "Velezzo Lomellina",
+            "sale": "428",
+            "rent": "5,93"
+        },
+        {
+            "name": "Vellezzo Bellini",
+            "sale": "1.641",
+            "rent": "10,81"
+        },
+        {
+            "name": "Verretto",
+            "sale": "708",
+            "rent": "7,31"
+        },
+        {
+            "name": "Verrua Po",
+            "sale": "827",
+            "rent": "7,78"
+        },
+        {
+            "name": "Vidigulfo",
+            "sale": "1.713",
+            "rent": "11,23"
+        },
+        {
+            "name": "Vigevano",
+            "sale": "1.214",
+            "rent": "9,35"
+        },
+        {
+            "name": "Villa Biscossi",
+            "sale": "521",
+            "rent": "5,44"
+        },
+        {
+            "name": "Villanova d'Ardenghi",
+            "sale": "871",
+            "rent": "7,5"
+        },
+        {
+            "name": "Villanterio",
+            "sale": "1.127",
+            "rent": "6,73"
+        },
+        {
+            "name": "Vistarino",
+            "sale": "1.246",
+            "rent": "7,51"
+        },
+        {
+            "name": "Voghera",
+            "sale": "1.146",
+            "rent": "7,48"
+        },
+        {
+            "name": "Volpara",
+            "sale": "1.056",
+            "rent": "7,23"
+        },
+        {
+            "name": "Zavattarello",
+            "sale": "685",
+            "rent": "7,42"
+        },
+        {
+            "name": "Zeccone",
+            "sale": "1.401",
+            "rent": "9,24"
+        },
+        {
+            "name": "Zeme",
+            "sale": "513",
+            "rent": "6,12"
+        },
+        {
+            "name": "Zenevredo",
+            "sale": "593",
+            "rent": "7,94"
+        },
+        {
+            "name": "Zerbo",
+            "sale": "425",
+            "rent": "6,92"
+        },
+        {
+            "name": "Zerbolò",
+            "sale": "971",
+            "rent": "7,81"
+        },
+        {
+            "name": "Zinasco",
+            "sale": "841",
+            "rent": "6,02"
+        }
+    ],
+    "Mantova": [
+        {
+            "name": "Mantova",
+            "sale": "1.632",
+            "rent": "10,12"
+        },
+        {
+            "name": "Acquanegra sul Chiese",
+            "sale": "569",
+            "rent": "6,93"
+        },
+        {
+            "name": "Asola",
+            "sale": "1.120",
+            "rent": "7,57"
+        },
+        {
+            "name": "Bagnolo San Vito",
+            "sale": "1.018",
+            "rent": "9,51"
+        },
+        {
+            "name": "Borgo Mantovano",
+            "sale": "803",
+            "rent": "7,15"
+        },
+        {
+            "name": "Borgo Virgilio",
+            "sale": "1.146",
+            "rent": "9,03"
+        },
+        {
+            "name": "Borgocarbonara",
+            "sale": "483",
+            "rent": "6,93"
+        },
+        {
+            "name": "Bozzolo",
+            "sale": "566",
+            "rent": "7,06"
+        },
+        {
+            "name": "Canneto sull'Oglio",
+            "sale": "765",
+            "rent": "6,76"
+        },
+        {
+            "name": "Casalmoro",
+            "sale": "869",
+            "rent": "6,61"
+        },
+        {
+            "name": "Casaloldo",
+            "sale": "942",
+            "rent": "7,61"
+        },
+        {
+            "name": "Casalromano",
+            "sale": "880",
+            "rent": "6,31"
+        },
+        {
+            "name": "Castel d'Ario",
+            "sale": "892",
+            "rent": "6,86"
+        },
+        {
+            "name": "Castel Goffredo",
+            "sale": "1.340",
+            "rent": "5,92"
+        },
+        {
+            "name": "Castelbelforte",
+            "sale": "1.004",
+            "rent": "6,1"
+        },
+        {
+            "name": "Castellucchio",
+            "sale": "795",
+            "rent": "7,2"
+        },
+        {
+            "name": "Castiglione delle Stiviere",
+            "sale": "1.731",
+            "rent": "9,28"
+        },
+        {
+            "name": "Cavriana",
+            "sale": "1.469",
+            "rent": "7,45"
+        },
+        {
+            "name": "Ceresara",
+            "sale": "675",
+            "rent": "7,32"
+        },
+        {
+            "name": "Commessaggio",
+            "sale": "451",
+            "rent": "7,5"
+        },
+        {
+            "name": "Curtatone",
+            "sale": "1.233",
+            "rent": "8,89"
+        },
+        {
+            "name": "Dosolo",
+            "sale": "805",
+            "rent": "7,15"
+        },
+        {
+            "name": "Gazoldo degli Ippoliti",
+            "sale": "1.444",
+            "rent": "7,59"
+        },
+        {
+            "name": "Gazzuolo",
+            "sale": "412",
+            "rent": "7,87"
+        },
+        {
+            "name": "Goito",
+            "sale": "1.055",
+            "rent": "8,41"
+        },
+        {
+            "name": "Gonzaga",
+            "sale": "931",
+            "rent": "7,53"
+        },
+        {
+            "name": "Guidizzolo",
+            "sale": "1.309",
+            "rent": "7,54"
+        },
+        {
+            "name": "Magnacavallo",
+            "sale": "534",
+            "rent": "6,88"
+        },
+        {
+            "name": "Marcaria",
+            "sale": "731",
+            "rent": "5,23"
+        },
+        {
+            "name": "Mariana Mantovana",
+            "sale": "556",
+            "rent": "7,06"
+        },
+        {
+            "name": "Marmirolo",
+            "sale": "975",
+            "rent": "8,35"
+        },
+        {
+            "name": "Medole",
+            "sale": "1.400",
+            "rent": "7,73"
+        },
+        {
+            "name": "Moglia",
+            "sale": "832",
+            "rent": "5,93"
+        },
+        {
+            "name": "Monzambano",
+            "sale": "1.500",
+            "rent": "11,94"
+        },
+        {
+            "name": "Motteggiana",
+            "sale": "790",
+            "rent": "7,25"
+        },
+        {
+            "name": "Ostiglia",
+            "sale": "793",
+            "rent": "7,07"
+        },
+        {
+            "name": "Pegognaga",
+            "sale": "763",
+            "rent": "6,92"
+        },
+        {
+            "name": "Piubega",
+            "sale": "974",
+            "rent": "7,29"
+        },
+        {
+            "name": "Poggio Rusco",
+            "sale": "1.196",
+            "rent": "6,62"
+        },
+        {
+            "name": "Pomponesco",
+            "sale": "884",
+            "rent": "7,42"
+        },
+        {
+            "name": "Ponti sul Mincio",
+            "sale": "2.619",
+            "rent": "14,4"
+        },
+        {
+            "name": "Porto Mantovano",
+            "sale": "1.522",
+            "rent": "8,66"
+        },
+        {
+            "name": "Quingentole",
+            "sale": "353",
+            "rent": "7,12"
+        },
+        {
+            "name": "Quistello",
+            "sale": "640",
+            "rent": "7,14"
+        },
+        {
+            "name": "Redondesco",
+            "sale": "394",
+            "rent": "7,43"
+        },
+        {
+            "name": "Rivarolo Mantovano",
+            "sale": "438",
+            "rent": "7,26"
+        },
+        {
+            "name": "Rodigo",
+            "sale": "1.079",
+            "rent": "7,96"
+        },
+        {
+            "name": "Roncoferraro",
+            "sale": "798",
+            "rent": "7,37"
+        },
+        {
+            "name": "Roverbella",
+            "sale": "1.108",
+            "rent": "7,38"
+        },
+        {
+            "name": "Sabbioneta",
+            "sale": "705",
+            "rent": "7,65"
+        },
+        {
+            "name": "San Benedetto Po",
+            "sale": "557",
+            "rent": "7,57"
+        },
+        {
+            "name": "San Giacomo delle Segnate",
+            "sale": "718",
+            "rent": "6,75"
+        },
+        {
+            "name": "San Giorgio Bigarello",
+            "sale": "1.326",
+            "rent": "8,54"
+        },
+        {
+            "name": "San Giovanni del Dosso",
+            "sale": "522",
+            "rent": "6,85"
+        },
+        {
+            "name": "San Martino dall'Argine",
+            "sale": "328",
+            "rent": "7,27"
+        },
+        {
+            "name": "Schivenoglia",
+            "sale": "558",
+            "rent": "6,93"
+        },
+        {
+            "name": "Sermide e Felonica",
+            "sale": "561",
+            "rent": "6,87"
+        },
+        {
+            "name": "Serravalle a Po",
+            "sale": "536",
+            "rent": "7,11"
+        },
+        {
+            "name": "Solferino",
+            "sale": "1.587",
+            "rent": "9,41"
+        },
+        {
+            "name": "Sustinente",
+            "sale": "556",
+            "rent": "7,46"
+        },
+        {
+            "name": "Suzzara",
+            "sale": "1.118",
+            "rent": "8,39"
+        },
+        {
+            "name": "Viadana",
+            "sale": "989",
+            "rent": "7,35"
+        },
+        {
+            "name": "Villimpenta",
+            "sale": "593",
+            "rent": "7,35"
+        },
+        {
+            "name": "Volta Mantovana",
+            "sale": "1.583",
+            "rent": "10,16"
+        }
+    ]
+}

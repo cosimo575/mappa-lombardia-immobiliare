@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mappa</title>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="sidebar">
+        <div class="sidebar-header">
+            <h2>Mappa Lombardia</h2>
+            <p>Esplora Comuni e Frazioni</p>
+        </div>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Cerca Comune o Frazione...">
+            <div id="search-results"></div>
+        </div>
+
+        <div class="layers-control">
+            <h3>Livelli Dati</h3>
+            <label><input type="checkbox" id="toggle-schools"> Scuole</label>
+            <label><input type="checkbox" id="toggle-pharmacies"> Farmacie</label>
+            <label><input type="checkbox" id="toggle-structures"> Strutture Sanitarie</label>
+            <label><input type="checkbox" id="toggle-water"> Qualità Acqua</label>
+        </div>
+
+        <div id="feature-info">
+            <!-- Dati futuri qui -->
+            <p class="placeholder-text">Seleziona un luogo per vedere i dettagli.</p>
+        </div>
+    </div>
+    <div id="map"></div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <!-- Data (Confini Statici) -->
+    <script src="data/data-comuni.js"></script>
+    <script src="data/data-luoghi.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

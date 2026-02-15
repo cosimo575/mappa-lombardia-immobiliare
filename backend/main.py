@@ -1,0 +1,168 @@
+from fastapi import FastAPI, Query
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
+import sqlite3
+import uvicorn
+import os
+
+app = FastAPI()
+
+# Enable CORS for local development
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+DB_PATH = "backend/database.sqlite"
+
+def get_db_conn():
+    conn = sqlite3.connect(DB_PATH)
+    conn.row_factory = sqlite3.Row
+    return conn
+
+@app.get("/api/points")
+async def get_points(
+    layer: str,
+    minLat: float,
+    minLon: float,
+    maxLat: float,
+    maxLon: float,
+    city: str = None,
+    limit: int = 2000
+):
+    conn = get_db_conn()
+    cursor = conn.cursor()
+    
+    params = [layer, minLat, maxLat, minLon, maxLon]
+    city_filter = ""
+    if city:
+        city_filter = " AND LOWER(city) = ?"
+        params.append(city.lower())
+    
+    params.append(limit)
+    
+    query = f"""
+        SELECT name, address, city, type, manager, lat, lon 
+        FROM points 
+        WHERE layer = ? 
+        AND lat BETWEEN ? AND ? 
+        AND lon BETWEEN ? AND ?
+        {city_filter}
+        LIMIT ?
+    """
+    cursor.execute(query, params)
+    rows = cursor.fetchall()
+    
+    features = []
+    for row in rows:
+        features.append({
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [row["lon"], row["lat"]]
+            },
+            "properties": {
+                "Name": row["name"],
+                "Address": row["address"],
+                "City": row["city"],
+                "Type": row["type"],
+                "Manager": row["manager"]
+            }
+        })
+    
+    conn.close()
+    return {
+        "type": "FeatureCollection",
+        "features": features
+    }
+
+@app.get("/api/stats")
+async def get_stats(city: str, type: str = None):
+    try:
+        conn = get_db_conn()
+        cursor = conn.cursor()
+        
+        prezzo_vendita = None
+        prezzo_affitto = None
+
+        # Check if it's a neighborhood request (or try both)
+        # First try to find in milano_neighborhood_stats if type hints it or just by name
+        if type in ['quarter', 'neighbourhood', 'suburb', 'hamlet']:
+             # Use LIKE to match "Isola" inside "Cenisio, Sarpi, Isola"
+             cursor.execute("SELECT prezzo_vendita, prezzo_affitto FROM milano_neighborhood_stats WHERE name LIKE ?", (f"%{city}%",))
+             row = cursor.fetchone()
+             if row:
+                 prezzo_vendita = row[0]
+                 prezzo_affitto = row[1]
+        
+        # If not found or not a neighborhood, try municipality stats
+        if prezzo_vendita is None:
+            cursor.execute("SELECT prezzo_vendita, prezzo_affitto FROM real_estate_stats WHERE comune = ?", (city,))
+            row = cursor.fetchone()
+            if row:
+                prezzo_vendita = row[0]
+                prezzo_affitto = row[1]
+            
+        conn.close()
+
+        # Mock service stats (as per original code)
+        import random
+        stats = {
+            "schools": random.randint(1, 10),
+            "pharmacies": random.randint(1, 5),
+            "structures": random.randint(0, 3),
+            "water": f"{random.randint(90, 100)}%",
+            "real_estate": {
+                "sale": prezzo_vendita,
+                "rent": prezzo_affitto
+            }
+        }
+        
+        return stats
+    except Exception as e:
+        print(f"Error in /api/stats: {e}")
+        # Return default structure on error to prevent frontend crash
+        return {
+            "schools": 0,
+            "pharmacies": 0,
+            "structures": 0,
+            "water": "N/D",
+            "real_estate": { "sale": None, "rent": None }
+        }
+
+# Temporary endpoint for scraping
+@app.post("/api/ingest_data")
+async def ingest_data(data: dict):
+    import json
+    import os
+    
+    file_path = "backend/dati_completi_raw.json"
+    
+    # Load existing
+    if os.path.exists(file_path):
+        with open(file_path, 'r') as f:
+            try:
+                existing = json.load(f)
+            except:
+                existing = {}
+    else:
+        existing = {}
+    
+    # Merge (province by province)
+    for province, cities in data.items():
+        existing[province] = cities
+        
+    with open(file_path, 'w') as f:
+        json.dump(existing, f, indent=2)
+        
+    return {"status": "success", "received": len(cities)}
+
+# Mount static files
+frontend_path = os.path.join(os.getcwd(), "frontend")
+if os.path.exists(frontend_path):
+    app.mount("/", StaticFiles(directory=frontend_path, html=True), name="frontend")
+
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=8000)
