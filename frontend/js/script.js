@@ -49,7 +49,18 @@ const layers = {};
 const pointLayers = {};
 
 // Carica confini statici
+// Carica confini statici
 if (typeof comuniData !== 'undefined') {
+    // Assegna esplicitamente il tipo "Comune" a tutti gli elementi di comuniData
+    // Questo serve perché onEachFeature usa feature.properties.type per capire se aggiornare il filtro città
+    if (comuniData.features) {
+        comuniData.features.forEach(f => {
+            if (f.properties) {
+                f.properties.type = "Comune";
+            }
+        });
+    }
+
     const comuniLayer = L.geoJSON(comuniData, {
         style: styleComuni,
         onEachFeature: onEachFeature
@@ -113,6 +124,17 @@ Object.keys(datasetsConfig).forEach(key => {
 
 // Funzione per caricare i punti visibili
 async function updateVisiblePoints() {
+    // OTTIMIZZAZIONE PRESTAZIONI:
+    // Non caricare nulla se siamo troppo "lontani" (vista regionale) e non abbiamo selezionato una città specifica.
+    // Questo evita di bloccare il browser cercando di disegnare migliaia di punti su tutta la Lombardia.
+    if (!currentSelectedCity && map.getZoom() < 12) {
+        // Pulisci tutti i layer se usciamo dallo zoom o deselezioniamo la città
+        for (const layer of Object.values(pointLayers)) {
+            layer.clearLayers();
+        }
+        return;
+    }
+
     const bounds = map.getBounds();
     const minLat = bounds.getSouth();
     const minLon = bounds.getWest();
@@ -123,6 +145,9 @@ async function updateVisiblePoints() {
     if (currentSelectedCity) {
         url += `&city=${encodeURIComponent(currentSelectedCity)}`;
     }
+
+    // Aggiungi timestamp per evitare caching del browser
+    url += `&_t=${new Date().getTime()}`;
 
     for (const [key, layer] of Object.entries(pointLayers)) {
         if (map.hasLayer(layer)) {

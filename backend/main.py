@@ -159,10 +159,49 @@ async def ingest_data(data: dict):
         
     return {"status": "success", "received": len(cities)}
 
+@app.get("/api/debug_fs")
+def debug_fs():
+    import os
+    features = {}
+    features["cwd"] = os.getcwd()
+    features["__file__"] = os.path.abspath(__file__)
+    
+    # Re-calculate paths as in the script
+    base = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    features["base_dir"] = base
+    frontend = os.path.join(base, "frontend")
+    features["frontend_path"] = frontend
+    features["frontend_exists"] = os.path.exists(frontend)
+    
+    if features["frontend_exists"]:
+        try:
+            features["frontend_files"] = os.listdir(frontend)
+            
+            js_path = os.path.join(frontend, "js")
+            if os.path.exists(js_path):
+                features["js_files"] = os.listdir(js_path)
+            else:
+                features["js_files"] = "MISSING"
+                
+            data_path = os.path.join(frontend, "data")
+            if os.path.exists(data_path):
+                features["data_files"] = os.listdir(data_path)
+            else:
+                features["data_files"] = "MISSING"
+        except Exception as e:
+            features["error"] = str(e)
+            
+    return features
+
 # Mount static files
-frontend_path = os.path.join(os.getcwd(), "frontend")
+# Robust path resolution: Get the directory of this file (backend/), then go up one level
+base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+frontend_path = os.path.join(base_dir, "frontend")
+
 if os.path.exists(frontend_path):
     app.mount("/", StaticFiles(directory=frontend_path, html=True), name="frontend")
+else:
+    print(f"WARNING: Frontend path not found at {frontend_path}. Current dir: {os.getcwd()}")
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
