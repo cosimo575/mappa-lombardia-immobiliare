@@ -72,20 +72,31 @@ if (typeof luoghiData !== 'undefined') {
 }
 
 // --- IDISE LAYER (Disagio Sociale) ---
+// --- IDISE LAYER (Disagio Sociale) ---
 // Range: 97.6 - 104.8. Mean: 100.2. 
 function getIdiseColor(d) {
     return d > 103 ? '#800026' : // Very High (Top 5%)
         d > 101.5 ? '#BD0026' : // High (Top 20%)
             d > 100.5 ? '#E31A1C' : // Above Average
-                d > 99.5 ? '#FC4E2A' : // Average (around 100)
-                    d > 98.8 ? '#FD8D3C' : // Below Average
-                        d > 98.2 ? '#FEB24C' : // Low
-                            '#FFEDA0';   // Very Low
+                d > 100 ? '#FC4E2A' : // Average (around 100)
+                    'transparent'; // Below Average (Good, so hide)
 }
 
 function styleIdise(feature) {
+    const val = feature.properties.IDISE || 0;
+
+    // NASCONDI SE VALORE <= 100 (O nullo)
+    if (val <= 100) {
+        return {
+            fillColor: 'transparent',
+            weight: 0,
+            opacity: 0,
+            fillOpacity: 0
+        };
+    }
+
     return {
-        fillColor: getIdiseColor(feature.properties.IDISE || 100),
+        fillColor: getIdiseColor(val),
         weight: 0.5,
         opacity: 1,
         color: '#000000',
