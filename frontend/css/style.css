@@ -296,3 +296,141 @@ path.leaflet-interactive:focus {
 #sidebar::-webkit-scrollbar-thumb:hover {
     background: #bbb;
 }
+
+/* MOBILE RESPONSIVE STYLES */
+#sidebar-toggle {
+    display: none;
+    /* Hidden on desktop */
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2000;
+    background: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+
+    /* Mappa a tutto schermo */
+    #map {
+        height: 100%;
+        width: 100%;
+    }
+
+    /* Bottone Menu RIMOSSO
+    #sidebar-toggle {
+        display: none;
+    } 
+    */
+
+    /* BOTTOM SHEET (Effetto Tendina dal basso) */
+    #sidebar {
+        /* Reset posizionamento desktop */
+        top: auto;
+        left: 0;
+        bottom: 0;
+
+        /* Dimensioni */
+        width: 100%;
+        max-width: 100%;
+        height: 70vh;
+        /* Altezza fissa quando aperto */
+
+        /* Stile Pannello */
+        border-radius: 24px 24px 0 0;
+        /* Arrotonda solo sopra */
+        padding: 0;
+        /* Gestiamo il padding nei figli per il layout flex */
+        background-color: white;
+        /* Opacità piena per coprire la mappa */
+
+        /* Animazione Entrata/Uscita */
+        /* Lasciamo viribile 60px (il titolo) */
+        transform: translateY(calc(100% - 60px));
+        transition: transform 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+
+        /* Ombra verso l'alto */
+        box-shadow: 0 -5px 25px rgba(0, 0, 0, 0.15);
+        z-index: 3000;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Contenuto interno scrollabile */
+    .sidebar-inner-content {
+        padding: 20px;
+        overflow-y: auto;
+        flex: 1;
+    }
+
+    /* HANDLE E HEADER SEMPRE VISIBILI */
+    .sidebar-header {
+        padding: 15px 20px;
+        cursor: pointer;
+        border-bottom: 1px solid #eee;
+        background: white;
+        border-radius: 24px 24px 0 0;
+        position: relative;
+        /* Per posizionare la freccia */
+    }
+
+    .sidebar-header::before {
+        content: '';
+        display: block;
+        width: 40px;
+        height: 4px;
+        background-color: #e0e0e0;
+        border-radius: 2px;
+        margin: 0 auto 10px auto;
+    }
+
+    /* Freccia indicatore (Chevron) */
+    .sidebar-header::after {
+        content: '▼';
+        /* O usiamo un bordo ruotato */
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        color: #999;
+        font-size: 14px;
+        /* Icona piccola */
+        transition: transform 0.3s ease;
+        transform: rotate(180deg);
+        /* Punta in su quando chiuso (per dire "apri") */
+    }
+
+    /* Quando attivo (aperto), la freccia punta in giù ("chiudi") */
+    #sidebar.active .sidebar-header::after {
+        transform: rotate(0deg);
+    }
+
+    .sidebar-header h2 {
+        margin: 0;
+        font-size: 16px;
+        text-align: center;
+        color: #333;
+    }
+
+    .sidebar-header p {
+        display: none;
+    }
+
+    /* Nascondiamo il sottotitolo su mobile */
+
+    /* Quando attivo, sale su */
+    #sidebar.active {
+        transform: translateY(0);
+    }
+
+    /* Performance Check */
+    #sidebar {
+        will-change: transform;
+    }
+}

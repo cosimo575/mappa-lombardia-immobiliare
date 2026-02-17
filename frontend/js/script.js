@@ -71,6 +71,47 @@ if (typeof luoghiData !== 'undefined') {
     layers["Frazioni / Quartieri"] = luoghiLayer;
 }
 
+// --- IDISE LAYER (Disagio Sociale) ---
+function getIdiseColor(d) {
+    return d > 105 ? '#800026' :
+        d > 102 ? '#BD0026' :
+            d > 100 ? '#E31A1C' :
+                d > 98 ? '#FC4E2A' :
+                    d > 96 ? '#FD8D3C' :
+                        d > 94 ? '#FEB24C' :
+                            '#FFEDA0';
+}
+
+function styleIdise(feature) {
+    return {
+        fillColor: getIdiseColor(feature.properties.IDISE || 100),
+        weight: 1,
+        opacity: 1,
+        color: 'white',
+        dashArray: '3',
+        fillOpacity: 0.7
+    };
+}
+
+if (typeof sezioniData !== 'undefined') {
+    const idiseLayer = L.geoJSON(sezioniData, {
+        style: styleIdise,
+        onEachFeature: function (feature, layer) {
+            let p = feature.properties;
+            let content = `<strong>Sezione ${p.SEZ21 || ''}</strong><br>
+                           IDISE: <b>${p.IDISE ? p.IDISE.toFixed(2) : "N/A"}</b><br>
+                           Popolazione: ${p.POP_TOT || 'N/A'}`;
+            layer.bindPopup(content);
+        }
+    });
+    layers["Disagio IDISE (2021)"] = idiseLayer;
+
+    // Aggiungi Legenda o Controllo Livelli
+}
+
+// Aggiungi i Base Layer al controllo standard di Leaflet (in alto a destra)
+L.control.layers(null, layers, { collapsed: true }).addTo(map);
+
 // --- GESTIONE PUNTI DINAMICI (API) ---
 
 const datasetsConfig = {
@@ -311,6 +352,9 @@ async function selectLocation(item) {
     // Mostra pannello laterale con loading
     infoPanel.innerHTML = `<h3>${item.name}</h3><p class="stats-hint">Caricamento dati zona...</p>`;
 
+    // Su mobile, apri la sidebar per mostrare i dati
+    if (typeof openSidebarMobile === 'function') openSidebarMobile();
+
     try {
         const response = await fetch(`${API_URL}/stats?city=${encodeURIComponent(item.name)}&type=${encodeURIComponent(item.type || '')}`);
         const stats = await response.json();
@@ -382,3 +426,60 @@ window.clearCityFilter = clearCityFilter;
 // Avvio
 initSearch();
 console.log("Mappa pronta: Modalità ZONA UNICA attiva");
+
+// --- MOBILE SIDEBAR TOGGLE ---
+const sidebar = document.getElementById('sidebar');
+const toggleBtn = document.getElementById('sidebar-toggle');
+
+if (toggleBtn) {
+    toggleBtn.addEventListener('click', () => {
+        sidebar.classList.toggle('active');
+    });
+
+    // Chiudi la sidebar se clicchi fuori (sulla mappa) su mobile
+    map.on('click', () => {
+        if (window.innerWidth <= 768) {
+            sidebar.classList.remove('active');
+        }
+    });
+
+    // APERTURA TRAMITE HEADER (TENDINA, CLICK & SWIPE)
+    const mobileHeader = document.getElementById('mobile-header-click');
+    if (mobileHeader) {
+
+        // Gestione Click Semplice
+        mobileHeader.addEventListener('click', () => {
+            if (window.innerWidth <= 768) {
+                sidebar.classList.toggle('active');
+            }
+        });
+
+        // Gestione Swipe (Touch)
+        let startY = 0;
+
+        mobileHeader.addEventListener('touchstart', (e) => {
+            startY = e.touches[0].clientY;
+        }, { passive: true });
+
+        mobileHeader.addEventListener('touchend', (e) => {
+            const endY = e.changedTouches[0].clientY;
+            const diff = startY - endY;
+
+            // Se diff > 50 (Swipe verso l'ALTO) -> Apri
+            if (diff > 50) {
+                sidebar.classList.add('active');
+            }
+            // Se diff < -50 (Swipe verso il BASSO) -> Chiudi
+            else if (diff < -50) {
+                sidebar.classList.remove('active');
+            }
+        }, { passive: true });
+    }
+}
+
+// Funzione ausiliaria per aprire la sidebar su mobile quando serve (es. selezione città)
+function openSidebarMobile() {
+    if (window.innerWidth <= 768) {
+        sidebar.classList.add('active');
+    }
+}

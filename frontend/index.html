@@ -15,27 +15,33 @@
 </head>
 
 <body>
+    <!-- Mobile Toggle Button (RIMOSSO, USIAMO DRAG/PEEK) -->
+    <!-- <button id="sidebar-toggle" aria-label="Toggle Menu">☰</button> -->
+
     <div id="sidebar">
-        <div class="sidebar-header">
+        <div class="sidebar-header" id="mobile-header-click">
             <h2>Mappa Lombardia</h2>
             <p>Esplora Comuni e Frazioni</p>
         </div>
-        <div class="search-container">
-            <input type="text" id="search-input" placeholder="Cerca Comune o Frazione...">
-            <div id="search-results"></div>
-        </div>
 
-        <div class="layers-control">
-            <h3>Livelli Dati</h3>
-            <label><input type="checkbox" id="toggle-schools"> Scuole</label>
-            <label><input type="checkbox" id="toggle-pharmacies"> Farmacie</label>
-            <label><input type="checkbox" id="toggle-structures"> Strutture Sanitarie</label>
-            <label><input type="checkbox" id="toggle-water"> Qualità Acqua</label>
-        </div>
+        <div class="sidebar-inner-content">
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Cerca Comune o Frazione...">
+                <div id="search-results"></div>
+            </div>
 
-        <div id="feature-info">
-            <!-- Dati futuri qui -->
-            <p class="placeholder-text">Seleziona un luogo per vedere i dettagli.</p>
+            <div class="layers-control">
+                <h3>Livelli Dati</h3>
+                <label><input type="checkbox" id="toggle-schools"> Scuole</label>
+                <label><input type="checkbox" id="toggle-pharmacies"> Farmacie</label>
+                <label><input type="checkbox" id="toggle-structures"> Strutture Sanitarie</label>
+                <label><input type="checkbox" id="toggle-water"> Qualità Acqua</label>
+            </div>
+
+            <div id="feature-info">
+                <!-- Dati futuri qui -->
+                <p class="placeholder-text">Seleziona un luogo per vedere i dettagli.</p>
+            </div>
         </div>
     </div>
     <div id="map"></div>
@@ -47,6 +53,7 @@
     <!-- Data (Confini Statici) -->
     <script src="data/data-comuni.js"></script>
     <script src="data/data-luoghi.js"></script>
+    <script src="data/data-sezioni.js"></script>
 
     <!-- Custom JS -->
     <script src="js/script.js"></script>
