@@ -117,8 +117,7 @@ if (typeof sezioniData !== 'undefined') {
             layer.bindPopup(content);
         }
     });
-});
-layers["Disagio IDISE (2021)"] = idiseLayer;
+    layers["Disagio IDISE (2021)"] = idiseLayer;
 }
 
 // --- ADU LAYER (Aree di Disagio Urbano - Specifiche) ---
