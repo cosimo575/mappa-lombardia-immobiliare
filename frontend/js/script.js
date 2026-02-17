@@ -72,14 +72,15 @@ if (typeof luoghiData !== 'undefined') {
 }
 
 // --- IDISE LAYER (Disagio Sociale) ---
-// --- IDISE LAYER (Disagio Sociale) ---
 // Range: 97.6 - 104.8. Mean: 100.2. 
 function getIdiseColor(d) {
-    return d > 103 ? '#800026' : // Very High (Top 5%)
-        d > 101.5 ? '#BD0026' : // High (Top 20%)
-            d > 100.5 ? '#E31A1C' : // Above Average
-                d > 100 ? '#FC4E2A' : // Average (around 100)
-                    'transparent'; // Below Average (Good, so hide)
+    return d > 103.5 ? '#800026' : // Top Critical (approx > 98th percentile)
+        d > 102.5 ? '#BD0026' : // Very High 
+            d > 101.5 ? '#E31A1C' : // High
+                d > 101.0 ? '#FC4E2A' : // Moderately High
+                    d > 100.5 ? '#FD8D3C' : // Above Average
+                        d > 100 ? '#FEB24C' : // Slightly Above Average
+                            'transparent'; // Below Average (Good, so hide)
 }
 
 function styleIdise(feature) {
