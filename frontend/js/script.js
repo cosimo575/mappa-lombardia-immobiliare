@@ -117,9 +117,34 @@ if (typeof sezioniData !== 'undefined') {
             layer.bindPopup(content);
         }
     });
-    layers["Disagio IDISE (2021)"] = idiseLayer;
+});
+layers["Disagio IDISE (2021)"] = idiseLayer;
+}
 
-    // Aggiungi Legenda o Controllo Livelli
+// --- ADU LAYER (Aree di Disagio Urbano - Specifiche) ---
+if (typeof aduData !== 'undefined') {
+    const aduLayer = L.geoJSON(aduData, {
+        style: function (feature) {
+            return {
+                fillColor: feature.properties.fillColor || getIdiseColor(feature.properties.IDISE || 100),
+                weight: 2,
+                opacity: 1,
+                color: '#000',
+                fillOpacity: 0.7
+            };
+        },
+        onEachFeature: function (feature, layer) {
+            let p = feature.properties;
+            let content = `<strong>Area Critica (ADU)</strong><br>
+                           IDISE: <b>${p.IDISE ? p.IDISE.toFixed(2) : "N/A"}</b><br>
+                           Popolazione: ${p.POP_TOT || 'N/A'}`;
+            layer.bindPopup(content);
+        }
+    });
+    layers["Aree Critiche (ADU)"] = aduLayer;
+
+    // Attiva ADU di default
+    aduLayer.addTo(map);
 }
 
 // Aggiungi i Base Layer al controllo standard di Leaflet (in alto a destra)
