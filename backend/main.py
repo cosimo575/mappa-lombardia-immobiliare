@@ -4,6 +4,7 @@ from fastapi.staticfiles import StaticFiles
 import sqlite3
 import uvicorn
 import os
+import json
 
 app = FastAPI()
 
@@ -21,6 +22,50 @@ def get_db_conn():
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
     return conn
+
+def fetch_features(table, minLat, maxLat, minLon, maxLon):
+    conn = get_db_conn()
+    cursor = conn.cursor()
+    
+    # Use standard bounding box query
+    # Check if the feature's bounding box intersects with the view's bounding box
+    query = f"""
+        SELECT properties, geometry 
+        FROM {table} 
+        WHERE min_lat <= ? AND max_lat >= ? 
+        AND min_lon <= ? AND max_lon >= ?
+    """
+    
+    # Note: intersecting rectangles:
+    # rect1.right > rect2.left && rect1.left < rect2.right && ...
+    # mapped to:
+    # feature.max_lat >= view.min_lat && feature.min_lat <= view.max_lat ...
+    
+    try:
+        cursor.execute(query, (maxLat, minLat, maxLon, minLon))
+        rows = cursor.fetchall()
+        
+        features = []
+        for row in rows:
+            try:
+                features.append({
+                    "type": "Feature",
+                    "properties": json.loads(row["properties"]),
+                    "geometry": json.loads(row["geometry"])
+                })
+            except Exception as e:
+                print(f"JSON parsing error for {table}: {e}")
+                continue
+                
+        return {
+            "type": "FeatureCollection",
+            "features": features
+        }
+    except Exception as e:
+        print(f"Database error in fetch_features({table}): {e}")
+        return {"type": "FeatureCollection", "features": []}
+    finally:
+        conn.close()
 
 @app.get("/api/points")
 def get_points(
