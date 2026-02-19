@@ -194,15 +194,6 @@ def debug_fs():
     return features
 
 
-# Mount static files
-# Robust path resolution: Get the directory of this file (backend/), then go up one level
-base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-frontend_path = os.path.join(base_dir, "frontend")
-
-if os.path.exists(frontend_path):
-    app.mount("/", StaticFiles(directory=frontend_path, html=True), name="frontend")
-else:
-    print(f"WARNING: Frontend path not found at {frontend_path}. Current dir: {os.getcwd()}")
 
 # --- New API Endpoints for Dynamic Data ---
 import json
@@ -324,6 +315,16 @@ async def search_locations(q: str = Query(..., min_length=2)):
         
     conn.close()
     return results
+
+# Mount static files
+# Robust path resolution: Get the directory of this file (backend/), then go up one level
+base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+frontend_path = os.path.join(base_dir, "frontend")
+
+if os.path.exists(frontend_path):
+    app.mount("/", StaticFiles(directory=frontend_path, html=True), name="frontend")
+else:
+    print(f"WARNING: Frontend path not found at {frontend_path}. Current dir: {os.getcwd()}")
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
