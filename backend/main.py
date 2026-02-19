@@ -196,6 +196,45 @@ def get_adu(
 ):
     return fetch_features("adu", minLat, maxLat, minLon, maxLon)
 
+@app.get("/api/fermate")
+def get_fermate(
+    minLat: float = Query(..., alias="minLat"),
+    maxLat: float = Query(..., alias="maxLat"),
+    minLon: float = Query(..., alias="minLon"),
+    maxLon: float = Query(..., alias="maxLon")
+):
+    conn = get_db_conn()
+    cursor = conn.cursor()
+    
+    # Query database using spatial index on bounding box
+    query = """
+        SELECT properties, geometry
+        FROM fermate
+        WHERE min_lat <= ? AND max_lat >= ? 
+        AND min_lon <= ? AND max_lon >= ?
+        LIMIT 2000
+    """
+    cursor.execute(query, (maxLat, minLat, maxLon, minLon))
+    rows = cursor.fetchall()
+    
+    features = []
+    for row in rows:
+        try:
+            features.append({
+                "type": "Feature",
+                "properties": json.loads(row["properties"]),
+                "geometry": json.loads(row["geometry"])
+            })
+        except Exception as e:
+            print(f"Error parsing feature: {e}")
+            continue
+            
+    conn.close()
+    return {
+        "type": "FeatureCollection",
+        "features": features
+    }
+
 @app.get("/api/search")
 def search_locations(q: str = Query(..., min_length=2)):
     conn = get_db_conn()

@@ -186,7 +186,8 @@ const datasetsConfig = {
     'schools': { id: 'toggle-schools', color: '#3388ff', name: 'Scuola', emoji: '🏫' },
     'pharmacies': { id: 'toggle-pharmacies', color: '#28a745', name: 'Farmacia', emoji: '💊' },
     'structures': { id: 'toggle-structures', color: '#dc3545', name: 'Struttura Sanitaria', emoji: '🏥' },
-    'water': { id: 'toggle-water', color: '#17a2b8', name: 'Qualità Acqua', emoji: '💧' }
+    'water': { id: 'toggle-water', color: '#17a2b8', name: 'Qualità Acqua', emoji: '💧' },
+    'stops': { id: 'toggle-stops', color: '#ffc107', name: 'Fermata TPL', emoji: '🚌' }
 };
 
 // Inizializza i layer per i punti
@@ -203,11 +204,19 @@ Object.keys(datasetsConfig).forEach(key => {
         },
         onEachFeature: (feature, layer) => {
             let popupContent = `<strong>${datasetsConfig[key].name}</strong><br>`;
-            if (feature.properties.Name) popupContent += `<b>${feature.properties.Name}</b><br>`;
-            if (feature.properties.Type) popupContent += `<i>${feature.properties.Type}</i><br>`;
-            if (feature.properties.Address) popupContent += `${feature.properties.Address}<br>`;
-            if (feature.properties.City) popupContent += `${feature.properties.City}`;
-            if (feature.properties.Manager) popupContent += `<br><small>Gestore: ${feature.properties.Manager}</small>`;
+
+            // Gestione specifica per Fermate TPL
+            if (key === 'stops') {
+                if (feature.properties.UBICAZIONE) popupContent += `<b>${feature.properties.UBICAZIONE}</b><br>`;
+                if (feature.properties.LINEE) popupContent += `Linee: <i>${feature.properties.LINEE}</i><br>`;
+            } else {
+                // Gestione standard per gli altri dataset
+                if (feature.properties.Name) popupContent += `<b>${feature.properties.Name}</b><br>`;
+                if (feature.properties.Type) popupContent += `<i>${feature.properties.Type}</i><br>`;
+                if (feature.properties.Address) popupContent += `${feature.properties.Address}<br>`;
+                if (feature.properties.City) popupContent += `${feature.properties.City}`;
+                if (feature.properties.Manager) popupContent += `<br><small>Gestore: ${feature.properties.Manager}</small>`;
+            }
             layer.bindPopup(popupContent);
         }
     });
@@ -302,15 +311,23 @@ async function updateVisiblePoints() {
     const maxLat = bounds.getNorth();
     const maxLon = bounds.getEast();
 
-    let url = `${API_URL}/points?minLat=${minLat}&minLon=${minLon}&maxLat=${maxLat}&maxLon=${maxLon}`;
+    let baseUrl = `${API_URL}/points?minLat=${minLat}&minLon=${minLon}&maxLat=${maxLat}&maxLon=${maxLon}`;
 
     // Aggiungi timestamp per evitare caching del browser
-    url += `&_t=${new Date().getTime()}`;
+    const timestamp = `&_t=${new Date().getTime()}`;
 
     for (const [key, layer] of Object.entries(pointLayers)) {
         if (map.hasLayer(layer)) {
             try {
-                const response = await fetch(`${url}&layer=${key}`);
+                let fetchUrl;
+                if (key === 'stops') {
+                    // Endpoint specifico per le fermate
+                    fetchUrl = `${API_URL}/fermate?minLat=${minLat}&minLon=${minLon}&maxLat=${maxLat}&maxLon=${maxLon}${timestamp}`;
+                } else {
+                    fetchUrl = `${baseUrl}&layer=${key}${timestamp}`;
+                }
+
+                const response = await fetch(fetchUrl);
                 const data = await response.json();
 
                 let featuresToShow = data.features;
