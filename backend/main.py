@@ -23,7 +23,7 @@ def get_db_conn():
     return conn
 
 @app.get("/api/points")
-async def get_points(
+def get_points(
     layer: str,
     minLat: float,
     minLon: float,
@@ -79,7 +79,7 @@ async def get_points(
     }
 
 @app.get("/api/stats")
-async def get_stats(city: str, type: str = None):
+def get_stats(city: str, type: str = None):
     try:
         conn = get_db_conn()
         cursor = conn.cursor()
@@ -102,8 +102,8 @@ async def get_stats(city: str, type: str = None):
             cursor.execute("SELECT prezzo_vendita, prezzo_affitto FROM real_estate_stats WHERE comune = ?", (city,))
             row = cursor.fetchone()
             if row:
-                prezzo_vendita = row[0]
-                prezzo_affitto = row[1]
+                 prezzo_vendita = row[0]
+                 prezzo_affitto = row[1]
             
         conn.close()
 
@@ -134,7 +134,7 @@ async def get_stats(city: str, type: str = None):
 
 # Temporary endpoint for scraping
 @app.post("/api/ingest_data")
-async def ingest_data(data: dict):
+def ingest_data(data: dict):
     import json
     import os
     
@@ -159,77 +159,9 @@ async def ingest_data(data: dict):
         
     return {"status": "success", "received": len(cities)}
 
-@app.get("/api/debug_fs")
-def debug_fs():
-    import os
-    features = {}
-    features["cwd"] = os.getcwd()
-    features["__file__"] = os.path.abspath(__file__)
-    
-    # Re-calculate paths as in the script
-    base = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    features["base_dir"] = base
-    frontend = os.path.join(base, "frontend")
-    features["frontend_path"] = frontend
-    features["frontend_exists"] = os.path.exists(frontend)
-    
-    if features["frontend_exists"]:
-        try:
-            features["frontend_files"] = os.listdir(frontend)
-            
-            js_path = os.path.join(frontend, "js")
-            if os.path.exists(js_path):
-                features["js_files"] = os.listdir(js_path)
-            else:
-                features["js_files"] = "MISSING"
-                
-            data_path = os.path.join(frontend, "data")
-            if os.path.exists(data_path):
-                features["data_files"] = os.listdir(data_path)
-            else:
-                features["data_files"] = "MISSING"
-        except Exception as e:
-            features["error"] = str(e)
-            
-    return features
-
-
-
-# --- New API Endpoints for Dynamic Data ---
-import json
-
-def fetch_features(table: str, min_lat: float, max_lat: float, min_lon: float, max_lon: float):
-    conn = get_db_conn()
-    cursor = conn.cursor()
-    # Spatial query: overlapping bounding boxes
-    query = f"""
-        SELECT properties, geometry 
-        FROM {table} 
-        WHERE min_lat <= ? AND max_lat >= ? AND min_lon <= ? AND max_lon >= ?
-    """
-    cursor.execute(query, (max_lat, min_lat, max_lon, min_lon))
-    rows = cursor.fetchall()
-    
-    features = []
-    for row in rows:
-        try:
-            features.append({
-                "type": "Feature",
-                "properties": json.loads(row["properties"]),
-                "geometry": json.loads(row["geometry"])
-            })
-        except Exception as e:
-            print(f"Error parsing row in {table}: {e}")
-            continue
-            
-    conn.close()
-    return {
-        "type": "FeatureCollection",
-        "features": features
-    }
-
+# ... (inside get_comuni etc)
 @app.get("/api/comuni")
-async def get_comuni(
+def get_comuni(
     minLat: float = Query(..., alias="minLat"),
     maxLat: float = Query(..., alias="maxLat"),
     minLon: float = Query(..., alias="minLon"),
@@ -238,7 +170,7 @@ async def get_comuni(
     return fetch_features("comuni", minLat, maxLat, minLon, maxLon)
 
 @app.get("/api/sezioni")
-async def get_sezioni(
+def get_sezioni(
     minLat: float = Query(..., alias="minLat"),
     maxLat: float = Query(..., alias="maxLat"),
     minLon: float = Query(..., alias="minLon"),
@@ -247,7 +179,7 @@ async def get_sezioni(
     return fetch_features("sezioni", minLat, maxLat, minLon, maxLon)
 
 @app.get("/api/luoghi")
-async def get_luoghi(
+def get_luoghi(
     minLat: float = Query(..., alias="minLat"),
     maxLat: float = Query(..., alias="maxLat"),
     minLon: float = Query(..., alias="minLon"),
@@ -256,7 +188,7 @@ async def get_luoghi(
     return fetch_features("luoghi", minLat, maxLat, minLon, maxLon)
 
 @app.get("/api/adu")
-async def get_adu(
+def get_adu(
     minLat: float = Query(..., alias="minLat"),
     maxLat: float = Query(..., alias="maxLat"),
     minLon: float = Query(..., alias="minLon"),
@@ -265,7 +197,7 @@ async def get_adu(
     return fetch_features("adu", minLat, maxLat, minLon, maxLon)
 
 @app.get("/api/search")
-async def search_locations(q: str = Query(..., min_length=2)):
+def search_locations(q: str = Query(..., min_length=2)):
     conn = get_db_conn()
     cursor = conn.cursor()
     
