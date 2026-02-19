@@ -48,54 +48,23 @@ function onEachFeature(feature, layer) {
 const layers = {};
 const pointLayers = {};
 
-// Carica confini statici
-// Carica confini statici
-if (typeof comuniData !== 'undefined') {
-    const comuniLayer = L.geoJSON(comuniData, {
-        style: styleComuni,
-        onEachFeature: (feature, layer) => {
-            // FORZATURA TIPO: Assicuriamoci che ogni poligono di questo layer sia un "Comune"
-            feature.properties.type = "Comune";
-            onEachFeature(feature, layer);
-        }
-    }).addTo(map);
-    layers["Comuni (Livello 8)"] = comuniLayer;
-    map.fitBounds(comuniLayer.getBounds());
-}
-
-if (typeof luoghiData !== 'undefined') {
-    const luoghiLayer = L.geoJSON(luoghiData, {
-        style: styleLuoghi,
-        onEachFeature: onEachFeature
-    }).addTo(map);
-    layers["Frazioni / Quartieri"] = luoghiLayer;
-}
-
-// --- IDISE LAYER (Disagio Sociale) ---
+// --- INDICI DISAGIO E STYLE FUNCTIONS ---
 // Range: 97.6 - 104.8. Mean: 100.2. 
 function getIdiseColor(d) {
-    return d > 103.5 ? '#800026' : // Top Critical (approx > 98th percentile)
+    return d > 103.5 ? '#800026' : // Top Critical
         d > 102.5 ? '#BD0026' : // Very High 
             d > 101.5 ? '#E31A1C' : // High
                 d > 101.0 ? '#FC4E2A' : // Moderately High
                     d > 100.5 ? '#FD8D3C' : // Above Average
                         d > 100 ? '#FEB24C' : // Slightly Above Average
-                            'transparent'; // Below Average (Good, so hide)
+                            'transparent';
 }
 
 function styleIdise(feature) {
     const val = feature.properties.IDISE || 0;
-
-    // NASCONDI SE VALORE <= 100 (O nullo)
     if (val <= 100) {
-        return {
-            fillColor: 'transparent',
-            weight: 0,
-            opacity: 0,
-            fillOpacity: 0
-        };
+        return { fillColor: 'transparent', weight: 0, opacity: 0, fillOpacity: 0 };
     }
-
     return {
         fillColor: getIdiseColor(val),
         weight: 0.5,
@@ -106,48 +75,100 @@ function styleIdise(feature) {
     };
 }
 
-if (typeof sezioniData !== 'undefined') {
-    const idiseLayer = L.geoJSON(sezioniData, {
-        style: styleIdise,
-        onEachFeature: function (feature, layer) {
-            let p = feature.properties;
-            let content = `<strong>Sezione ${p.SEZ21 || ''}</strong><br>
-                           IDISE: <b>${p.IDISE ? p.IDISE.toFixed(2) : "N/A"}</b><br>
-                           Popolazione: ${p.POP_TOT || 'N/A'}`;
-            layer.bindPopup(content);
-        }
-    });
-    layers["Disagio IDISE (2021)"] = idiseLayer;
-}
+// --- DYNAMIC LAYERS ---
 
-// --- ADU LAYER (Aree di Disagio Urbano - Specifiche) ---
-if (typeof aduData !== 'undefined') {
-    const aduLayer = L.geoJSON(aduData, {
-        style: function (feature) {
-            return {
-                fillColor: feature.properties.fillColor || getIdiseColor(feature.properties.IDISE || 100),
-                weight: 2,
-                opacity: 1,
-                color: '#000',
-                fillOpacity: 0.7
-            };
-        },
-        onEachFeature: function (feature, layer) {
-            let p = feature.properties;
-            let content = `<strong>Area Critica (ADU)</strong><br>
-                           IDISE: <b>${p.IDISE ? p.IDISE.toFixed(2) : "N/A"}</b><br>
-                           Popolazione: ${p.POP_TOT || 'N/A'}`;
-            layer.bindPopup(content);
-        }
-    });
-    layers["Aree Critiche (ADU)"] = aduLayer;
+// 1. Comuni
+const comuniLayer = L.geoJSON(null, {
+    style: styleComuni,
+    onEachFeature: (feature, layer) => {
+        feature.properties.type = "Comune";
+        onEachFeature(feature, layer);
+    }
+}).addTo(map);
+layers["Comuni (Livello 8)"] = comuniLayer;
 
-    // Attiva ADU di default
-    aduLayer.addTo(map);
-}
+// 2. Luoghi
+const luoghiLayer = L.geoJSON(null, {
+    style: styleLuoghi,
+    onEachFeature: onEachFeature
+});
+layers["Frazioni / Quartieri"] = luoghiLayer;
 
-// Aggiungi i Base Layer al controllo standard di Leaflet (in alto a destra)
+// 3. IDISE (Sezioni)
+const idiseLayer = L.geoJSON(null, {
+    style: styleIdise,
+    onEachFeature: function (feature, layer) {
+        let p = feature.properties;
+        let content = `<strong>Sezione ${p.SEZ21 || ''}</strong><br>
+                       IDISE: <b>${p.IDISE ? p.IDISE.toFixed(2) : "N/A"}</b><br>
+                       Popolazione: ${p.POP_TOT || 'N/A'}`;
+        layer.bindPopup(content);
+    }
+});
+layers["Disagio IDISE (2021)"] = idiseLayer;
+
+// 4. ADU
+const aduLayer = L.geoJSON(null, {
+    style: function (feature) {
+        return {
+            fillColor: feature.properties.fillColor || getIdiseColor(feature.properties.IDISE || 100),
+            weight: 2,
+            opacity: 1,
+            color: '#000',
+            fillOpacity: 0.7
+        };
+    },
+    onEachFeature: function (feature, layer) {
+        let p = feature.properties;
+        let content = `<strong>Area Critica (ADU)</strong><br>
+                       IDISE: <b>${p.IDISE ? p.IDISE.toFixed(2) : "N/A"}</b><br>
+                       Popolazione: ${p.POP_TOT || 'N/A'}`;
+        layer.bindPopup(content);
+    }
+}).addTo(map);
+layers["Aree Critiche (ADU)"] = aduLayer;
+
 L.control.layers(null, layers, { collapsed: true }).addTo(map);
+
+// --- DYNAMIC DATA FETCHING ---
+let fetchTimeout;
+async function updateMapFeatures() {
+    clearTimeout(fetchTimeout);
+    fetchTimeout = setTimeout(async () => {
+        const bounds = map.getBounds();
+        const minLat = bounds.getSouth();
+        const maxLat = bounds.getNorth();
+        const minLon = bounds.getWest();
+        const maxLon = bounds.getEast();
+
+        const fetchParams = `minLat=${minLat}&maxLat=${maxLat}&minLon=${minLon}&maxLon=${maxLon}`;
+
+        const loadLayer = async (layer, endpoint) => {
+            if (!map.hasLayer(layer)) return;
+            try {
+                const res = await fetch(`${API_URL}/${endpoint}?${fetchParams}`);
+                if (!res.ok) throw new Error(res.statusText);
+                const data = await res.json();
+                layer.clearLayers();
+                layer.addData(data);
+            } catch (e) {
+                console.error(`Error loading ${endpoint}:`, e);
+            }
+        };
+
+        // Parallel fetch
+        await Promise.all([
+            loadLayer(comuniLayer, 'comuni'),
+            loadLayer(luoghiLayer, 'luoghi'),
+            loadLayer(idiseLayer, 'sezioni'),
+            loadLayer(aduLayer, 'adu')
+        ]);
+    }, 300); // 300ms debounce
+}
+
+map.on('moveend', updateMapFeatures);
+map.on('overlayadd', updateMapFeatures);
+updateMapFeatures(); // Initial load
 
 // --- GESTIONE PUNTI DINAMICI (API) ---
 
@@ -309,53 +330,41 @@ async function updateVisiblePoints() {
 
 // --- SEARCH E SIDEBAR ---
 
-let searchableItems = [];
-
-function indexData() {
-    searchableItems = [];
-    if (typeof comuniData !== 'undefined' && comuniData.features) {
-        comuniData.features.forEach(feature => {
-            if (feature.properties && feature.properties.name) {
-                searchableItems.push({ name: feature.properties.name, type: "Comune", feature: feature });
-            }
-        });
-    }
-    if (typeof luoghiData !== 'undefined' && luoghiData.features) {
-        luoghiData.features.forEach(feature => {
-            if (feature.properties && feature.properties.name) {
-                // Determine type more gracefully if possible
-                let t = feature.properties.type || "Zona";
-                searchableItems.push({ name: feature.properties.name, type: t, feature: feature });
-            }
-        });
-    }
-}
+// --- SEARCH E SIDEBAR ---
 
 function initSearch() {
-    indexData();
     const searchInput = document.getElementById('search-input');
     const searchResults = document.getElementById('search-results');
 
-    searchInput.addEventListener('input', (e) => {
-        const query = e.target.value.toLowerCase();
+    searchInput.addEventListener('input', async (e) => {
+        const query = e.target.value;
         searchResults.innerHTML = '';
-        if (query.length < 2) { searchResults.classList.remove('active'); return; }
-
-        const filtered = searchableItems.filter(item => item.name.toLowerCase().includes(query));
-        if (filtered.length > 0) {
-            searchResults.classList.add('active');
-            filtered.slice(0, 50).forEach(item => {
-                const div = document.createElement('div');
-                div.className = 'result-item';
-                div.innerHTML = `<span class="name">${item.name}</span><span class="type">${item.type}</span>`;
-                div.addEventListener('click', () => {
-                    selectLocation(item);
-                    searchResults.classList.remove('active');
-                });
-                searchResults.appendChild(div);
-            });
-        } else {
+        if (query.length < 2) {
             searchResults.classList.remove('active');
+            return;
+        }
+
+        try {
+            const res = await fetch(`${API_URL}/search?q=${encodeURIComponent(query)}`);
+            const results = await res.json();
+
+            if (results && results.length > 0) {
+                searchResults.classList.add('active');
+                results.forEach(item => {
+                    const div = document.createElement('div');
+                    div.className = 'result-item';
+                    div.innerHTML = `<span class="name">${item.name}</span><span class="type">${item.type}</span>`;
+                    div.addEventListener('click', () => {
+                        selectLocation(item);
+                        searchResults.classList.remove('active');
+                    });
+                    searchResults.appendChild(div);
+                });
+            } else {
+                searchResults.classList.remove('active');
+            }
+        } catch (e) {
+            console.error("Search error:", e);
         }
     });
 

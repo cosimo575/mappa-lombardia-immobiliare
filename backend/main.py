@@ -193,6 +193,7 @@ def debug_fs():
             
     return features
 
+
 # Mount static files
 # Robust path resolution: Get the directory of this file (backend/), then go up one level
 base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -202,6 +203,127 @@ if os.path.exists(frontend_path):
     app.mount("/", StaticFiles(directory=frontend_path, html=True), name="frontend")
 else:
     print(f"WARNING: Frontend path not found at {frontend_path}. Current dir: {os.getcwd()}")
+
+# --- New API Endpoints for Dynamic Data ---
+import json
+
+def fetch_features(table: str, min_lat: float, max_lat: float, min_lon: float, max_lon: float):
+    conn = get_db_conn()
+    cursor = conn.cursor()
+    # Spatial query: overlapping bounding boxes
+    query = f"""
+        SELECT properties, geometry 
+        FROM {table} 
+        WHERE min_lat <= ? AND max_lat >= ? AND min_lon <= ? AND max_lon >= ?
+    """
+    cursor.execute(query, (max_lat, min_lat, max_lon, min_lon))
+    rows = cursor.fetchall()
+    
+    features = []
+    for row in rows:
+        try:
+            features.append({
+                "type": "Feature",
+                "properties": json.loads(row["properties"]),
+                "geometry": json.loads(row["geometry"])
+            })
+        except Exception as e:
+            print(f"Error parsing row in {table}: {e}")
+            continue
+            
+    conn.close()
+    return {
+        "type": "FeatureCollection",
+        "features": features
+    }
+
+@app.get("/api/comuni")
+async def get_comuni(
+    minLat: float = Query(..., alias="minLat"),
+    maxLat: float = Query(..., alias="maxLat"),
+    minLon: float = Query(..., alias="minLon"),
+    maxLon: float = Query(..., alias="maxLon")
+):
+    return fetch_features("comuni", minLat, maxLat, minLon, maxLon)
+
+@app.get("/api/sezioni")
+async def get_sezioni(
+    minLat: float = Query(..., alias="minLat"),
+    maxLat: float = Query(..., alias="maxLat"),
+    minLon: float = Query(..., alias="minLon"),
+    maxLon: float = Query(..., alias="maxLon")
+):
+    return fetch_features("sezioni", minLat, maxLat, minLon, maxLon)
+
+@app.get("/api/luoghi")
+async def get_luoghi(
+    minLat: float = Query(..., alias="minLat"),
+    maxLat: float = Query(..., alias="maxLat"),
+    minLon: float = Query(..., alias="minLon"),
+    maxLon: float = Query(..., alias="maxLon")
+):
+    return fetch_features("luoghi", minLat, maxLat, minLon, maxLon)
+
+@app.get("/api/adu")
+async def get_adu(
+    minLat: float = Query(..., alias="minLat"),
+    maxLat: float = Query(..., alias="maxLat"),
+    minLon: float = Query(..., alias="minLon"),
+    maxLon: float = Query(..., alias="maxLon")
+):
+    return fetch_features("adu", minLat, maxLat, minLon, maxLon)
+
+@app.get("/api/search")
+async def search_locations(q: str = Query(..., min_length=2)):
+    conn = get_db_conn()
+    cursor = conn.cursor()
+    
+    results = []
+    
+    # Search Comuni
+    try:
+        cursor.execute("""
+            SELECT name, properties, geometry 
+            FROM comuni 
+            WHERE name LIKE ? 
+            LIMIT 20
+        """, (f"%{q}%",))
+        
+        for row in cursor.fetchall():
+            results.append({
+                "name": row["name"],
+                "type": "Comune",
+                "feature": {
+                    "type": "Feature",
+                    "properties": json.loads(row["properties"]),
+                    "geometry": json.loads(row["geometry"])
+                }
+            })
+            
+        # Search Luoghi
+        cursor.execute("""
+            SELECT name, properties, geometry 
+            FROM luoghi 
+            WHERE name LIKE ? 
+            LIMIT 20
+        """, (f"%{q}%",))
+        
+        for row in cursor.fetchall():
+            results.append({
+                "name": row["name"],
+                "type": "Zona",
+                "feature": {
+                    "type": "Feature",
+                    "properties": json.loads(row["properties"]),
+                    "geometry": json.loads(row["geometry"])
+                }
+            })
+            
+    except Exception as e:
+        print(f"Search error: {e}")
+        
+    conn.close()
+    return results
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
