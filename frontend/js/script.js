@@ -141,18 +141,28 @@ async function updateMapFeatures() {
         const minLon = bounds.getWest();
         const maxLon = bounds.getEast();
 
+        console.log(`[DEBUG] Fetching features for bounds: Lat[${minLat}, ${maxLat}] Lon[${minLon}, ${maxLon}]`);
+
         const fetchParams = `minLat=${minLat}&maxLat=${maxLat}&minLon=${minLon}&maxLon=${maxLon}`;
 
         const loadLayer = async (layer, endpoint) => {
-            if (!map.hasLayer(layer)) return;
+            if (!map.hasLayer(layer)) {
+                // console.log(`[DEBUG] Layer ${endpoint} not active, skipping.`);
+                return;
+            }
             try {
-                const res = await fetch(`${API_URL}/${endpoint}?${fetchParams}`);
-                if (!res.ok) throw new Error(res.statusText);
+                const url = `${API_URL}/${endpoint}?${fetchParams}`;
+                // console.log(`[DEBUG] Calling ${url}`);
+                const res = await fetch(url);
+                if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
                 const data = await res.json();
+
+                console.log(`[DEBUG] Loaded ${data.features ? data.features.length : 0} features for ${endpoint}`);
+
                 layer.clearLayers();
                 layer.addData(data);
             } catch (e) {
-                console.error(`Error loading ${endpoint}:`, e);
+                console.error(`[ERROR] Error loading ${endpoint}:`, e);
             }
         };
 
