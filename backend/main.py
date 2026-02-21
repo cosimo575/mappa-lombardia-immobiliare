@@ -132,6 +132,7 @@ def get_stats(city: str, type: str = None):
         
         prezzo_vendita = None
         prezzo_affitto = None
+        water_quality = "N/D"
 
         # Check if it's a neighborhood request (or try both)
         # First try to find in milano_neighborhood_stats if type hints it or just by name
@@ -151,15 +152,26 @@ def get_stats(city: str, type: str = None):
                  prezzo_vendita = row[0]
                  prezzo_affitto = row[1]
             
+        # Fetch real water quality data
+        cursor.execute("SELECT compliance_percentage FROM water_quality_stats WHERE comune = ?", (city.upper(),))
+        water_row = cursor.fetchone()
+        if water_row:
+            water_quality = f"{int(water_row[0])}%"
+
+        # Fetch real service stats
+        cursor.execute("SELECT schools, pharmacies, structures FROM services_stats WHERE comune = ?", (city.upper(),))
+        service_row = cursor.fetchone()
+        schools_count = service_row[0] if service_row else 0
+        pharmacies_count = service_row[1] if service_row else 0
+        structures_count = service_row[2] if service_row else 0
+
         conn.close()
 
-        # Mock service stats (as per original code)
-        import random
         stats = {
-            "schools": random.randint(1, 10),
-            "pharmacies": random.randint(1, 5),
-            "structures": random.randint(0, 3),
-            "water": f"{random.randint(90, 100)}%",
+            "schools": schools_count,
+            "pharmacies": pharmacies_count,
+            "structures": structures_count,
+            "water": water_quality,
             "real_estate": {
                 "sale": prezzo_vendita,
                 "rent": prezzo_affitto

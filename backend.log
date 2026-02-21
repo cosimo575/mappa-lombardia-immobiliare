@@ -1,6 +1,0 @@
-INFO:     Started server process [19030]
-INFO:     Waiting for application startup.
-INFO:     Application startup complete.
-INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
-INFO:     127.0.0.1:55703 - "GET /api/comuni?minLat=45.0&maxLat=46.0&minLon=9.0&maxLon=10.0 HTTP/1.1" 404 Not Found
-INFO:     127.0.0.1:56118 - "GET /api/comuni?minLat=45.0&maxLat=46.0&minLon=9.0&maxLon=10.0 HTTP/1.1" 404 Not Found

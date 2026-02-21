@@ -1,10 +1,14 @@
 import sqlite3
 import json
+import ijson
+import math
 import os
 import re
+from migrate_water import migrate_water
+from migrate_services import migrate_services
 
-DB_PATH = "backend/database.sqlite"
-DATA_DIR = "frontend/data"
+DB_PATH = os.path.join(os.path.dirname(__file__), 'database.sqlite')
+DATA_DIR = "dati/json_sources"
 
 def get_db_conn():
     conn = sqlite3.connect(DB_PATH)
@@ -197,6 +201,14 @@ def main():
         
         # Migrate ADU
         migrate_file(conn, "data-adu.js", "adu", id_field="ID_NIL") # Typical for Milan NILs
+
+        # Migrate Water stats
+        print("Migrating water quality stats...")
+        migrate_water()
+
+        # Migrate Services stats
+        print("Migrating services stats...")
+        migrate_services()
 
     finally:
         conn.close()
