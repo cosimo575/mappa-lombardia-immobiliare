@@ -23,7 +23,7 @@ def get_db_conn():
     conn.row_factory = sqlite3.Row
     return conn
 
-def fetch_features(table, minLat, maxLat, minLon, maxLon):
+def fetch_features(table, minLat, maxLat, minLon, maxLon, limit=2000):
     conn = get_db_conn()
     cursor = conn.cursor()
     
@@ -34,6 +34,7 @@ def fetch_features(table, minLat, maxLat, minLon, maxLon):
         FROM {table} 
         WHERE min_lat <= ? AND max_lat >= ? 
         AND min_lon <= ? AND max_lon >= ?
+        LIMIT ?
     """
     
     # Note: intersecting rectangles:
@@ -42,7 +43,7 @@ def fetch_features(table, minLat, maxLat, minLon, maxLon):
     # feature.max_lat >= view.min_lat && feature.min_lat <= view.max_lat ...
     
     try:
-        cursor.execute(query, (maxLat, minLat, maxLon, minLon))
+        cursor.execute(query, (maxLat, minLat, maxLon, minLon, limit))
         rows = cursor.fetchall()
         
         features = []

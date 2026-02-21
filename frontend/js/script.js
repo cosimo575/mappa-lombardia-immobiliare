@@ -508,46 +508,46 @@ if (toggleBtn) {
     toggleBtn.addEventListener('click', () => {
         sidebar.classList.toggle('active');
     });
+}
 
-    // Chiudi la sidebar se clicchi fuori (sulla mappa) su mobile
-    map.on('click', () => {
+// Chiudi la sidebar se clicchi fuori (sulla mappa) su mobile
+map.on('click', () => {
+    if (window.innerWidth <= 768) {
+        sidebar.classList.remove('active');
+    }
+});
+
+// APERTURA TRAMITE HEADER (TENDINA, CLICK & SWIPE)
+const mobileHeader = document.getElementById('mobile-header-click');
+if (mobileHeader) {
+
+    // Gestione Click Semplice
+    mobileHeader.addEventListener('click', () => {
         if (window.innerWidth <= 768) {
-            sidebar.classList.remove('active');
+            sidebar.classList.toggle('active');
         }
     });
 
-    // APERTURA TRAMITE HEADER (TENDINA, CLICK & SWIPE)
-    const mobileHeader = document.getElementById('mobile-header-click');
-    if (mobileHeader) {
+    // Gestione Swipe (Touch)
+    let startY = 0;
 
-        // Gestione Click Semplice
-        mobileHeader.addEventListener('click', () => {
-            if (window.innerWidth <= 768) {
-                sidebar.classList.toggle('active');
-            }
-        });
+    mobileHeader.addEventListener('touchstart', (e) => {
+        startY = e.touches[0].clientY;
+    }, { passive: true });
 
-        // Gestione Swipe (Touch)
-        let startY = 0;
+    mobileHeader.addEventListener('touchend', (e) => {
+        const endY = e.changedTouches[0].clientY;
+        const diff = startY - endY;
 
-        mobileHeader.addEventListener('touchstart', (e) => {
-            startY = e.touches[0].clientY;
-        }, { passive: true });
-
-        mobileHeader.addEventListener('touchend', (e) => {
-            const endY = e.changedTouches[0].clientY;
-            const diff = startY - endY;
-
-            // Se diff > 50 (Swipe verso l'ALTO) -> Apri
-            if (diff > 50) {
-                sidebar.classList.add('active');
-            }
-            // Se diff < -50 (Swipe verso il BASSO) -> Chiudi
-            else if (diff < -50) {
-                sidebar.classList.remove('active');
-            }
-        }, { passive: true });
-    }
+        // Se diff > 50 (Swipe verso l'ALTO) -> Apri
+        if (diff > 50) {
+            sidebar.classList.add('active');
+        }
+        // Se diff < -50 (Swipe verso il BASSO) -> Chiudi
+        else if (diff < -50) {
+            sidebar.classList.remove('active');
+        }
+    }, { passive: true });
 }
 
 // Funzione ausiliaria per aprire la sidebar su mobile quando serve (es. selezione città)
