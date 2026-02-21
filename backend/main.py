@@ -339,6 +339,43 @@ def search_locations(q: str = Query(..., min_length=2)):
                 }
             })
             
+        # Search Addresses (only if query has a space, assuming user types Street + Number)
+        if " " in q:
+            safe_q = "".join(c for c in q if c.isalnum() or c.isspace())
+            if safe_q.strip():
+                # Add wildcard to terms for prefix matching
+                fts_query = " ".join(f"{term}*" for term in safe_q.split())
+                try:
+                    cursor.execute("""
+                        SELECT comune, street, number, lat, lon 
+                        FROM addresses_fts 
+                        WHERE addresses_fts MATCH ? 
+                        LIMIT 10
+                    """, (fts_query,))
+                    
+                    for row in cursor.fetchall():
+                        addr_name = f"{row['street']} {row['number']}, {row['comune']}"
+                        results.append({
+                            "name": addr_name,
+                            "type": "Indirizzo",
+                            "feature": {
+                                "type": "Feature",
+                                "properties": {
+                                    "name": addr_name,
+                                    "type": "Indirizzo",
+                                    "street": row["street"],
+                                    "number": row["number"],
+                                    "comune": row["comune"]
+                                },
+                                "geometry": {
+                                    "type": "Point",
+                                    "coordinates": [row["lon"], row["lat"]]
+                                }
+                            }
+                        })
+                except Exception as addr_err:
+                    print(f"Address search error: {addr_err}")
+            
     except Exception as e:
         print(f"Search error: {e}")
         

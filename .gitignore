@@ -13,3 +13,4 @@ frontend/data/
 *.log
 sample_*.json
 sample_*.geojson
+backend/database.sqlite
